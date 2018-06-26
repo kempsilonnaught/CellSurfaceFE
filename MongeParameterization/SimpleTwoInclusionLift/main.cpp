@@ -14,6 +14,12 @@ SolveLaplacian::SolveLaplacian(){}
 SolveLaplacian::~SolveLaplacian(){}
 
 int main(){
+	double r1 = 10;
+	double r2 = 5;
+	double s = 100;
+	double x = 300;
+	double y = 150;
+
 	SolveLaplacian mysys;
-	mysys.cell_mesh();
+	mysys.cell_mesh(r1, r2, s, x, y);
 }

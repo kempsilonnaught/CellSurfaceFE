@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/SimpleTwoInclusionLift/TwoInclusionLift.h
+deal.II/grid/tria.h
+-
+deal.II/dofs/dof_handler.h
+-
+deal.II/lac/constraint_matrix.h
+-
+deal.II/lac/sparsity_pattern.h
+-
+deal.II/fe/fe_system.h
+-
+deal.II/lac/vector.h
+-
+
+/home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/SimpleTwoInclusionLift/TwoInclusionLift_cell_mesh.cpp
+deal.II/grid/tria.h
+-
+deal.II/grid/grid_generator.h
+-
+deal.II/grid/grid_out.h
+-
+deal.II/grid/grid_tools.h
+-
+deal.II/grid/tria_boundary_lib.h
+-
+iostream
+-
+fstream
+-
+cmath
+-
+TwoInclusionLift.h
+/home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/SimpleTwoInclusionLift/TwoInclusionLift.h
+
+/home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/SimpleTwoInclusionLift/main.cpp
+TwoInclusionLift.h
+/home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/SimpleTwoInclusionLift/TwoInclusionLift.h
+

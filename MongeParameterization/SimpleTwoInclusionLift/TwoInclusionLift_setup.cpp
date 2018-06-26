@@ -1,6 +1,6 @@
 
 #include "TwoInclusionLift.h"
 
-void SolveLaplacian::setup(){
+	void SolveLaplacian::setup(){
 	
 }
