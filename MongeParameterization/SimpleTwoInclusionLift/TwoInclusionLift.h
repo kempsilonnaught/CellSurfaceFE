@@ -39,6 +39,7 @@ public:
 	void assemble();
 	void solve();
 	void output();
+	void run(double r1, double r2, double s, double x, double y);
 
 private:
 
@@ -48,6 +49,14 @@ private:
 	double inclusion_separation;
 	double surface_y;
 	double surface_x; 
+
+	FE_Q<2> fe;
+	DoFHandler<2> doffer;
+
+	SparsityPattern sparsity_pattern;
+	SparseMatrix<double> BIG_matrix;
+	Vector<double> solution;
+	Vector<double> rhs;
 
 };
 

@@ -10,16 +10,18 @@
 }
 */
 
-SolveLaplacian::SolveLaplacian(){}
+SolveLaplacian::SolveLaplacian() : fe(1), dof_handler(surface){}
 SolveLaplacian::~SolveLaplacian(){}
 
 int main(){
-	double r1 = 10;
-	double r2 = 5;
-	double s = 100;
-	double x = 300;
-	double y = 150;
+	double r1 = 25;
+	double r2 = 15;
+	double s = 600;
+	double x = 1000;
+	double y = 500;
 
-	SolveLaplacian mysys;
-	mysys.cell_mesh(r1, r2, s, x, y);
+	SolveLaplacian twoinclusionlift;
+	twoinclusionlift.run();
+
+	return 0;
 }

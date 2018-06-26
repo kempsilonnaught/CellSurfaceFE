@@ -81,13 +81,13 @@ void SolveLaplacian::cell_mesh(double r1, double r2, double s, double x, double 
 		}
 	}
 
-	surface.refine_global(4);
-	GridTools::remove_hanging_nodes(surface, false, 100);
-	GridTools::remove_anisotropy(surface, 1.2,  10);
-
-	std::ofstream out("testgrid.eps");
-	GridOut cell_mesh;
-	cell_mesh.write_eps(surface, out);
+	
+	GridTools::remove_anisotropy(surface, 1, 5);
+	surface.refine_global(2);
+	
+	//std::ofstream out("testgrid.eps");
+	//GridOut cell_mesh;
+	//cell_mesh.write_eps(surface, out);
 
 
 } 
