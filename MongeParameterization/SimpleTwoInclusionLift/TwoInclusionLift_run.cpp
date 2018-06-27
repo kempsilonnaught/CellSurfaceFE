@@ -1,11 +1,17 @@
 #include "TwoInclusionLift.h"
 
 void SolveLaplacian::run(double r1, double r2, double s, double x, double y){
-	cell_mesh(r1, r2, s, x, y);
-	setup();
-	assemble();
-	solve();
-	output();
+		std::cout << s << "run" << std::endl;
+		cell_mesh(r1, r2, s, x, y);
+		std::cout << s << "mesh" << std::endl;
+		setup();
+		std::cout << s << "setup" << std::endl;
+		assemble();
+		std::cout << s << "assemble" << std::endl;
+		solve();
+		output(s);
+		std::cout << "Blep" + std::to_string(s) << std::endl;
+
 }
 
 

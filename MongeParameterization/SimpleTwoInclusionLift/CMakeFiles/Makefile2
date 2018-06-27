@@ -98,7 +98,7 @@ clean: CMakeFiles/info.dir/clean
 CMakeFiles/strip_comments.dir/all:
 	$(MAKE) -f CMakeFiles/strip_comments.dir/build.make CMakeFiles/strip_comments.dir/depend
 	$(MAKE) -f CMakeFiles/strip_comments.dir/build.make CMakeFiles/strip_comments.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/SimpleTwoInclusionLift/CMakeFiles --progress-num=6 "Built target strip_comments"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/SimpleTwoInclusionLift/CMakeFiles --progress-num=14 "Built target strip_comments"
 .PHONY : CMakeFiles/strip_comments.dir/all
 
 # Build rule for subdir invocation for target.
@@ -127,10 +127,10 @@ clean: CMakeFiles/strip_comments.dir/clean
 # Target rules for target CMakeFiles/run.dir
 
 # All Build rule for target.
-CMakeFiles/run.dir/all: CMakeFiles/testexe.dir/all
+CMakeFiles/run.dir/all: CMakeFiles/laplacian_two_inclusion.dir/all
 	$(MAKE) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/depend
 	$(MAKE) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/SimpleTwoInclusionLift/CMakeFiles --progress-num=4 "Built target run"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/SimpleTwoInclusionLift/CMakeFiles --progress-num=12 "Built target run"
 .PHONY : CMakeFiles/run.dir/all
 
 # Build rule for subdir invocation for target.
@@ -152,6 +152,43 @@ CMakeFiles/run.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/run.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/laplacian_two_inclusion.dir
+
+# All Build rule for target.
+CMakeFiles/laplacian_two_inclusion.dir/all:
+	$(MAKE) -f CMakeFiles/laplacian_two_inclusion.dir/build.make CMakeFiles/laplacian_two_inclusion.dir/depend
+	$(MAKE) -f CMakeFiles/laplacian_two_inclusion.dir/build.make CMakeFiles/laplacian_two_inclusion.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/SimpleTwoInclusionLift/CMakeFiles --progress-num=3,4,5,6,7,8,9,10 "Built target laplacian_two_inclusion"
+.PHONY : CMakeFiles/laplacian_two_inclusion.dir/all
+
+# Include target in all.
+all: CMakeFiles/laplacian_two_inclusion.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/laplacian_two_inclusion.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/SimpleTwoInclusionLift/CMakeFiles 8
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/laplacian_two_inclusion.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/SimpleTwoInclusionLift/CMakeFiles 0
+.PHONY : CMakeFiles/laplacian_two_inclusion.dir/rule
+
+# Convenience name for target.
+laplacian_two_inclusion: CMakeFiles/laplacian_two_inclusion.dir/rule
+
+.PHONY : laplacian_two_inclusion
+
+# clean rule for target.
+CMakeFiles/laplacian_two_inclusion.dir/clean:
+	$(MAKE) -f CMakeFiles/laplacian_two_inclusion.dir/build.make CMakeFiles/laplacian_two_inclusion.dir/clean
+.PHONY : CMakeFiles/laplacian_two_inclusion.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/laplacian_two_inclusion.dir/clean
 
 .PHONY : clean
 
@@ -194,7 +231,7 @@ clean: CMakeFiles/debug.dir/clean
 CMakeFiles/release.dir/all:
 	$(MAKE) -f CMakeFiles/release.dir/build.make CMakeFiles/release.dir/depend
 	$(MAKE) -f CMakeFiles/release.dir/build.make CMakeFiles/release.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/SimpleTwoInclusionLift/CMakeFiles --progress-num=3 "Built target release"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/SimpleTwoInclusionLift/CMakeFiles --progress-num=11 "Built target release"
 .PHONY : CMakeFiles/release.dir/all
 
 # Build rule for subdir invocation for target.
@@ -226,7 +263,7 @@ clean: CMakeFiles/release.dir/clean
 CMakeFiles/runclean.dir/all:
 	$(MAKE) -f CMakeFiles/runclean.dir/build.make CMakeFiles/runclean.dir/depend
 	$(MAKE) -f CMakeFiles/runclean.dir/build.make CMakeFiles/runclean.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/SimpleTwoInclusionLift/CMakeFiles --progress-num=5 "Built target runclean"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/SimpleTwoInclusionLift/CMakeFiles --progress-num=13 "Built target runclean"
 .PHONY : CMakeFiles/runclean.dir/all
 
 # Build rule for subdir invocation for target.
@@ -248,43 +285,6 @@ CMakeFiles/runclean.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/runclean.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/testexe.dir
-
-# All Build rule for target.
-CMakeFiles/testexe.dir/all:
-	$(MAKE) -f CMakeFiles/testexe.dir/build.make CMakeFiles/testexe.dir/depend
-	$(MAKE) -f CMakeFiles/testexe.dir/build.make CMakeFiles/testexe.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/SimpleTwoInclusionLift/CMakeFiles --progress-num=7,8,9,10,11,12,13,14 "Built target testexe"
-.PHONY : CMakeFiles/testexe.dir/all
-
-# Include target in all.
-all: CMakeFiles/testexe.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/testexe.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/SimpleTwoInclusionLift/CMakeFiles 8
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/testexe.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/SimpleTwoInclusionLift/CMakeFiles 0
-.PHONY : CMakeFiles/testexe.dir/rule
-
-# Convenience name for target.
-testexe: CMakeFiles/testexe.dir/rule
-
-.PHONY : testexe
-
-# clean rule for target.
-CMakeFiles/testexe.dir/clean:
-	$(MAKE) -f CMakeFiles/testexe.dir/build.make CMakeFiles/testexe.dir/clean
-.PHONY : CMakeFiles/testexe.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/testexe.dir/clean
 
 .PHONY : clean
 

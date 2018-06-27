@@ -17,11 +17,15 @@ The first 5 lines pass the input values to the variable declared
 */
 
 void SolveLaplacian::cell_mesh(double r1, double r2, double s, double x, double y){
+	//free(dealii::Triangulation<2>(surface));
+
 	inclusion_rad_1 = r1;
 	inclusion_rad_2 = r2;
 	inclusion_separation = s;
 	surface_y = y;
 	surface_x = x;
+	
+	std::cout << inclusion_separation << "mesh.1" << std::endl;
 
 	Triangulation<2> inclusion_1;
 	GridGenerator::hyper_cube_with_cylindrical_hole(inclusion_1, inclusion_rad_1, inclusion_separation/2);
@@ -32,6 +36,8 @@ void SolveLaplacian::cell_mesh(double r1, double r2, double s, double x, double 
 	GridTools::shift(Point<2>(-inclusion_separation/2, 0), inclusion_2);
 
 	GridGenerator::merge_triangulations(inclusion_1, inclusion_2, surface);
+
+	std::cout << s << "mesh.2" << std::endl;
 
 	static const HyperBallBoundary<2> inclusion_boundary_1(Point<2>(inclusion_separation/2, 0), inclusion_rad_1);
 	surface.set_boundary(1, inclusion_boundary_1);	
@@ -47,6 +53,7 @@ void SolveLaplacian::cell_mesh(double r1, double r2, double s, double x, double 
 						}
 				}
 	}
+	std::cout << s << "mesh.3" << std::endl;
 
 
 	static const HyperBallBoundary<2> inclusion_boundary_2(Point<2>(-inclusion_separation/2, 0), inclusion_rad_2);
@@ -63,6 +70,9 @@ void SolveLaplacian::cell_mesh(double r1, double r2, double s, double x, double 
 						}
 				}
 	}
+
+	std::cout << s << "mesh.4" << std::endl;
+
 
 	typename Triangulation<2>::active_cell_iterator 
 	cell = surface.begin_active(), 
@@ -81,13 +91,24 @@ void SolveLaplacian::cell_mesh(double r1, double r2, double s, double x, double 
 		}
 	}
 
-	
-	GridTools::remove_anisotropy(surface, 1, 5);
-	surface.refine_global(2);
-	
-	//std::ofstream out("testgrid.eps");
-	//GridOut cell_mesh;
-	//cell_mesh.write_eps(surface, out);
+	std::cout << s << "mesh.5" << std::endl;
 
+	surface.refine_global(3);
+
+	std::ofstream out("testgrid.eps");
+	GridOut cell_mesh;
+	cell_mesh.write_eps(surface, out);
+
+	GridTools::remove_anisotropy(surface, 1, 1);
+
+
+	std::cout << s << "mesh.5" << std::endl;
+
+	std::cout << s << "mesh.6" << std::endl;
+
+	/* std::ofstream out("testgrid.eps");
+	GridOut cell_mesh;
+	cell_mesh.write_eps(surface, out);
+	*/
 
 } 

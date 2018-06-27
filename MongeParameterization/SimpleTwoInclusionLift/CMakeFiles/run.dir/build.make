@@ -53,9 +53,9 @@ CMAKE_BINARY_DIR = /home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterizat
 # Include the progress variables for this target.
 include CMakeFiles/run.dir/progress.make
 
-CMakeFiles/run: testexe
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/SimpleTwoInclusionLift/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Run testexe with Debug configuration"
-	./testexe
+CMakeFiles/run: laplacian_two_inclusion
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/SimpleTwoInclusionLift/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Run laplacian_two_inclusion with Debug configuration"
+	./laplacian_two_inclusion
 
 run: CMakeFiles/run
 run: CMakeFiles/run.dir/build.make

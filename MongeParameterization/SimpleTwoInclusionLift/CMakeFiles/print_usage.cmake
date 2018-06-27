@@ -1,7 +1,7 @@
 MESSAGE(
 "###
 #
-#  Project  testexe  set up with  deal.II-8.5.1  found at
+#  Project  laplacian_two_inclusion  set up with  deal.II-8.5.1  found at
 #      /usr
 #
 #  CMAKE_BUILD_TYPE:          Debug

@@ -14,14 +14,20 @@ SolveLaplacian::SolveLaplacian() : fe(1), doffer(surface){}
 SolveLaplacian::~SolveLaplacian(){}
 
 int main(){
-	double r1 = 25;
-	double r2 = 15;
-	double s = 600;
-	double x = 1000;
-	double y = 500;
+	for(double s = 100; s <= 600; s+=25){
 
-	SolveLaplacian twoinclusionlift;
-	twoinclusionlift.run(r1, r2, s, x, y);
+		double r1 = 15;
+		double r2 = 15;
+		double x = 1000;
+		double y = 500;
+
+		SolveLaplacian twoinclusionlift;
+
+		std::cout << s << std::endl;
+
+		twoinclusionlift.run(r1, r2, s, x, y);
+
+	}
 
 	return 0;
-}
+}	

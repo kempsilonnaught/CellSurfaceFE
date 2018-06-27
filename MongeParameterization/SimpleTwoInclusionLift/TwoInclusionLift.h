@@ -54,7 +54,7 @@ public:
 	void setup();
 	void assemble();
 	void solve();
-	void output();
+	void output(double s);
 	void run(double r1, double r2, double s, double x, double y);
 
 private:
