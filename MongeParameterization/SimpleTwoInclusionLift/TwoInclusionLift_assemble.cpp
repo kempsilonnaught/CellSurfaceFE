@@ -22,6 +22,7 @@ void SolveLaplacian::assemble(){
 	Vector<double> lil_rhs(dofs_per_cell);
 
 	std::vector<types::global_dof_index>local_dof_indices(dofs_per_cell);
+	std::cout << "BLORPDOG" << std::endl;
 
 	for(auto cell : doffer.active_cell_iterators()){
 		fe_time.reinit(cell);
@@ -31,17 +32,19 @@ void SolveLaplacian::assemble(){
 			for(unsigned int i = 0; i < dofs_per_cell; ++i)
 				for(unsigned int j = 0; j < dofs_per_cell; ++j)
 					lil_matrix(i, j) += ((fe_time.shape_grad(i, q_index))*(fe_time.shape_grad(j, q_index))*(fe_time.JxW(q_index)));
-				lil_rhs(i) += (fe_time.shape_value(i, q_index)*1*fe_time.JxW(q_index));
+			for(unsigned int i = 0; i < dofs_per_cell; ++i)	
+				lil_rhs(i) += (fe_time.shape_value(i, q_index)*1*fe_time.JxW(q_index));	
 		}
+
 		cell -> get_dof_indices(local_dof_indices);
 		for(unsigned int i = 0; i < dofs_per_cell; ++i)
 			for(unsigned int j = 0; j < dofs_per_cell; ++j)
-				BIG_matrix.add(local_dof_indices[i], local_dof_indices[j], lil_matrix(i, j))
-			for(unsigned int i = 0; i < dofs_per_cell; ++i)
-				rhs(local_dof_indices[i] += lil_rhs(i));
+				big_matrix.add(local_dof_indices[i], local_dof_indices[j], lil_matrix(i, j));
+		for(unsigned int i = 0; i < dofs_per_cell; ++i)
+			rhs(local_dof_indices[i]) += lil_rhs(i);
 	}
 
 	std::map<types::global_dof_index, double> boundary_values;
 	VectorTools::interpolate_boundary_values(doffer, 0, ZeroFunction<2>(), boundary_values);
-	MatrixTools::apply_boundary_values(boundary_values, BIG_matrix, solution, rhs);
+	MatrixTools::apply_boundary_values(boundary_values, big_matrix, solution, rhs);
 }

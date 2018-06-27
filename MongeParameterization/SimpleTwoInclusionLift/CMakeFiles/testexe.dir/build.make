@@ -81,9 +81,33 @@ CMakeFiles/testexe.dir/main.cpp.o.provides: CMakeFiles/testexe.dir/main.cpp.o.re
 CMakeFiles/testexe.dir/main.cpp.o.provides.build: CMakeFiles/testexe.dir/main.cpp.o
 
 
+CMakeFiles/testexe.dir/TwoInclusionLift_run.cpp.o: CMakeFiles/testexe.dir/flags.make
+CMakeFiles/testexe.dir/TwoInclusionLift_run.cpp.o: TwoInclusionLift_run.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/SimpleTwoInclusionLift/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/testexe.dir/TwoInclusionLift_run.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/testexe.dir/TwoInclusionLift_run.cpp.o -c /home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/SimpleTwoInclusionLift/TwoInclusionLift_run.cpp
+
+CMakeFiles/testexe.dir/TwoInclusionLift_run.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testexe.dir/TwoInclusionLift_run.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/SimpleTwoInclusionLift/TwoInclusionLift_run.cpp > CMakeFiles/testexe.dir/TwoInclusionLift_run.cpp.i
+
+CMakeFiles/testexe.dir/TwoInclusionLift_run.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testexe.dir/TwoInclusionLift_run.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/SimpleTwoInclusionLift/TwoInclusionLift_run.cpp -o CMakeFiles/testexe.dir/TwoInclusionLift_run.cpp.s
+
+CMakeFiles/testexe.dir/TwoInclusionLift_run.cpp.o.requires:
+
+.PHONY : CMakeFiles/testexe.dir/TwoInclusionLift_run.cpp.o.requires
+
+CMakeFiles/testexe.dir/TwoInclusionLift_run.cpp.o.provides: CMakeFiles/testexe.dir/TwoInclusionLift_run.cpp.o.requires
+	$(MAKE) -f CMakeFiles/testexe.dir/build.make CMakeFiles/testexe.dir/TwoInclusionLift_run.cpp.o.provides.build
+.PHONY : CMakeFiles/testexe.dir/TwoInclusionLift_run.cpp.o.provides
+
+CMakeFiles/testexe.dir/TwoInclusionLift_run.cpp.o.provides.build: CMakeFiles/testexe.dir/TwoInclusionLift_run.cpp.o
+
+
 CMakeFiles/testexe.dir/TwoInclusionLift_cell_mesh.cpp.o: CMakeFiles/testexe.dir/flags.make
 CMakeFiles/testexe.dir/TwoInclusionLift_cell_mesh.cpp.o: TwoInclusionLift_cell_mesh.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/SimpleTwoInclusionLift/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/testexe.dir/TwoInclusionLift_cell_mesh.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/SimpleTwoInclusionLift/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/testexe.dir/TwoInclusionLift_cell_mesh.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/testexe.dir/TwoInclusionLift_cell_mesh.cpp.o -c /home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/SimpleTwoInclusionLift/TwoInclusionLift_cell_mesh.cpp
 
 CMakeFiles/testexe.dir/TwoInclusionLift_cell_mesh.cpp.i: cmake_force
@@ -105,16 +129,122 @@ CMakeFiles/testexe.dir/TwoInclusionLift_cell_mesh.cpp.o.provides: CMakeFiles/tes
 CMakeFiles/testexe.dir/TwoInclusionLift_cell_mesh.cpp.o.provides.build: CMakeFiles/testexe.dir/TwoInclusionLift_cell_mesh.cpp.o
 
 
+CMakeFiles/testexe.dir/TwoInclusionLift_setup.cpp.o: CMakeFiles/testexe.dir/flags.make
+CMakeFiles/testexe.dir/TwoInclusionLift_setup.cpp.o: TwoInclusionLift_setup.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/SimpleTwoInclusionLift/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/testexe.dir/TwoInclusionLift_setup.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/testexe.dir/TwoInclusionLift_setup.cpp.o -c /home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/SimpleTwoInclusionLift/TwoInclusionLift_setup.cpp
+
+CMakeFiles/testexe.dir/TwoInclusionLift_setup.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testexe.dir/TwoInclusionLift_setup.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/SimpleTwoInclusionLift/TwoInclusionLift_setup.cpp > CMakeFiles/testexe.dir/TwoInclusionLift_setup.cpp.i
+
+CMakeFiles/testexe.dir/TwoInclusionLift_setup.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testexe.dir/TwoInclusionLift_setup.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/SimpleTwoInclusionLift/TwoInclusionLift_setup.cpp -o CMakeFiles/testexe.dir/TwoInclusionLift_setup.cpp.s
+
+CMakeFiles/testexe.dir/TwoInclusionLift_setup.cpp.o.requires:
+
+.PHONY : CMakeFiles/testexe.dir/TwoInclusionLift_setup.cpp.o.requires
+
+CMakeFiles/testexe.dir/TwoInclusionLift_setup.cpp.o.provides: CMakeFiles/testexe.dir/TwoInclusionLift_setup.cpp.o.requires
+	$(MAKE) -f CMakeFiles/testexe.dir/build.make CMakeFiles/testexe.dir/TwoInclusionLift_setup.cpp.o.provides.build
+.PHONY : CMakeFiles/testexe.dir/TwoInclusionLift_setup.cpp.o.provides
+
+CMakeFiles/testexe.dir/TwoInclusionLift_setup.cpp.o.provides.build: CMakeFiles/testexe.dir/TwoInclusionLift_setup.cpp.o
+
+
+CMakeFiles/testexe.dir/TwoInclusionLift_assemble.cpp.o: CMakeFiles/testexe.dir/flags.make
+CMakeFiles/testexe.dir/TwoInclusionLift_assemble.cpp.o: TwoInclusionLift_assemble.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/SimpleTwoInclusionLift/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/testexe.dir/TwoInclusionLift_assemble.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/testexe.dir/TwoInclusionLift_assemble.cpp.o -c /home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/SimpleTwoInclusionLift/TwoInclusionLift_assemble.cpp
+
+CMakeFiles/testexe.dir/TwoInclusionLift_assemble.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testexe.dir/TwoInclusionLift_assemble.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/SimpleTwoInclusionLift/TwoInclusionLift_assemble.cpp > CMakeFiles/testexe.dir/TwoInclusionLift_assemble.cpp.i
+
+CMakeFiles/testexe.dir/TwoInclusionLift_assemble.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testexe.dir/TwoInclusionLift_assemble.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/SimpleTwoInclusionLift/TwoInclusionLift_assemble.cpp -o CMakeFiles/testexe.dir/TwoInclusionLift_assemble.cpp.s
+
+CMakeFiles/testexe.dir/TwoInclusionLift_assemble.cpp.o.requires:
+
+.PHONY : CMakeFiles/testexe.dir/TwoInclusionLift_assemble.cpp.o.requires
+
+CMakeFiles/testexe.dir/TwoInclusionLift_assemble.cpp.o.provides: CMakeFiles/testexe.dir/TwoInclusionLift_assemble.cpp.o.requires
+	$(MAKE) -f CMakeFiles/testexe.dir/build.make CMakeFiles/testexe.dir/TwoInclusionLift_assemble.cpp.o.provides.build
+.PHONY : CMakeFiles/testexe.dir/TwoInclusionLift_assemble.cpp.o.provides
+
+CMakeFiles/testexe.dir/TwoInclusionLift_assemble.cpp.o.provides.build: CMakeFiles/testexe.dir/TwoInclusionLift_assemble.cpp.o
+
+
+CMakeFiles/testexe.dir/TwoInclusionLift_solve.cpp.o: CMakeFiles/testexe.dir/flags.make
+CMakeFiles/testexe.dir/TwoInclusionLift_solve.cpp.o: TwoInclusionLift_solve.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/SimpleTwoInclusionLift/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/testexe.dir/TwoInclusionLift_solve.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/testexe.dir/TwoInclusionLift_solve.cpp.o -c /home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/SimpleTwoInclusionLift/TwoInclusionLift_solve.cpp
+
+CMakeFiles/testexe.dir/TwoInclusionLift_solve.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testexe.dir/TwoInclusionLift_solve.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/SimpleTwoInclusionLift/TwoInclusionLift_solve.cpp > CMakeFiles/testexe.dir/TwoInclusionLift_solve.cpp.i
+
+CMakeFiles/testexe.dir/TwoInclusionLift_solve.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testexe.dir/TwoInclusionLift_solve.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/SimpleTwoInclusionLift/TwoInclusionLift_solve.cpp -o CMakeFiles/testexe.dir/TwoInclusionLift_solve.cpp.s
+
+CMakeFiles/testexe.dir/TwoInclusionLift_solve.cpp.o.requires:
+
+.PHONY : CMakeFiles/testexe.dir/TwoInclusionLift_solve.cpp.o.requires
+
+CMakeFiles/testexe.dir/TwoInclusionLift_solve.cpp.o.provides: CMakeFiles/testexe.dir/TwoInclusionLift_solve.cpp.o.requires
+	$(MAKE) -f CMakeFiles/testexe.dir/build.make CMakeFiles/testexe.dir/TwoInclusionLift_solve.cpp.o.provides.build
+.PHONY : CMakeFiles/testexe.dir/TwoInclusionLift_solve.cpp.o.provides
+
+CMakeFiles/testexe.dir/TwoInclusionLift_solve.cpp.o.provides.build: CMakeFiles/testexe.dir/TwoInclusionLift_solve.cpp.o
+
+
+CMakeFiles/testexe.dir/twoinclusionlift_output.cpp.o: CMakeFiles/testexe.dir/flags.make
+CMakeFiles/testexe.dir/twoinclusionlift_output.cpp.o: twoinclusionlift_output.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/SimpleTwoInclusionLift/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/testexe.dir/twoinclusionlift_output.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/testexe.dir/twoinclusionlift_output.cpp.o -c /home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/SimpleTwoInclusionLift/twoinclusionlift_output.cpp
+
+CMakeFiles/testexe.dir/twoinclusionlift_output.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testexe.dir/twoinclusionlift_output.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/SimpleTwoInclusionLift/twoinclusionlift_output.cpp > CMakeFiles/testexe.dir/twoinclusionlift_output.cpp.i
+
+CMakeFiles/testexe.dir/twoinclusionlift_output.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testexe.dir/twoinclusionlift_output.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/SimpleTwoInclusionLift/twoinclusionlift_output.cpp -o CMakeFiles/testexe.dir/twoinclusionlift_output.cpp.s
+
+CMakeFiles/testexe.dir/twoinclusionlift_output.cpp.o.requires:
+
+.PHONY : CMakeFiles/testexe.dir/twoinclusionlift_output.cpp.o.requires
+
+CMakeFiles/testexe.dir/twoinclusionlift_output.cpp.o.provides: CMakeFiles/testexe.dir/twoinclusionlift_output.cpp.o.requires
+	$(MAKE) -f CMakeFiles/testexe.dir/build.make CMakeFiles/testexe.dir/twoinclusionlift_output.cpp.o.provides.build
+.PHONY : CMakeFiles/testexe.dir/twoinclusionlift_output.cpp.o.provides
+
+CMakeFiles/testexe.dir/twoinclusionlift_output.cpp.o.provides.build: CMakeFiles/testexe.dir/twoinclusionlift_output.cpp.o
+
+
 # Object files for target testexe
 testexe_OBJECTS = \
 "CMakeFiles/testexe.dir/main.cpp.o" \
-"CMakeFiles/testexe.dir/TwoInclusionLift_cell_mesh.cpp.o"
+"CMakeFiles/testexe.dir/TwoInclusionLift_run.cpp.o" \
+"CMakeFiles/testexe.dir/TwoInclusionLift_cell_mesh.cpp.o" \
+"CMakeFiles/testexe.dir/TwoInclusionLift_setup.cpp.o" \
+"CMakeFiles/testexe.dir/TwoInclusionLift_assemble.cpp.o" \
+"CMakeFiles/testexe.dir/TwoInclusionLift_solve.cpp.o" \
+"CMakeFiles/testexe.dir/twoinclusionlift_output.cpp.o"
 
 # External object files for target testexe
 testexe_EXTERNAL_OBJECTS =
 
 testexe: CMakeFiles/testexe.dir/main.cpp.o
+testexe: CMakeFiles/testexe.dir/TwoInclusionLift_run.cpp.o
 testexe: CMakeFiles/testexe.dir/TwoInclusionLift_cell_mesh.cpp.o
+testexe: CMakeFiles/testexe.dir/TwoInclusionLift_setup.cpp.o
+testexe: CMakeFiles/testexe.dir/TwoInclusionLift_assemble.cpp.o
+testexe: CMakeFiles/testexe.dir/TwoInclusionLift_solve.cpp.o
+testexe: CMakeFiles/testexe.dir/twoinclusionlift_output.cpp.o
 testexe: CMakeFiles/testexe.dir/build.make
 testexe: /usr/lib/x86_64-linux-gnu/libdeal.ii.g.so.8.5.1
 testexe: /usr/lib/x86_64-linux-gnu/libbz2.so
@@ -279,7 +409,7 @@ testexe: /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
 testexe: /usr/lib/x86_64-linux-gnu/libslepc.so
 testexe: /usr/lib/x86_64-linux-gnu/libpetsc.so
 testexe: CMakeFiles/testexe.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/SimpleTwoInclusionLift/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable testexe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/SimpleTwoInclusionLift/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable testexe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/testexe.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -288,7 +418,12 @@ CMakeFiles/testexe.dir/build: testexe
 .PHONY : CMakeFiles/testexe.dir/build
 
 CMakeFiles/testexe.dir/requires: CMakeFiles/testexe.dir/main.cpp.o.requires
+CMakeFiles/testexe.dir/requires: CMakeFiles/testexe.dir/TwoInclusionLift_run.cpp.o.requires
 CMakeFiles/testexe.dir/requires: CMakeFiles/testexe.dir/TwoInclusionLift_cell_mesh.cpp.o.requires
+CMakeFiles/testexe.dir/requires: CMakeFiles/testexe.dir/TwoInclusionLift_setup.cpp.o.requires
+CMakeFiles/testexe.dir/requires: CMakeFiles/testexe.dir/TwoInclusionLift_assemble.cpp.o.requires
+CMakeFiles/testexe.dir/requires: CMakeFiles/testexe.dir/TwoInclusionLift_solve.cpp.o.requires
+CMakeFiles/testexe.dir/requires: CMakeFiles/testexe.dir/twoinclusionlift_output.cpp.o.requires
 
 .PHONY : CMakeFiles/testexe.dir/requires
 

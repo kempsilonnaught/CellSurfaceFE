@@ -10,7 +10,7 @@
 }
 */
 
-SolveLaplacian::SolveLaplacian() : fe(1), dof_handler(surface){}
+SolveLaplacian::SolveLaplacian() : fe(1), doffer(surface){}
 SolveLaplacian::~SolveLaplacian(){}
 
 int main(){
@@ -21,7 +21,7 @@ int main(){
 	double y = 500;
 
 	SolveLaplacian twoinclusionlift;
-	twoinclusionlift.run();
+	twoinclusionlift.run(r1, r2, s, x, y);
 
 	return 0;
 }

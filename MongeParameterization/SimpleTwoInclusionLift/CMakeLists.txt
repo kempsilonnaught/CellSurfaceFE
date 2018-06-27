@@ -17,7 +17,12 @@ SET(TARGET "testexe")
 # page of the documentation.
 SET(TARGET_SRC
   main.cpp
+  TwoInclusionLift_run.cpp
   TwoInclusionLift_cell_mesh.cpp
+  TwoInclusionLift_setup.cpp
+  TwoInclusionLift_assemble.cpp
+  TwoInclusionLift_solve.cpp
+  twoinclusionlift_output.cpp
   TwoInclusionLift.h
   )
 

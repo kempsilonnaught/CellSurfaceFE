@@ -4,5 +4,5 @@ void SolveLaplacian::solve(){
 	SolverControl solver_control(1000, 1e-12);
 	SolverCG<> solver(solver_control);
 
-	solver.solve(BIG_matrix, solution, rhs, PreconditionIdentity());
+	solver.solve(big_matrix, solution, rhs, PreconditionIdentity());
 }

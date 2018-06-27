@@ -55,7 +55,7 @@ include CMakeFiles/strip_comments.dir/progress.make
 
 CMakeFiles/strip_comments:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/SimpleTwoInclusionLift/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "strip comments"
-	/usr/bin/perl -pi -e 's#^[ \t]*//.*\n##g;' main.cpp TwoInclusionLift_cell_mesh.cpp TwoInclusionLift.h
+	/usr/bin/perl -pi -e 's#^[ \t]*//.*\n##g;' main.cpp TwoInclusionLift_run.cpp TwoInclusionLift_cell_mesh.cpp TwoInclusionLift_setup.cpp TwoInclusionLift_assemble.cpp TwoInclusionLift_solve.cpp twoinclusionlift_output.cpp TwoInclusionLift.h
 
 strip_comments: CMakeFiles/strip_comments
 strip_comments: CMakeFiles/strip_comments.dir/build.make

@@ -1,3 +1,4 @@
+#include <deal.II/lac/dynamic_sparsity_pattern.h>
 #include "TwoInclusionLift.h"
 
 void SolveLaplacian::setup(){
@@ -6,7 +7,7 @@ void SolveLaplacian::setup(){
 	DoFTools::make_sparsity_pattern(doffer, dynspar);
 	sparsity_pattern.copy_from(dynspar);
 
-	BIG_matrix.reinit(sparsity_pattern);
+	big_matrix.reinit(sparsity_pattern);
 
 	solution.reinit(doffer.n_dofs());
 	rhs.reinit(doffer.n_dofs());
