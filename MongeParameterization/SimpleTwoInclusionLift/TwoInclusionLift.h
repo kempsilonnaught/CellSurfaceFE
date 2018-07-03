@@ -54,26 +54,30 @@ public:
 	void setup();
 	void assemble();
 	void solve();
-	void output(double s);
+	void output();
 	void run(double r1, double r2, double s, double x, double y);
+	//int force(double sigma);
 
 private:
-
 	Triangulation<2> surface;
+
 	double inclusion_rad_1;
 	double inclusion_rad_2;
 	double inclusion_separation;
 	double surface_y;
 	double surface_x; 
-
-	FE_Q<2> fe;
+	
 	DoFHandler<2> doffer;
-
+	
+	FE_Q<2> fe;
+	
 	SparsityPattern sparsity_pattern;
+	
 	SparseMatrix<double> big_matrix;
+	
 	Vector<double> solution;
 	Vector<double> rhs;
-
 };
+	
 
 #endif

@@ -9,6 +9,6 @@ void SolveLaplacian::setup(){
 
 	big_matrix.reinit(sparsity_pattern);
 
-	solution.reinit(doffer.n_dofs());
-	rhs.reinit(doffer.n_dofs());
+	solution.reinit(doffer.n_dofs(), false);
+	rhs.reinit(doffer.n_dofs(), false);
 }

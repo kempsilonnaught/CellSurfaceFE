@@ -3,6 +3,7 @@
 #include <deal.II/grid/grid_out.h>
 #include <deal.II/grid/grid_tools.h>
 #include <deal.II/grid/tria_boundary_lib.h>
+#include <deal.II/base/logstream.h>
 
 #include <iostream>
 #include <fstream>
@@ -25,6 +26,7 @@ void SolveLaplacian::cell_mesh(double r1, double r2, double s, double x, double 
 	surface_y = y;
 	surface_x = x;
 	
+
 	std::cout << inclusion_separation << "mesh.1" << std::endl;
 
 	Triangulation<2> inclusion_1;
@@ -37,9 +39,8 @@ void SolveLaplacian::cell_mesh(double r1, double r2, double s, double x, double 
 
 	GridGenerator::merge_triangulations(inclusion_1, inclusion_2, surface);
 
-	std::cout << s << "mesh.2" << std::endl;
 
-	static const HyperBallBoundary<2> inclusion_boundary_1(Point<2>(inclusion_separation/2, 0), inclusion_rad_1);
+	static HyperBallBoundary<2> inclusion_boundary_1(Point<2>(inclusion_separation/2, 0), inclusion_rad_1);
 	surface.set_boundary(1, inclusion_boundary_1);	
 
 	for(unsigned int aa = 0; aa < 10; ++aa){
@@ -53,11 +54,14 @@ void SolveLaplacian::cell_mesh(double r1, double r2, double s, double x, double 
 						}
 				}
 	}
-	std::cout << s << "mesh.3" << std::endl;
 
 
-	static const HyperBallBoundary<2> inclusion_boundary_2(Point<2>(-inclusion_separation/2, 0), inclusion_rad_2);
+	//std::cout << s << "mesh.3" << std::endl;
+
+
+	static HyperBallBoundary<2> inclusion_boundary_2(Point<2>(-inclusion_separation/2, 0), inclusion_rad_2);
 	surface.set_boundary(2, inclusion_boundary_2);
+
 	
 	for(unsigned int aa = 0; aa < 10; ++aa){
 		typename Triangulation<2>::active_cell_iterator cell_2 = surface.begin_active(), endc_2 = surface.end();
@@ -70,9 +74,6 @@ void SolveLaplacian::cell_mesh(double r1, double r2, double s, double x, double 
 						}
 				}
 	}
-
-	std::cout << s << "mesh.4" << std::endl;
-
 
 	typename Triangulation<2>::active_cell_iterator 
 	cell = surface.begin_active(), 
@@ -89,9 +90,10 @@ void SolveLaplacian::cell_mesh(double r1, double r2, double s, double x, double 
 			if(-1e-5 < (v(0)+s) && (v(0)+s) < 1e-5)
 				v(0) = -x/2;
 		}
-	}
+	} 
 
-	std::cout << s << "mesh.5" << std::endl;
+
+	//std::cout << s << "mesh.5" << std::endl;
 
 	surface.refine_global(3);
 
@@ -100,15 +102,18 @@ void SolveLaplacian::cell_mesh(double r1, double r2, double s, double x, double 
 	cell_mesh.write_eps(surface, out);
 
 	GridTools::remove_anisotropy(surface, 1, 1);
+	std::cout << s << "mesh.2" << std::endl;
 
 
-	std::cout << s << "mesh.5" << std::endl;
+	//std::cout << s << "mesh.5" << std::endl;
 
-	std::cout << s << "mesh.6" << std::endl;
+	//std::cout << s << "mesh.6" << std::endl;
 
 	/* std::ofstream out("testgrid.eps");
 	GridOut cell_mesh;
 	cell_mesh.write_eps(surface, out);
 	*/
+
+	
 
 } 

@@ -67,6 +67,8 @@ deal.II/grid/grid_tools.h
 -
 deal.II/grid/tria_boundary_lib.h
 -
+deal.II/base/logstream.h
+-
 iostream
 -
 fstream
@@ -91,10 +93,16 @@ TwoInclusionLift.h
 /home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/SimpleTwoInclusionLift/TwoInclusionLift.h
 
 /home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/SimpleTwoInclusionLift/main.cpp
+cstdlib
+-
+cmath
+-
 TwoInclusionLift.h
 /home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/SimpleTwoInclusionLift/TwoInclusionLift.h
 
 /home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/SimpleTwoInclusionLift/twoinclusionlift_output.cpp
+deal.II/base/table_handler.h
+-
 TwoInclusionLift.h
 /home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/SimpleTwoInclusionLift/TwoInclusionLift.h
 

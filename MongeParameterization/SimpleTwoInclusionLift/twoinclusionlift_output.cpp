@@ -1,6 +1,7 @@
+#include <deal.II/base/table_handler.h>
 #include "TwoInclusionLift.h"
 
-void SolveLaplacian::output(double s){
+void SolveLaplacian::output(){
 	DataOut<2> data_out;
 
 	data_out.attach_dof_handler(doffer);
@@ -8,6 +9,7 @@ void SolveLaplacian::output(double s){
 
 	data_out.build_patches();
 
-	std::ofstream out("cell_forces" + std::to_string(s) + ".gpl");
+	std::ofstream out("cell_forces.gpl");
+	
 	data_out.write_gnuplot(out);
 }

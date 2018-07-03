@@ -9,16 +9,16 @@ void SolveLaplacian::assemble(){
 	argument is update_values and update_gradients and update_JxW_values. Note that JxW represents 
 	Jacobians crossed with quadrature weights.
 	*/
-	std::cout << "quadrature is good" << std::endl;
+	//std::cout << "quadrature is good" << std::endl;
 	
 	FEValues<2> fe_time(fe, quadrakill, update_values | update_gradients | update_JxW_values);
 
-	std::cout << "FEVALUES ARE good" << std::endl;
+	//std::cout << "FEVALUES ARE good" << std::endl;
 
 
 	const unsigned int dofs_per_cell = fe.dofs_per_cell;
 	const unsigned int n_q_points = quadrakill.size();
-	std::cout << "Contants ARE good" << std::endl;
+	//std::cout << "Contants ARE good" << std::endl;
 
 	/* Note that because we are in 2d, dofs per vertex is one and a cell has 4
 	vertices, so there are 4 degrees of freedom per cell
@@ -27,7 +27,7 @@ void SolveLaplacian::assemble(){
 	Vector<double> lil_rhs(dofs_per_cell);
 
 	std::vector<types::global_dof_index>local_dof_indices(dofs_per_cell);
-	std::cout << "Matrices and indices initializations are good" << std::endl;
+	//std::cout << "Matrices and indices initializations are good" << std::endl;
 
 	for(auto cell : doffer.active_cell_iterators()){
 		fe_time.reinit(cell);
@@ -37,8 +37,8 @@ void SolveLaplacian::assemble(){
 			for(unsigned int i = 0; i < dofs_per_cell; ++i)
 				for(unsigned int j = 0; j < dofs_per_cell; ++j)
 					lil_matrix(i, j) += ((fe_time.shape_grad(i, q_index))*(fe_time.shape_grad(j, q_index))*(fe_time.JxW(q_index)));
-			for(unsigned int i = 0; i < dofs_per_cell; ++i)	
-				lil_rhs(i) += (fe_time.shape_value(i, q_index)*1*fe_time.JxW(q_index));	
+			//for(unsigned int i = 0; i < dofs_per_cell; ++i)	
+				//lil_rhs(i) += (fe_time.shape_value(i, q_index)*1*fe_time.JxW(q_index));	
 		}
 
 		cell -> get_dof_indices(local_dof_indices);
@@ -48,10 +48,15 @@ void SolveLaplacian::assemble(){
 		for(unsigned int i = 0; i < dofs_per_cell; ++i)
 			rhs(local_dof_indices[i]) += lil_rhs(i);
 	}
-	std::cout << "Big matrix good" << std::endl;
+	//std::cout << "Big matrix good" << std::endl;
+	//std::cout << rhs << std::endl;
+	
+
 
 	std::map<types::global_dof_index, double> boundary_values;
 	VectorTools::interpolate_boundary_values(doffer, 0, ZeroFunction<2>(), boundary_values);
+	VectorTools::interpolate_boundary_values(doffer, 1, ConstantFunction<2>(100), boundary_values);
+	VectorTools::interpolate_boundary_values(doffer, 2, ConstantFunction<2>(100), boundary_values);
 	MatrixTools::apply_boundary_values(boundary_values, big_matrix, solution, rhs);
 
 }
