@@ -7,6 +7,16 @@
 #IncludeRegexTransform: 
 
 /home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/SimpleTwoInclusionLift/TwoInclusionLift.h
+deal.II/grid/grid_generator.h
+-
+deal.II/grid/grid_out.h
+-
+deal.II/grid/grid_tools.h
+-
+deal.II/grid/tria_boundary_lib.h
+-
+deal.II/base/logstream.h
+-
 deal.II/grid/tria.h
 -
 deal.II/dofs/dof_handler.h

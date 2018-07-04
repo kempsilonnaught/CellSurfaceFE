@@ -2,6 +2,8 @@
 #include "TwoInclusionLift.h"
 
 void SolveLaplacian::setup(){
+	doffer.initialize(surface, fe);
+
 	doffer.distribute_dofs(fe);
 	DynamicSparsityPattern dynspar(doffer.n_dofs());
 	DoFTools::make_sparsity_pattern(doffer, dynspar);

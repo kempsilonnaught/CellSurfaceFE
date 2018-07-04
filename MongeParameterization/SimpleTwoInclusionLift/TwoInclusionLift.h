@@ -1,6 +1,11 @@
 #ifndef TWO_INCLUSION_LIFT_SAMKEMP
 #define TWO_INCLUSION_LIFT_SAMKEMP
 
+#include <deal.II/grid/grid_generator.h>
+#include <deal.II/grid/grid_out.h>
+#include <deal.II/grid/grid_tools.h>
+#include <deal.II/grid/tria_boundary_lib.h>
+#include <deal.II/base/logstream.h>
 #include <deal.II/grid/tria.h>
 #include <deal.II/dofs/dof_handler.h>
 #include <deal.II/lac/constraint_matrix.h>
@@ -45,22 +50,23 @@ Triangulation<2> surface declares a two dimensional mesh called "surface"
 
 */
 
-class SolveLaplacian{
-public:
+class SolveLaplacian {
+
+public :
+
 	SolveLaplacian();
 	~SolveLaplacian();
 
-	void cell_mesh(double r1, double r2, double s, double x, double y);
+	void cell_mesh(double r1, double r2, double s, double x, double y, int n);
 	void setup();
 	void assemble();
 	void solve();
 	void output();
 	void run(double r1, double r2, double s, double x, double y);
-	//int force(double sigma);
 
-private:
+private : 
+
 	Triangulation<2> surface;
-
 	double inclusion_rad_1;
 	double inclusion_rad_2;
 	double inclusion_separation;
@@ -77,7 +83,7 @@ private:
 	
 	Vector<double> solution;
 	Vector<double> rhs;
-};
 	
+};
 
 #endif

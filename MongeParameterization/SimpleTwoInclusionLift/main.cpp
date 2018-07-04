@@ -12,8 +12,12 @@
 	double sep = atof(argv[3]);
 }
 */
-SolveLaplacian::SolveLaplacian() : doffer(surface), fe(1){}
-SolveLaplacian::~SolveLaplacian(){}
+
+
+SolveLaplacian::SolveLaplacian() : fe(1){}
+SolveLaplacian::~SolveLaplacian(){
+	
+}
 
 int main(){
 
@@ -31,21 +35,21 @@ int main(){
 	*/
 
 	//double sigma = 1;
-	double r1 = 15;
-	double r2 = 15;
-	double x = 1000;
-	double y = 500;
-	double s = 300;
+	//double r1 = 15;
+	//double r2 = 15;
+	//double x = 1000;
+	//double s = 300;
 	
-	SolveLaplacian twoinclusionlift;
-	twoinclusionlift.run(r1, r2, s, x, y);
+	//SolveLaplacian twoinclusionlift;
+
+	//twoinclusionlift.run(r1, r2, s, x, y);
 
 	/* Loops over increasing s:
-	
+	*/
 
 	SolveLaplacian twoinclusionlift[1000];
 	unsigned int i = 0;
-
+	
 	for(double s = 100; s < 750; s+=25){
 		//double sigma = 1;
 		double r1 = 15;
@@ -55,12 +59,11 @@ int main(){
 
 		std::cout << s << std::endl;
 
-		lift_i = twoinclusionlift[i];
-
-		lift_i.run(r1, r2, s, x, y);
+		twoinclusionlift[i].run(r1, r2, s, x, y);
+		
 		++i;
 	}
-	*/
+	
 
 	return 0;
 }	
