@@ -61,8 +61,9 @@ public :
 	void setup();
 	void assemble();
 	void solve();
-	void output();
-	void run(double r1, double r2, double s, double x, double y);
+	double calcEnergy();
+	void output(double s);
+	double run(double r1, double r2, double s, double x, double y);
 
 private : 
 

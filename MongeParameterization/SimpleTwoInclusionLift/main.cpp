@@ -1,5 +1,6 @@
 #include <cstdlib>
 #include <cmath>
+#include <fstream>
 
 #include "TwoInclusionLift.h"
 
@@ -47,23 +48,32 @@ int main(){
 	/* Loops over increasing s:
 	*/
 
+	double Energy[50];
+	double Separation[50];
+
 	SolveLaplacian twoinclusionlift[1000];
 	unsigned int i = 0;
+
+	std::ofstream energysep;
+	energysep.open("energysep.txt");
 	
-	for(double s = 100; s < 750; s+=25){
+	for(double s = 150; s <= 900; s+=15){
 		//double sigma = 1;
 		double r1 = 15;
 		double r2 = 15;
 		double x = 1000;
 		double y = 500;
 
-		std::cout << s << std::endl;
-
-		twoinclusionlift[i].run(r1, r2, s, x, y);
+		Energy[i] = twoinclusionlift[i].run(r1, r2, s, x, y);
+		Separation[i] = s;
+		std::cout << Energy[i] << std::endl;
+		std::cout << Separation[i] << std::endl;
 		
+		energysep << Separation[i] << " " << Energy[i] << std::endl;
+
 		++i;
 	}
-	
+	energysep.close();
 
 	return 0;
 }	

@@ -27,8 +27,6 @@ void SolveLaplacian::cell_mesh(double r1, double r2, double s, double x, double 
 	surface_x = x;
 	
 
-	std::cout << inclusion_separation << "mesh.1" << std::endl;
-
 	Triangulation<2> inclusion_1;
 	GridGenerator::hyper_cube_with_cylindrical_hole(inclusion_1, inclusion_rad_1, inclusion_separation/2);
 	GridTools::shift(Point<2>(inclusion_separation/2, 0), inclusion_1);	
@@ -99,7 +97,6 @@ void SolveLaplacian::cell_mesh(double r1, double r2, double s, double x, double 
 	std::ofstream out("testgrid.eps");
 	GridOut cell_mesh;
 	cell_mesh.write_eps(surface, out);
-	std::cout << s << "mesh.2" << std::endl;
 
 	GridTools::remove_anisotropy(surface, 1, 1);
 
@@ -109,7 +106,6 @@ void SolveLaplacian::cell_mesh(double r1, double r2, double s, double x, double 
 		delete inclusion_boundary_2;
 	}
 
-	std::cout << s << "mesh.3" << std::endl;
 
 	//std::cout << s << "mesh.5" << std::endl;
 
