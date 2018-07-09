@@ -48,27 +48,27 @@ int main(){
 	/* Loops over increasing s:
 	*/
 
-	double Energy[50];
-	double Separation[50];
+	double Energy[100];
+	double Separation[100];
 
-	SolveLaplacian twoinclusionlift[1000];
+	SolveLaplacian twoinclusionlift[1250];
 	unsigned int i = 0;
 
 	std::ofstream energysep;
 	energysep.open("energysep.txt");
 	
-	for(double s = 150; s <= 900; s+=15){
+	for(double s = 100; s <= 1000; s+=15){
 		//double sigma = 1;
-		double r1 = 15;
-		double r2 = 15;
-		double x = 1000;
-		double y = 500;
+		double r1 = 20;
+		double r2 = 20;
+		double x = 4000;
+		double y = 2000;
 
 		Energy[i] = twoinclusionlift[i].run(r1, r2, s, x, y);
 		Separation[i] = s;
-		std::cout << Energy[i] << std::endl;
-		std::cout << Separation[i] << std::endl;
 		
+		std::cout << "blep" << std::endl;
+
 		energysep << Separation[i] << " " << Energy[i] << std::endl;
 
 		++i;

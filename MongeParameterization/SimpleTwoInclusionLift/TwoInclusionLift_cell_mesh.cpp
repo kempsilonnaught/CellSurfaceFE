@@ -78,13 +78,13 @@ void SolveLaplacian::cell_mesh(double r1, double r2, double s, double x, double 
 	for (; cell != endc; ++cell){
 		for(unsigned int i = 0; i < GeometryInfo<2>::vertices_per_cell; ++i){
 			Point<2> &v = cell -> vertex(i);
-			if(-1e-5 < (v(1)-s/2) && (v(1)-s/2) < 1e-5)
+			if((r1 < v(1)) && (r2 < v(1)) && (v(1) > 0) && (cell -> vertex_iterator(i) -> at_boundary()))
 				v(1) = y/2;
-			if(-1e-5 < (v(1)+s/2) && (v(1)+s/2) < 1e-5)
+			if((r1 < v(1)) && (r2 < v(1)) && v(1) < 0 && (cell -> vertex_iterator(i) -> at_boundary()))
 				v(1) = -y/2;
-			if(-1e-5 < (v(0)-s) && (v(0)-s) < 1e-5)
+			if((s/2 + r1 + 1e-5 < v(0)) && v(0) > 0 && (cell -> vertex_iterator(i) -> at_boundary()))
 				v(0) = x/2;
-			if(-1e-5 < (v(0)+s) && (v(0)+s) < 1e-5)
+			if((-s/2 - r2 - 1e-5 < v(0)) && v(0) < 0 && (cell -> vertex_iterator(i) -> at_boundary()))
 				v(0) = -x/2;
 		}
 	} 
@@ -92,13 +92,6 @@ void SolveLaplacian::cell_mesh(double r1, double r2, double s, double x, double 
 
 	//std::cout << s << "mesh.5" << std::endl;
 
-	surface.refine_global(3);
-
-	std::ofstream out("testgrid.eps");
-	GridOut cell_mesh;
-	cell_mesh.write_eps(surface, out);
-
-	GridTools::remove_anisotropy(surface, 1, 1);
 
 	if(n == 1){	
 		surface.clear();

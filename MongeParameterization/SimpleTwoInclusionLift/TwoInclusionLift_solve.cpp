@@ -64,7 +64,7 @@ double SolveLaplacian::calcEnergy() {
 				}
 			}
 
-			energy += fe_val.JxW(q)*(sqrt(1 + delh_squared));		
+			energy += fe_val.JxW(q)*(sqrt(1 + delh_squared) - 1);		
 			
 		}
 	}

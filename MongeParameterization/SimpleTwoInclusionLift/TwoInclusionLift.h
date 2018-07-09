@@ -26,6 +26,11 @@
 #include <deal.II/lac/solver_cg.h>
 #include <deal.II/lac/precondition.h>
 #include <deal.II/numerics/data_out.h>
+#include <deal.II/grid/grid_refinement.h>
+#include <deal.II/numerics/error_estimator.h>
+#include <deal.II/grid/manifold_lib.h>
+#include <deal.II/lac/dynamic_sparsity_pattern.h>
+
 
 #include <fstream>
 #include <iostream>
