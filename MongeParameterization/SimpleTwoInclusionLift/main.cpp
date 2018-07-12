@@ -57,12 +57,13 @@ int main(){
 	std::ofstream energysep;
 	energysep.open("energysep.txt");
 	
-	for(double s = 100; s <= 1000; s+=15){
+	for(double s = 150; s <= 1000; s+=15){
+
 		//double sigma = 1;
 		double r1 = 20;
 		double r2 = 20;
-		double x = 4000;
-		double y = 2000;
+		double x = 8000;
+		double y = 2400;
 
 		Energy[i] = twoinclusionlift[i].run(r1, r2, s, x, y);
 		Separation[i] = s;
@@ -72,6 +73,8 @@ int main(){
 		energysep << Separation[i] << " " << Energy[i] << std::endl;
 
 		++i;
+
+
 	}
 	energysep.close();
 

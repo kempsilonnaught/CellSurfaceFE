@@ -9,7 +9,7 @@ void SolveLaplacian::output(double s){
 
 	data_out.build_patches();
 
-	std::ofstream out("cell_forces" + std::to_string(s) + ".gpl");
+	std::ofstream out("gpls/cell_forces" + std::to_string(s) + ".gpl");
 	
 	data_out.write_gnuplot(out);
 }

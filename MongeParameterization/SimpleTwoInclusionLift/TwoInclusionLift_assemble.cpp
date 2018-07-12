@@ -55,8 +55,8 @@ void SolveLaplacian::assemble(){
 
 	std::map<types::global_dof_index, double> boundary_values;
 	VectorTools::interpolate_boundary_values(doffer, 0, ZeroFunction<2>(), boundary_values);
-	VectorTools::interpolate_boundary_values(doffer, 1, ConstantFunction<2>(100), boundary_values);
-	VectorTools::interpolate_boundary_values(doffer, 2, ConstantFunction<2>(100), boundary_values);
+	VectorTools::interpolate_boundary_values(doffer, 5, ConstantFunction<2>(100), boundary_values);
+	VectorTools::interpolate_boundary_values(doffer, 6, ConstantFunction<2>(100), boundary_values);
 	MatrixTools::apply_boundary_values(boundary_values, big_matrix, solution, rhs);
 
 }
