@@ -75,11 +75,11 @@ public :
 
 	void cell_mesh(double r1, double r2, double sep, double x, double y, bool first_run);
 	void setup();
-	void assemble();
+	void assemble(double sigma, double kappa, double kappabar);
 	void solve();
 	double calcEnergy();
 	void output();
-	double run(double r1, double r2, double sep, double x, double y);
+	double run(double r1, double r2, double sep, double x, double y, double sigma, double kappa, double kappabar);
 
 private :
 

@@ -1,136 +1,72 @@
 #include "fourthorder.h"
 
-void rectangle_with_cylindrical_hole(Triangulation<2> &triangulation,
-                                     double sep, 
-                                     const double inner_radius,
-                                     const double x,
-                                     const double y,
-                                     const int n,
-                                     bool colorize)
-   {
-    triangulation.clear();
-     const int dim = 2;
- 
-     Assert(inner_radius < x,
-            ExcMessage("outer_radius has to be bigger than inner_radius."));
-      Assert(inner_radius < y,
-            ExcMessage("outer_radius has to be bigger than inner_radius."));
- 
-     Point<dim> center;
-     // We create an hyper_shell in two dimensions, and then we modify it.
-     GridGenerator::hyper_shell(triangulation, center, inner_radius, y, 8);
-     Triangulation<dim>::active_cell_iterator
-     cell = triangulation.begin_active(),
-     endc = triangulation.end();
-     std::vector<bool> treated_vertices(triangulation.n_vertices(), false);
-     for (; cell != endc; ++cell)
-       {
-         for (unsigned int f=0; f<GeometryInfo<dim>::faces_per_cell; ++f)
-           if (cell->face(f)->at_boundary())
-             {
-               for (unsigned int v=0; v < GeometryInfo<dim>::vertices_per_face; ++v)
-                 {
-                   unsigned int vv = cell->face(f)->vertex_index(v);
-                   if (treated_vertices[vv] == false)
-                     {
-                      if(n == 1){
-                        treated_vertices[vv] = true;
-                        switch (vv)
-                          {
-                          case 1:
-                            cell->face(f)->vertex(v) = center+Point<dim>(x/2, y/2);
-                            break;
-                          case 3:
-                            cell->face(f)->vertex(v) = center+Point<dim>(-sep/2, y/2);
-                            break;
-                          case 5:
-                            cell->face(f)->vertex(v) = center+Point<dim>(-sep/2, -y/2);
-                            break;
-                          case 7:
-                            cell->face(f)->vertex(v) = center+Point<dim>(x/2, -y/2);
-                          default:
-                            break;
-
-                          }
-                      }  
-                      else{
-                        treated_vertices[vv] = true;
-                        switch (vv)
-                          {
-                          case 1:
-                            cell->face(f)->vertex(v) = center+Point<dim>(sep/2, y/2);
-                            break;
-                          case 3:
-                            cell->face(f)->vertex(v) = center+Point<dim>(-x/2, y/2);
-                            break;
-                          case 5:
-                            cell->face(f)->vertex(v) = center+Point<dim>(-x/2, -y/2);
-                            break;
-                          case 7:
-                            cell->face(f)->vertex(v) = center+Point<dim>(sep/2, -y/2);
-                          default:
-                            break;
-                          }
-                      } 
-                     }
-                 }
-             }
-       }
-     double epsx = 1e-3 * x;
-     double epsy = 1e-3 * y;
-
-     cell = triangulation.begin_active();
-     for (; cell != endc; ++cell)
-       {
-         for (unsigned int f=0; f<GeometryInfo<dim>::faces_per_cell; ++f)
-           if (cell->face(f)->at_boundary())
-             {
-               double dx = cell->face(f)->center()(0) - center(0);
-               double dy = cell->face(f)->center()(1) - center(1);
-               if (colorize)
-                 {
-                   if (std::abs(dx + x) < epsx)
-                     cell->face(f)->set_boundary_id(0);
-                   else if (std::abs(dx - x) < epsx)
-                     cell->face(f)->set_boundary_id(1);
-                   else if (std::abs(dy + y) < epsy)
-                     cell->face(f)->set_boundary_id(2);
-                   else if (std::abs(dy - y) < epsy)
-                     cell->face(f)->set_boundary_id(3);
-                   else
-                     cell->face(f)->set_boundary_id(4);
-                 }
-               else
-                 {
-                   double d = (cell->face(f)->center() - center).norm();
-                   if (d-inner_radius < 0)
-                     cell->face(f)->set_boundary_id(1);
-                   else
-                     cell->face(f)->set_boundary_id(0);
-                 }
-             }
-       }
-   }
-
 void FourthOrder::cell_mesh(double r1, double r2, double sep, double x, double y, bool first_run){
 	surface.clear();
 
-	Triangulation<2> inclusion_1;
-	rectangle_with_cylindrical_hole(inclusion_1, sep, r1, x, y, 1, false);
-  GridTools::shift(Point<2>(sep/2, 0), inclusion_1);
+    Triangulation<2> inclusion_1;
+    GridGenerator::hyper_cube_with_cylindrical_hole(inclusion_1, r1, sep/2, true);
+    GridTools::shift(Point<2>(sep/2, 0), inclusion_1);  
 
-	Triangulation<2> inclusion_2;
-	rectangle_with_cylindrical_hole(inclusion_1, sep, r2, x, y, 1, false);
-  GridTools::shift(Point<2>(-sep/2, 0), inclusion_2);
+    Triangulation<2> inclusion_2;
+    GridGenerator::hyper_cube_with_cylindrical_hole(inclusion_2, r2, sep/2, true);
+    GridTools::shift(Point<2>(-sep/2, 0), inclusion_2);
 
-  GridGenerator::merge_triangulations(inclusion_1, inclusion_2, surface);
-   
-	std::ofstream out("twoDgrids/testgrid" + std::to_string(sep) + ".eps");
-	GridOut cell_mesho;
-	cell_mesho.write_eps(surface, out);
+    GridGenerator::merge_triangulations(inclusion_1, inclusion_2, surface);
 
-	if(first_run == false){
-		surface.clear();
-		//delete pointers
-	}
+    HyperBallBoundary<2>* inclusion_boundary_1 = new HyperBallBoundary<2>(Point<2>(sep/2, 0), r1);
+    surface.set_boundary(5, *inclusion_boundary_1); 
+
+    for(unsigned int aa = 0; aa < 10; ++aa){
+      typename Triangulation<2>::active_cell_iterator cell_1 = surface.begin_active(), endc_1 = surface.end();
+        for(; cell_1 != endc_1; ++cell_1)
+          for(unsigned int l_1 = 0; l_1 < GeometryInfo<2>::lines_per_cell; ++l_1){
+            Point<2> edge_center_1 = cell_1 -> line(l_1) -> center(true, true);
+              if(cell_1 -> line(l_1) -> at_boundary()){
+                if(sqrt((std::pow((edge_center_1[0]-sep/2), 2))+std::pow(edge_center_1[1], 2)) <= (r1))
+                  cell_1 -> line(l_1) -> set_all_boundary_ids(5);
+              }
+          }
+    }
+
+    HyperBallBoundary<2>* inclusion_boundary_2 = new HyperBallBoundary<2>(Point<2>(-sep/2, 0), r2);
+    surface.set_boundary(6, *inclusion_boundary_2); 
+    
+    for(unsigned int aa = 0; aa < 10; ++aa){
+      typename Triangulation<2>::active_cell_iterator cell_2 = surface.begin_active(), endc_2 = surface.end();
+        for(; cell_2 != endc_2; ++cell_2)
+          for(unsigned int l_2 = 0; l_2 < GeometryInfo<2>::lines_per_cell; ++l_2){
+            Point<2> edge_center_2 = cell_2 -> line(l_2) -> center(true, true);
+              if(cell_2 -> line(l_2) -> at_boundary()){
+                if(sqrt((std::pow((edge_center_2[0]+sep/2), 2))+std::pow(edge_center_2[1], 2)) <= (r2))
+                  cell_2 -> line(l_2) -> set_all_boundary_ids(6);
+              }
+          }
+    }
+
+    typename Triangulation<2>::active_cell_iterator 
+    cell = surface.begin_active(), 
+    endc = surface.end();
+    for (; cell != endc; ++cell){
+      for(unsigned int i = 0; i < GeometryInfo<2>::vertices_per_cell; ++i){
+        Point<2> &v = cell -> vertex(i);
+        if(v(0) == sep)
+          v(0) = x/2; 
+        if(v(0) == -sep)
+          v(0) = -x/2;
+        if(v(1) == sep/2)
+          v(1) = y/2; 
+        if(v(1) == -sep/2)
+          v(1) = -y/2;              
+      
+      }
+
+    }
+
+    if(first_run == false){ 
+      surface.clear();
+      delete inclusion_boundary_1;
+      delete inclusion_boundary_2;
+    }
+
 }
+    

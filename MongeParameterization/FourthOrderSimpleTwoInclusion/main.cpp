@@ -19,7 +19,10 @@ int main(){
 		double x = 500;
 		double y = 250;
 		double sep = 100;
-		solve_instance[i].run(r1, r2, sep, x, y);
+		double sigma = 1;
+		double kappa = 1;
+		double kappabar = 1;
+		solve_instance[i].run(r1, r2, sep, x, y, sigma, kappa, kappabar);
 
 		//Energy[i] = solveinstance[i].run();
 		//Separation[i] = s;
