@@ -1,5 +1,9 @@
 #include "fourthorder.h"
 
+/*
+
+*/
+
 double FourthOrder::run(double r1, double r2, double sep, double x, double y, double sigma, double kappa, double kappabar, int i){
 
 	for(unsigned int refine_cycle = 0; refine_cycle < 8; ++refine_cycle){
