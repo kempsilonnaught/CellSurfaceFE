@@ -24,10 +24,10 @@ void FourthOrder::assemble(double sigma, double kappa, double kappabar){
 				for(unsigned int j = 0; j < dofs_per_cell; ++j){
 					hess_i = fe_time.shape_hessian(i, q_index);
 					hess_j = fe_time.shape_hessian(j, q_index);
-					lil_matrix(i, j) += (kappa*((trace(hess_i))*(trace(hess_j)))/2);
-					lil_matrix(i, j) += (kappabar*((hess_j[0][0]))*(hess_i[1][1]));
-					lil_matrix(i, j) += (kappabar*((hess_i[0][0]))*(hess_j[1][1]));
-					lil_matrix(i, j) += (kappabar*(-(hess_i[0][1]))*(hess_j[0][1]));
+					lil_matrix(i, j) += (kappa*((trace(hess_i))*(trace(hess_j))*(fe_time.JxW(q_index))/2));
+					lil_matrix(i, j) += (kappabar*((hess_j[0][0]))*(hess_i[1][1])*(fe_time.JxW(q_index)));
+					lil_matrix(i, j) += (kappabar*((hess_i[0][0]))*(hess_j[1][1])*(fe_time.JxW(q_index)));
+					lil_matrix(i, j) += (kappabar*(-(hess_i[0][1]))*(hess_j[0][1])*(fe_time.JxW(q_index)));
 					lil_matrix(i, j) += (sigma*(((fe_time.shape_grad(i, q_index))*(fe_time.shape_grad(j, q_index))*(fe_time.JxW(q_index)))/2));
 				}
 			}

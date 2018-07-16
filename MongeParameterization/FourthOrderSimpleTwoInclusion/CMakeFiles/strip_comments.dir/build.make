@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/FourthOrderSimpleTwoInclusion
+CMAKE_SOURCE_DIR = /home/kempsilonnaught/Builds/CellSurfaceFE-master/CellSurfaceFE/MongeParameterization/FourthOrderSimpleTwoInclusion
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/FourthOrderSimpleTwoInclusion
+CMAKE_BINARY_DIR = /home/kempsilonnaught/Builds/CellSurfaceFE-master/CellSurfaceFE/MongeParameterization/FourthOrderSimpleTwoInclusion
 
 # Utility rule file for strip_comments.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterizat
 include CMakeFiles/strip_comments.dir/progress.make
 
 CMakeFiles/strip_comments:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/FourthOrderSimpleTwoInclusion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "strip comments"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/kempsilonnaught/Builds/CellSurfaceFE-master/CellSurfaceFE/MongeParameterization/FourthOrderSimpleTwoInclusion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "strip comments"
 	/usr/bin/perl -pi -e 's#^[ \t]*//.*\n##g;' main.cpp run.cpp cell_mesh.cpp setup.cpp assemble.cpp solve.cpp output.cpp fourthorder.h
 
 strip_comments: CMakeFiles/strip_comments
@@ -72,6 +72,6 @@ CMakeFiles/strip_comments.dir/clean:
 .PHONY : CMakeFiles/strip_comments.dir/clean
 
 CMakeFiles/strip_comments.dir/depend:
-	cd /home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/FourthOrderSimpleTwoInclusion && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/FourthOrderSimpleTwoInclusion /home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/FourthOrderSimpleTwoInclusion /home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/FourthOrderSimpleTwoInclusion /home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/FourthOrderSimpleTwoInclusion /home/kempsilonnaught/Builds/CellSurfaceFE/MongeParameterization/FourthOrderSimpleTwoInclusion/CMakeFiles/strip_comments.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/kempsilonnaught/Builds/CellSurfaceFE-master/CellSurfaceFE/MongeParameterization/FourthOrderSimpleTwoInclusion && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kempsilonnaught/Builds/CellSurfaceFE-master/CellSurfaceFE/MongeParameterization/FourthOrderSimpleTwoInclusion /home/kempsilonnaught/Builds/CellSurfaceFE-master/CellSurfaceFE/MongeParameterization/FourthOrderSimpleTwoInclusion /home/kempsilonnaught/Builds/CellSurfaceFE-master/CellSurfaceFE/MongeParameterization/FourthOrderSimpleTwoInclusion /home/kempsilonnaught/Builds/CellSurfaceFE-master/CellSurfaceFE/MongeParameterization/FourthOrderSimpleTwoInclusion /home/kempsilonnaught/Builds/CellSurfaceFE-master/CellSurfaceFE/MongeParameterization/FourthOrderSimpleTwoInclusion/CMakeFiles/strip_comments.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/strip_comments.dir/depend
 

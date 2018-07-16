@@ -13,24 +13,21 @@ int main(){
 	std::ofstream energysep;
 	energysep.open("energysep.txt");
 
-	//for(#; s <= #; s+= #){
+	for(double sep = 50; sep <= 1000; sep += 5){
 		double r1 = 10;
 		double r2 = 10;
-		double x = 500;
-		double y = 250;
-		double sep = 100;
+		double x = 4000;
+		double y = 2000;
 		double sigma = 1;
 		double kappa = 1;
 		double kappabar = 1;
-		solve_instance[i].run(r1, r2, sep, x, y, sigma, kappa, kappabar);
 
-		//Energy[i] = solveinstance[i].run();
-		//Separation[i] = s;
+		Energy[i] = solve_instance[i].run(r1, r2, sep, x, y, sigma, kappa, kappabar, i);
+		Separation[i] = sep;
+		energysep << Separation[i] << " " << Energy[i] << std::endl;
 
-		//energysep << Spearation[i] << " " << Energy[i] << std::endl;
-
-		//++i
-	//}
+		++i;
+	}
 
 	energysep.close();
 

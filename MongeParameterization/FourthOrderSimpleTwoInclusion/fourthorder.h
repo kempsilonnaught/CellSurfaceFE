@@ -54,13 +54,13 @@ probably be familiar with the theory at this point, though not necessarily comfo
 the Helfrich Hamiltonian and the soap film/thin film problem, as well as some reading on finite element method).
 
 Nextly, objects necessary throughout the program are declared, but not defined.
-	- surface is declared as a two dimensional triangulation.
+	- surface is declared as a two dimensional triangulation, this will hold the data describing the mesh of the bilayer.
 	- r1 is a double holding the radius of the first inclusion.
 	- r2 is a double holding the radius of the second inclusion.
 	- sep is a double holding the distance between the inclusions.
 	- x is a double indicating the length in of the base of the surface in the x direction.
 	- y is a double indicating the length in of the base of the surface in the y direction.
-
+	- doffer is a DoFHandler in two dimensions. This is used to handle and manipulate the degrees of freedom of each cell.
 
 
 
@@ -77,9 +77,9 @@ public :
 	void setup();
 	void assemble(double sigma, double kappa, double kappabar);
 	void solve();
-	double calcEnergy();
-	void output();
-	double run(double r1, double r2, double sep, double x, double y, double sigma, double kappa, double kappabar);
+	double calcEnergy(double sigma, double kappa, double kappabar);
+	void output(int i);
+	double run(double r1, double r2, double sep, double x, double y, double sigma, double kappa, double kappabar, int i);
 
 private :
 
