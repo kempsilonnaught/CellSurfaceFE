@@ -1,7 +1,28 @@
 #include "fourthorder.h"
 
 /*
+Obviously the header file is included above. This file defines the cell_mesh function which
+generates Triangulation in the surface object. The program takes as arguments the radii of the 
+inclusions, the distance between them, and the overall x and y dimensions of the base manifold. 
+This function also takes a boolean that indicates whether or not this is the first time through the cell_mesh 
+function for this iteration of the program. Note that the run file runs this function twice. 
 
+Firstly, the surface object is cleared of any remnant data, now that it has entered the scope where everything it references
+is defined. Next two separate meshes are created, both being squares with a hole in the center, centered on the origin. The squares have side length
+equal to the value selected for separation between the two inclusion, by defining half of a side length to be half of the separation. Then, one mesh
+is moved in the positive x direction, and the other in the negative x direction, both by a value of half of the separation. Thus, the edges of each square 
+meet at x = 0, and the two holes have a distance equal to the separation value between them. The two triangulations are then merged into one, and this 
+triangulation is attached to the surface object. Then, two pointers to circular boundaries are created, with each circular boundary defined to be a circle of
+radius equal to one of the inclusions, with the boundary centered on that inclusion. The boundaries are then set with an id. Next, we loop over all lines of all cells
+in the surface, checking to see if they are at the boundary. If they are indeed on the boundary, we check to see if they are on the inclusion boundary, rather than the 
+edge of the rectangular manifold. This is done by checking if the center of the line in question is less than or equal to a distance equal to the inclusion radius 
+away from the center of the inclusion. If this is the case, the boundary id of the line is set to the circular boundary. This means that whenever we refine the mesh, these lines
+divide in such a way that they become closer to being a circle. If the math regarding the center of the line and the radius does not make sense to you, I urge you to
+draw a picture of the whole system, and draw an octogan and a circle either inscribed or circumscribed, preferably one of each, with the mesh stretching away from the nodes. 
+Convince yourself that the center of the lines that are edges of the octogans must be less than or equal to the radius of the circle. Reread the code, and see that that is exactly 
+what I have done here.
+
+Nextly, 
 */
 
 void FourthOrder::cell_mesh(double r1, double r2, double sep, double x, double y, bool first_run){
