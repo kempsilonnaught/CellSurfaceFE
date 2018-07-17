@@ -1,8 +1,8 @@
+#!/bin/bash
 #PBS -N membraneboi
 #PBS -l nodes=1:ppn=4
 #PBS -l mem=4GB
 #PBS -l h_rt=<01:00:00>
 #PBS -q phage
-#
 cd /home/kemps/Builds/CellSurfaceFE-master/CellSurfaceFE/MongeParameterization/FourthOrderSimpleTwoInclusion
 fourthorder
