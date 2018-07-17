@@ -5,4 +5,4 @@
 #PBS -l walltime=1:00:00
 #PBS -q phage
 cd /home/kemps/Builds/CellSurfaceFE-master/CellSurfaceFE/MongeParameterization/FourthOrderSimpleTwoInclusion
-fourthorder
+./fourthorder
