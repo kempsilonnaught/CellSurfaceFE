@@ -3,4 +3,5 @@
 #PBS -cwd
 #PBS -l h_rt=<01:00:00>
 
+cd /home/kemps/Builds/CellSurfaceFE-master/CellSurfaceFE/MongeParameterization/FourthOrderSimpleTwoInclusion
 ./fourthorder
