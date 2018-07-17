@@ -1,6 +1,6 @@
-#!/bin/bash
 #PBS -N membraneboi
 #PBS -l h_rt=<01:00:00>
-
+#PBS -q phage
+#
 cd /home/kemps/Builds/CellSurfaceFE-master/CellSurfaceFE/MongeParameterization/FourthOrderSimpleTwoInclusion
 ./fourthorder
