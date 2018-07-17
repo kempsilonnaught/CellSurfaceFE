@@ -4,4 +4,3 @@
 #PBS -l h_rt=<01:00:00>
 
 ./fourthorder
-exit 0
