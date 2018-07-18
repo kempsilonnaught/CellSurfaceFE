@@ -16,18 +16,18 @@ written to a .gpl file, and the energy is of the surface is calculated using the
 
 double FourthOrder::run(double r1, double r2, double sep, double x, double y, double sigma, double kappa, double kappabar, int i){
 
-	for(unsigned int refine_cycle = 0; refine_cycle < 3; ++refine_cycle){
+	for(unsigned int refine_cycle = 0; refine_cycle < 6; ++refine_cycle){
 		if(refine_cycle == 0){
 			cell_mesh(r1, r2, sep, x, y, true);
 
-			GridTools::remove_anisotropy(surface, 1.6180339887, 2);
+			GridTools::remove_anisotropy(surface, 1.6180339887, 3);
 		}
 
 		else{
 			Vector<float> estimated_error(surface.n_active_cells());
 			KellyErrorEstimator<2>::estimate(doffer, QGauss<1>(3), typename FunctionMap<2>::type(), solution, estimated_error);
 
-			GridRefinement::refine_and_coarsen_fixed_number(surface, estimated_error, .30, 0.10);
+			GridRefinement::refine_and_coarsen_fixed_number(surface, estimated_error, .20, 0.05);
 			surface.execute_coarsening_and_refinement();
 		}
 

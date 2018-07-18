@@ -6,14 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/kemps/Builds/CellSurfaceFE-master/CellSurfaceFE/MongeParameterization/FourthOrderSimpleTwoInclusion/assemble.cpp
-fourthorder.h
-/home/kemps/Builds/CellSurfaceFE-master/CellSurfaceFE/MongeParameterization/FourthOrderSimpleTwoInclusion/fourthorder.h
-
-/home/kemps/Builds/CellSurfaceFE-master/CellSurfaceFE/MongeParameterization/FourthOrderSimpleTwoInclusion/cell_mesh.cpp
-fourthorder.h
-/home/kemps/Builds/CellSurfaceFE-master/CellSurfaceFE/MongeParameterization/FourthOrderSimpleTwoInclusion/fourthorder.h
-
 /home/kemps/Builds/CellSurfaceFE-master/CellSurfaceFE/MongeParameterization/FourthOrderSimpleTwoInclusion/fourthorder.h
 deal.II/grid/grid_generator.h
 -
@@ -84,23 +76,7 @@ fstream
 iostream
 -
 
-/home/kemps/Builds/CellSurfaceFE-master/CellSurfaceFE/MongeParameterization/FourthOrderSimpleTwoInclusion/main.cpp
-fourthorder.h
-/home/kemps/Builds/CellSurfaceFE-master/CellSurfaceFE/MongeParameterization/FourthOrderSimpleTwoInclusion/fourthorder.h
-
-/home/kemps/Builds/CellSurfaceFE-master/CellSurfaceFE/MongeParameterization/FourthOrderSimpleTwoInclusion/output.cpp
-fourthorder.h
-/home/kemps/Builds/CellSurfaceFE-master/CellSurfaceFE/MongeParameterization/FourthOrderSimpleTwoInclusion/fourthorder.h
-
 /home/kemps/Builds/CellSurfaceFE-master/CellSurfaceFE/MongeParameterization/FourthOrderSimpleTwoInclusion/run.cpp
-fourthorder.h
-/home/kemps/Builds/CellSurfaceFE-master/CellSurfaceFE/MongeParameterization/FourthOrderSimpleTwoInclusion/fourthorder.h
-
-/home/kemps/Builds/CellSurfaceFE-master/CellSurfaceFE/MongeParameterization/FourthOrderSimpleTwoInclusion/setup.cpp
-fourthorder.h
-/home/kemps/Builds/CellSurfaceFE-master/CellSurfaceFE/MongeParameterization/FourthOrderSimpleTwoInclusion/fourthorder.h
-
-/home/kemps/Builds/CellSurfaceFE-master/CellSurfaceFE/MongeParameterization/FourthOrderSimpleTwoInclusion/solve.cpp
 fourthorder.h
 /home/kemps/Builds/CellSurfaceFE-master/CellSurfaceFE/MongeParameterization/FourthOrderSimpleTwoInclusion/fourthorder.h
 
