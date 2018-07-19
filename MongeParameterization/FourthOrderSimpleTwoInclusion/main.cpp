@@ -36,7 +36,7 @@ int main(){
 	std::ofstream energysep;
 	energysep.open("energysep.txt");
 
-	for(double sep = 50; sep <= 100; sep += 5){
+	for(double sep = 50; sep <= 60; sep += 1){
 		double r1 = 10;
 		double r2 = 10;
 		double x = 4000;
