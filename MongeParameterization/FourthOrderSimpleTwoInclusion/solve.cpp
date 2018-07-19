@@ -10,6 +10,10 @@ void FourthOrder::solve(){
 
 	solver.solve(big_matrix, solution, rhs, PreconditionIdentity());
 
+	std::cout << "   " << solver_control.last_step()
+        << " CG iterations needed to obtain convergence."
+        << std::endl;
+
 }
 
 double FourthOrder::calcEnergy(double sigma, double kappa, double kappabar){
