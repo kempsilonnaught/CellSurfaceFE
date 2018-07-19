@@ -74,9 +74,6 @@ double FourthOrder::run(double r1, double r2, double sep, double x, double y, do
         << std::endl
         << "   Total number of cells: "
         << surface.n_cells()
-        << std::endl
-        << "   Number of degrees of freedom: "
-        << doffer.n_dofs()
         << std::endl;
 
 	setup();

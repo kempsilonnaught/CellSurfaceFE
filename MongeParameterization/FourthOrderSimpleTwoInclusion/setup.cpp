@@ -7,6 +7,10 @@
 void FourthOrder::setup(){
 	doffer.initialize(surface, fe);
 
+	std::cout << "   Number of degrees of freedom: "
+        << doffer.n_dofs()
+        << std::endl;
+
 	doffer.distribute_dofs(fe);
 	DynamicSparsityPattern dynspar(doffer.n_dofs());
 	DoFTools::make_sparsity_pattern(doffer, dynspar);
