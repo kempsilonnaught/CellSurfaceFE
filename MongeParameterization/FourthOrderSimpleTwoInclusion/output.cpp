@@ -14,4 +14,7 @@ void FourthOrder::output(int i){
 
 	std::ofstream out("gpls/surface" + std::to_string(i) + ".gpl");
 	data_out.write_gnuplot(out); 
+
+	std::ofstream outt("matrix" + std::to_string(i) + ".txt");
+	big_matrix.print(outt);
 }
