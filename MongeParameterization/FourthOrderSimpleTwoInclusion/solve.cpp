@@ -38,11 +38,12 @@ double FourthOrder::calcEnergy(double sigma, double kappa, double kappabar){
 				for(unsigned int j = 0; j < numdofs; ++j){
 					hess_i = fe_val.shape_hessian(i, q);
 					hess_j = fe_val.shape_hessian(j, q);
-					energy += (kappa*((solution(local_dof_indices[i]))*(solution(local_dof_indices[j]))*(trace(hess_i))*(trace(hess_j)))/2)*(fe_val.JxW(q));
-					energy += (kappabar*((hess_i[0][0])*(solution(local_dof_indices[i]))*(hess_j[1][1])*(solution(local_dof_indices[j]))))*(fe_val.JxW(q));
-					energy += (-kappabar*((solution(local_dof_indices[i]))*(solution(local_dof_indices[j]))*(hess_i[0][1])*(hess_j[0][1])))*(fe_val.JxW(q));
-					energy += (sigma*((solution(local_dof_indices[i]))*(solution(local_dof_indices[j]))*(fe_val.shape_grad(i, q))*(fe_val.shape_grad(j, q)))/2)*(fe_val.JxW(q));
-					energy += sigma*(fe_val.JxW(q));
+					energy += ((kappa*((solution(local_dof_indices[i]))*(solution(local_dof_indices[j]))*(trace(hess_i))*(trace(hess_j)))/2))*(fe_val.JxW(q));
+					energy += ((kappabar*((hess_i[0][0])*(solution(local_dof_indices[i]))*(hess_j[1][1])*(solution(local_dof_indices[j])))))*(fe_val.JxW(q));
+					energy += ((-kappabar*((solution(local_dof_indices[i]))*(solution(local_dof_indices[j]))*(hess_i[0][1])*(hess_j[0][1]))))*(fe_val.JxW(q));
+					energy += ((sigma*((solution(local_dof_indices[i]))*(solution(local_dof_indices[j]))*(fe_val.shape_grad(i, q))*(fe_val.shape_grad(j, q)))/2))*(fe_val.JxW(q));
+					energy += (sigma)*(fe_val.JxW(q));
+					energy += -(fe_val.JxW(q));
 				}
 			}
 		}

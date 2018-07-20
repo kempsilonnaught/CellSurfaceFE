@@ -36,7 +36,7 @@ int main(){
 	std::ofstream energysep;
 	energysep.open("energysep.txt");
 
-	for(double sep = 50; sep <= 60; sep += 1){
+	for(double sep = 50; sep <= 1000; sep += 10){
 		double r1 = 10;
 		double r2 = 10;
 		double x = 4000;
@@ -48,6 +48,7 @@ int main(){
 		Energy[i] = solve_instance[i].run(r1, r2, sep, x, y, sigma, kappa, kappabar, i);
 		Separation[i] = sep;
 		energysep << Separation[i] << " " << Energy[i] << std::endl;
+		std::cout << Energy[i] << std::endl;
 
 		++i;
 	}
