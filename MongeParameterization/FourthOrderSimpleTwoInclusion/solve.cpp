@@ -5,7 +5,7 @@
 */
 
 void FourthOrder::solve(){
-	SolverControl solver_control(50000000, 1e-12);
+	SolverControl solver_control(50000000, 1e-13);
 	SolverCG<> solver(solver_control);
 
 	solver.solve(big_matrix, solution, rhs, PreconditionIdentity());
@@ -18,7 +18,7 @@ void FourthOrder::solve(){
 
 double FourthOrder::calcEnergy(double sigma, double kappa, double kappabar){
 	QGauss<2> quadrakilltwo(2);
-	FEValues<2> fe_val(fe, quadrakilltwo, update_gradients | update_JxW_values | update_hessians);
+	FEValues<2> fe_val(fe, quadrakilltwo, update_values | update_gradients | update_JxW_values | update_hessians);
 
 	unsigned int numdofs = fe.dofs_per_cell;
 	unsigned int n_quadp = quadrakilltwo.size();
@@ -42,8 +42,6 @@ double FourthOrder::calcEnergy(double sigma, double kappa, double kappabar){
 					energy += ((kappabar*((hess_i[0][0])*(solution(local_dof_indices[i]))*(hess_j[1][1])*(solution(local_dof_indices[j])))))*(fe_val.JxW(q));
 					energy += ((-kappabar*((solution(local_dof_indices[i]))*(solution(local_dof_indices[j]))*(hess_i[0][1])*(hess_j[0][1]))))*(fe_val.JxW(q));
 					energy += ((sigma*((solution(local_dof_indices[i]))*(solution(local_dof_indices[j]))*(fe_val.shape_grad(i, q))*(fe_val.shape_grad(j, q)))/2))*(fe_val.JxW(q));
-					energy += (sigma)*(fe_val.JxW(q));
-					energy += -(fe_val.JxW(q));
 				}
 			}
 		}

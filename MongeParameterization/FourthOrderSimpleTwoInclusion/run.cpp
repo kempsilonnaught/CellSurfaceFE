@@ -16,7 +16,7 @@ written to a .gpl file, and the energy is of the surface is calculated using the
 
 double FourthOrder::run(double r1, double r2, double sep, double x, double y, double sigma, double kappa, double kappabar, int i){
 
-	/*
+	
 	for(unsigned int refine_cycle = 0; refine_cycle < 6; ++refine_cycle){
 		if(refine_cycle == 0){
 			cell_mesh(r1, r2, sep, x, y, true);
@@ -41,40 +41,39 @@ double FourthOrder::run(double r1, double r2, double sep, double x, double y, do
 		GridOut cell_mesho;
 		cell_mesho.write_eps(surface, out);
 	}
-	*/
-
-	cell_mesh(r1, r2, sep, x, y, true);
-	surface.refine_global(2);
-	for(unsigned int step=0; step<5; ++step){
-    	Triangulation<2>::active_cell_iterator cell = surface.begin_active();
-    	Triangulation<2>::active_cell_iterator endc = surface.end();
-    	for(; cell!=endc; ++cell){
-    	    for(unsigned int l_1 = 0; l_1 < GeometryInfo<2>::lines_per_cell; ++l_1){
-            	Point<2> edge_center_1 = cell -> line(l_1) -> center(true, true);
-              	if(cell -> line(l_1) -> at_boundary()){
-                	if(sqrt((std::pow((edge_center_1[0]-sep/2), 2))+std::pow(edge_center_1[1], 2)) <= (r1))
-    	            	cell->set_refine_flag ();
-    	            	break;
-    	        }
-    	    }
-    	    for(unsigned int l_2 = 0; l_2 < GeometryInfo<2>::lines_per_cell; ++l_2){
-            	Point<2> edge_center_2 = cell -> line(l_2) -> center(true, true);
-              		if(cell -> line(l_2) -> at_boundary()){
-                		if(sqrt((std::pow((edge_center_2[0]+sep/2), 2))+std::pow(edge_center_2[1], 2)) <= (r2))
-                  			cell->set_refine_flag ();
-    	            		break;
-    	        	}
-    	    }
-    	}
-    	surface.execute_coarsening_and_refinement ();
-    }
-    
-    std::cout << "   Number of active cells: "
-        << surface.n_active_cells()
-        << std::endl
-        << "   Total number of cells: "
-        << surface.n_cells()
-        << std::endl;
+	
+	// cell_mesh(r1, r2, sep, x, y, true);
+	// surface.refine_global(2);
+	// for(unsigned int step=0; step<3; ++step){
+	// 	Triangulation<2>::active_cell_iterator cell = surface.begin_active();
+	// 	Triangulation<2>::active_cell_iterator endc = surface.end();
+	// 	for(; cell!=endc; ++cell){
+	// 		for(unsigned int l_1 = 0; l_1 < GeometryInfo<2>::lines_per_cell; ++l_1){
+	// 			Point<2> edge_center_1 = cell -> line(l_1) -> center(true, true);
+	// 			if(cell -> line(l_1) -> at_boundary()){
+	// 				if(sqrt((std::pow((edge_center_1[0]-sep/2), 2))+std::pow(edge_center_1[1], 2)) <= (r1))
+	// 					cell->set_refine_flag ();
+	// 					break;
+	// 			}
+	// 		}
+	// 		for(unsigned int l_2 = 0; l_2 < GeometryInfo<2>::lines_per_cell; ++l_2){
+	// 			Point<2> edge_center_2 = cell -> line(l_2) -> center(true, true);
+	// 				if(cell -> line(l_2) -> at_boundary()){
+	// 					if(sqrt((std::pow((edge_center_2[0]+sep/2), 2))+std::pow(edge_center_2[1], 2)) <= (r2))
+	// 						cell->set_refine_flag ();
+	// 						break;
+	// 				}
+	// 		}
+	// 	}
+	// 	surface.execute_coarsening_and_refinement ();
+	// }
+	
+	std::cout << "   Number of active cells: "
+		<< surface.n_active_cells()
+		<< std::endl
+		<< "   Total number of cells: "
+		<< surface.n_cells()
+		<< std::endl;
 
 	setup();
 	assemble(sigma, kappa, kappabar);

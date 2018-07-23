@@ -16,5 +16,5 @@ void FourthOrder::output(int i){
 	data_out.write_gnuplot(out); 
 
 	std::ofstream outt("matrix" + std::to_string(i) + ".txt");
-	big_matrix.print(outt);
+	big_matrix.print_formatted(outt, 10, false);
 }
