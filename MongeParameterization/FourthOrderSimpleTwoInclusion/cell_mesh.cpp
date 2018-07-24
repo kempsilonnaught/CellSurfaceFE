@@ -94,4 +94,8 @@ void FourthOrder::cell_mesh(double r1, double r2, double sep, double x, double y
 		}
 
 }
+
+void FourthOrder::smoothness(){
+	
+}
 		

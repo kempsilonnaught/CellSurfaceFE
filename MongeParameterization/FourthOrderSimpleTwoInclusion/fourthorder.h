@@ -91,6 +91,7 @@ public :
 	double calcEnergy(double sigma, double kappa, double kappabar);
 	void output(int i);
 	double run(double r1, double r2, double sep, double x, double y, double sigma, double kappa, double kappabar, int i);
+	void smoothness();
 
 private :
 
