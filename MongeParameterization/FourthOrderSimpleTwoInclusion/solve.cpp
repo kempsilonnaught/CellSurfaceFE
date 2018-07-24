@@ -5,7 +5,7 @@
 */
 
 void FourthOrder::solve(){
-	SolverControl solver_control(50000000, 1e-13);
+	SolverControl solver_control(50000000, 1e-14);
 	SolverCG<> solver(solver_control);
 
 	solver.solve(big_matrix, solution, rhs, PreconditionIdentity());

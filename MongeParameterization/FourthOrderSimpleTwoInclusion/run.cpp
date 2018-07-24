@@ -17,11 +17,11 @@ written to a .gpl file, and the energy is of the surface is calculated using the
 double FourthOrder::run(double r1, double r2, double sep, double x, double y, double sigma, double kappa, double kappabar, int i){
 
 	
-	for(unsigned int refine_cycle = 0; refine_cycle < 6; ++refine_cycle){
+	for(unsigned int refine_cycle = 0; refine_cycle < 4; ++refine_cycle){
 		if(refine_cycle == 0){
 			cell_mesh(r1, r2, sep, x, y, true);
 
-			GridTools::remove_anisotropy(surface, 1.6180339887, 5);
+			GridTools::remove_anisotropy(surface, 1.6180339887, 3);
 		}
 
 		else{
