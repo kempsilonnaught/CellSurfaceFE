@@ -76,7 +76,11 @@ fstream
 iostream
 -
 
-/home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/FourthOrderSimpleTwoInclusion/run.cpp
+/home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/FourthOrderSimpleTwoInclusion/main.cpp
+fourthorder.h
+/home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/FourthOrderSimpleTwoInclusion/fourthorder.h
+
+/home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/FourthOrderSimpleTwoInclusion/solve.cpp
 fourthorder.h
 /home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/FourthOrderSimpleTwoInclusion/fourthorder.h
 
