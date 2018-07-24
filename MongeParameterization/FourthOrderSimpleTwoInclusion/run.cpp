@@ -43,7 +43,7 @@ double FourthOrder::run(double r1, double r2, double sep, double x, double y, do
 	// }
 	
 	cell_mesh(r1, r2, sep, x, y, true);
-	surface.refine_global(2);
+	surface.refine_global(3);
 	for(unsigned int step=0; step<3; ++step){
 		Triangulation<2>::active_cell_iterator cell = surface.begin_active();
 		Triangulation<2>::active_cell_iterator endc = surface.end();
