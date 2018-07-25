@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/FourthOrderSimpleTwoInclusion/cell_mesh.cpp
-fourthorder.h
-/home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/FourthOrderSimpleTwoInclusion/fourthorder.h
-
 /home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/FourthOrderSimpleTwoInclusion/fourthorder.h
 deal.II/grid/grid_generator.h
 -

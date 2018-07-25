@@ -1,0 +1,646 @@
+   Number of degrees of freedom: 423
+Number of non-zero Sparse Matrix entries: 3463
+   285 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 487
+Number of non-zero Sparse Matrix entries: 4031
+   310 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 553
+Number of non-zero Sparse Matrix entries: 4605
+   410 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 645
+Number of non-zero Sparse Matrix entries: 5409
+   442 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 775
+Number of non-zero Sparse Matrix entries: 6519
+   559 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 903
+Number of non-zero Sparse Matrix entries: 7647
+   625 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 1027
+Number of non-zero Sparse Matrix entries: 8731
+   703 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 1181
+Number of non-zero Sparse Matrix entries: 10057
+   706 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 1373
+Number of non-zero Sparse Matrix entries: 11689
+   1112 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 1601
+Number of non-zero Sparse Matrix entries: 13645
+   1566 CG iterations needed to obtain convergence.
+   Number of active cells: 1368
+   Total number of cells: 1880
+100
+9677.64
+   Number of degrees of freedom: 423
+Number of non-zero Sparse Matrix entries: 3463
+   233 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 479
+Number of non-zero Sparse Matrix entries: 3957
+   474 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 545
+Number of non-zero Sparse Matrix entries: 4519
+   559 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 634
+Number of non-zero Sparse Matrix entries: 5272
+   611 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 760
+Number of non-zero Sparse Matrix entries: 6350
+   706 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 878
+Number of non-zero Sparse Matrix entries: 7382
+   761 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 995
+Number of non-zero Sparse Matrix entries: 8401
+   833 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 1151
+Number of non-zero Sparse Matrix entries: 9721
+   1251 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 1354
+Number of non-zero Sparse Matrix entries: 11436
+   1554 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 1550
+Number of non-zero Sparse Matrix entries: 13134
+   2003 CG iterations needed to obtain convergence.
+   Number of active cells: 1301
+   Total number of cells: 1786
+150
+9640.1
+   Number of degrees of freedom: 389
+Number of non-zero Sparse Matrix entries: 3169
+   189 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 441
+Number of non-zero Sparse Matrix entries: 3629
+   208 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 507
+Number of non-zero Sparse Matrix entries: 4179
+   232 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 617
+Number of non-zero Sparse Matrix entries: 5117
+   283 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 709
+Number of non-zero Sparse Matrix entries: 5905
+   360 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 823
+Number of non-zero Sparse Matrix entries: 6895
+   422 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 977
+Number of non-zero Sparse Matrix entries: 8181
+   506 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 1157
+Number of non-zero Sparse Matrix entries: 9705
+   650 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 1359
+Number of non-zero Sparse Matrix entries: 11431
+   740 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 1533
+Number of non-zero Sparse Matrix entries: 12945
+   830 CG iterations needed to obtain convergence.
+   Number of active cells: 1284
+   Total number of cells: 1760
+200
+9974.33
+   Number of degrees of freedom: 353
+Number of non-zero Sparse Matrix entries: 2853
+   160 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 415
+Number of non-zero Sparse Matrix entries: 3375
+   184 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 473
+Number of non-zero Sparse Matrix entries: 3861
+   207 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 583
+Number of non-zero Sparse Matrix entries: 4799
+   249 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 657
+Number of non-zero Sparse Matrix entries: 5437
+   296 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 739
+Number of non-zero Sparse Matrix entries: 6147
+   323 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 921
+Number of non-zero Sparse Matrix entries: 7661
+   434 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 1093
+Number of non-zero Sparse Matrix entries: 9097
+   589 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 1267
+Number of non-zero Sparse Matrix entries: 10571
+   602 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 1433
+Number of non-zero Sparse Matrix entries: 12013
+   691 CG iterations needed to obtain convergence.
+   Number of active cells: 1176
+   Total number of cells: 1616
+250
+10355.8
+   Number of degrees of freedom: 345
+Number of non-zero Sparse Matrix entries: 2789
+   145 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 399
+Number of non-zero Sparse Matrix entries: 3247
+   163 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 449
+Number of non-zero Sparse Matrix entries: 3669
+   181 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 567
+Number of non-zero Sparse Matrix entries: 4671
+   223 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 645
+Number of non-zero Sparse Matrix entries: 5337
+   277 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 747
+Number of non-zero Sparse Matrix entries: 6199
+   405 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 917
+Number of non-zero Sparse Matrix entries: 7593
+   560 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 1065
+Number of non-zero Sparse Matrix entries: 8857
+   700 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 1233
+Number of non-zero Sparse Matrix entries: 10265
+   798 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 1415
+Number of non-zero Sparse Matrix entries: 11819
+   856 CG iterations needed to obtain convergence.
+   Number of active cells: 1158
+   Total number of cells: 1592
+300
+10550.6
+   Number of degrees of freedom: 337
+Number of non-zero Sparse Matrix entries: 2725
+   135 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 391
+Number of non-zero Sparse Matrix entries: 3167
+   152 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 441
+Number of non-zero Sparse Matrix entries: 3605
+   166 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 551
+Number of non-zero Sparse Matrix entries: 4527
+   229 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 625
+Number of non-zero Sparse Matrix entries: 5165
+   261 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 735
+Number of non-zero Sparse Matrix entries: 6087
+   304 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 909
+Number of non-zero Sparse Matrix entries: 7529
+   430 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 1077
+Number of non-zero Sparse Matrix entries: 8937
+   507 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 1227
+Number of non-zero Sparse Matrix entries: 10211
+   564 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 1427
+Number of non-zero Sparse Matrix entries: 11851
+   700 CG iterations needed to obtain convergence.
+   Number of active cells: 1148
+   Total number of cells: 1576
+350
+10800.1
+   Number of degrees of freedom: 303
+Number of non-zero Sparse Matrix entries: 2431
+   109 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 345
+Number of non-zero Sparse Matrix entries: 2773
+   123 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 421
+Number of non-zero Sparse Matrix entries: 3417
+   160 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 525
+Number of non-zero Sparse Matrix entries: 4311
+   346 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 605
+Number of non-zero Sparse Matrix entries: 4993
+   330 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 709
+Number of non-zero Sparse Matrix entries: 5869
+   390 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 871
+Number of non-zero Sparse Matrix entries: 7207
+   544 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 1011
+Number of non-zero Sparse Matrix entries: 8379
+   676 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 1179
+Number of non-zero Sparse Matrix entries: 9787
+   730 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 1334
+Number of non-zero Sparse Matrix entries: 11116
+   789 CG iterations needed to obtain convergence.
+   Number of active cells: 1088
+   Total number of cells: 1496
+400
+11077.7
+   Number of degrees of freedom: 265
+Number of non-zero Sparse Matrix entries: 2117
+   91 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 311
+Number of non-zero Sparse Matrix entries: 2479
+   111 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 385
+Number of non-zero Sparse Matrix entries: 3117
+   136 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 457
+Number of non-zero Sparse Matrix entries: 3725
+   173 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 539
+Number of non-zero Sparse Matrix entries: 4427
+   197 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 627
+Number of non-zero Sparse Matrix entries: 5187
+   254 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 761
+Number of non-zero Sparse Matrix entries: 6293
+   303 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 919
+Number of non-zero Sparse Matrix entries: 7623
+   381 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 1099
+Number of non-zero Sparse Matrix entries: 9139
+   487 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 1297
+Number of non-zero Sparse Matrix entries: 10821
+   548 CG iterations needed to obtain convergence.
+   Number of active cells: 1056
+   Total number of cells: 1448
+450
+11138.2
+   Number of degrees of freedom: 265
+Number of non-zero Sparse Matrix entries: 2117
+   89 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 311
+Number of non-zero Sparse Matrix entries: 2479
+   111 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 385
+Number of non-zero Sparse Matrix entries: 3117
+   137 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 487
+Number of non-zero Sparse Matrix entries: 3983
+   181 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 553
+Number of non-zero Sparse Matrix entries: 4549
+   199 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 637
+Number of non-zero Sparse Matrix entries: 5249
+   255 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 761
+Number of non-zero Sparse Matrix entries: 6301
+   285 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 905
+Number of non-zero Sparse Matrix entries: 7517
+   384 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 1033
+Number of non-zero Sparse Matrix entries: 8613
+   412 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 1217
+Number of non-zero Sparse Matrix entries: 10149
+   519 CG iterations needed to obtain convergence.
+   Number of active cells: 996
+   Total number of cells: 1368
+500
+11428.9
+   Number of degrees of freedom: 265
+Number of non-zero Sparse Matrix entries: 2117
+   88 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 303
+Number of non-zero Sparse Matrix entries: 2415
+   156 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 363
+Number of non-zero Sparse Matrix entries: 2931
+   170 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 467
+Number of non-zero Sparse Matrix entries: 3807
+   232 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 531
+Number of non-zero Sparse Matrix entries: 4363
+   241 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 611
+Number of non-zero Sparse Matrix entries: 5039
+   318 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 707
+Number of non-zero Sparse Matrix entries: 5859
+   375 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 855
+Number of non-zero Sparse Matrix entries: 7083
+   495 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 1003
+Number of non-zero Sparse Matrix entries: 8335
+   589 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 1155
+Number of non-zero Sparse Matrix entries: 9603
+   630 CG iterations needed to obtain convergence.
+   Number of active cells: 940
+   Total number of cells: 1292
+550
+11711.1
+   Number of degrees of freedom: 257
+Number of non-zero Sparse Matrix entries: 2053
+   82 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 303
+Number of non-zero Sparse Matrix entries: 2415
+   105 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 357
+Number of non-zero Sparse Matrix entries: 2873
+   133 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 457
+Number of non-zero Sparse Matrix entries: 3709
+   172 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 527
+Number of non-zero Sparse Matrix entries: 4327
+   195 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 609
+Number of non-zero Sparse Matrix entries: 5021
+   238 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 703
+Number of non-zero Sparse Matrix entries: 5839
+   248 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 847
+Number of non-zero Sparse Matrix entries: 7023
+   339 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 1005
+Number of non-zero Sparse Matrix entries: 8353
+   420 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 1157
+Number of non-zero Sparse Matrix entries: 9621
+   660 CG iterations needed to obtain convergence.
+   Number of active cells: 946
+   Total number of cells: 1296
+600
+11884.8
+   Number of degrees of freedom: 245
+Number of non-zero Sparse Matrix entries: 1953
+   77 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 287
+Number of non-zero Sparse Matrix entries: 2287
+   145 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 349
+Number of non-zero Sparse Matrix entries: 2809
+   170 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 441
+Number of non-zero Sparse Matrix entries: 3577
+   218 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 509
+Number of non-zero Sparse Matrix entries: 4169
+   249 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 581
+Number of non-zero Sparse Matrix entries: 4769
+   303 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 665
+Number of non-zero Sparse Matrix entries: 5485
+   244 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 6551
+   282 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 969
+Number of non-zero Sparse Matrix entries: 8045
+   388 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 1119
+Number of non-zero Sparse Matrix entries: 9319
+   451 CG iterations needed to obtain convergence.
+   Number of active cells: 916
+   Total number of cells: 1256
+650
+12059.4
+   Number of degrees of freedom: 249
+Number of non-zero Sparse Matrix entries: 1989
+   76 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 299
+Number of non-zero Sparse Matrix entries: 2387
+   105 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 347
+Number of non-zero Sparse Matrix entries: 2787
+   121 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 443
+Number of non-zero Sparse Matrix entries: 3587
+   174 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 517
+Number of non-zero Sparse Matrix entries: 4233
+   186 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 597
+Number of non-zero Sparse Matrix entries: 4913
+   221 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 705
+Number of non-zero Sparse Matrix entries: 5805
+   275 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 881
+Number of non-zero Sparse Matrix entries: 7277
+   493 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 1003
+Number of non-zero Sparse Matrix entries: 8347
+   529 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 1153
+Number of non-zero Sparse Matrix entries: 9605
+   474 CG iterations needed to obtain convergence.
+   Number of active cells: 944
+   Total number of cells: 1296
+700
+12210.7
+   Number of degrees of freedom: 249
+Number of non-zero Sparse Matrix entries: 1989
+   76 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 297
+Number of non-zero Sparse Matrix entries: 2381
+   105 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 345
+Number of non-zero Sparse Matrix entries: 2781
+   116 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 445
+Number of non-zero Sparse Matrix entries: 3609
+   165 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 515
+Number of non-zero Sparse Matrix entries: 4219
+   176 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 591
+Number of non-zero Sparse Matrix entries: 4871
+   209 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 707
+Number of non-zero Sparse Matrix entries: 5803
+   276 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 867
+Number of non-zero Sparse Matrix entries: 7155
+   337 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 995
+Number of non-zero Sparse Matrix entries: 8259
+   423 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 1149
+Number of non-zero Sparse Matrix entries: 9561
+   471 CG iterations needed to obtain convergence.
+   Number of active cells: 944
+   Total number of cells: 1296
+750
+12271.7
+   Number of degrees of freedom: 247
+Number of non-zero Sparse Matrix entries: 1967
+   76 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 293
+Number of non-zero Sparse Matrix entries: 2345
+   99 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 341
+Number of non-zero Sparse Matrix entries: 2737
+   125 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 437
+Number of non-zero Sparse Matrix entries: 3537
+   164 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 515
+Number of non-zero Sparse Matrix entries: 4203
+   174 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 599
+Number of non-zero Sparse Matrix entries: 4911
+   225 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 687
+Number of non-zero Sparse Matrix entries: 5639
+   266 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 805
+Number of non-zero Sparse Matrix entries: 6633
+   310 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 953
+Number of non-zero Sparse Matrix entries: 7877
+   511 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 1111
+Number of non-zero Sparse Matrix entries: 9207
+   623 CG iterations needed to obtain convergence.
+   Number of active cells: 898
+   Total number of cells: 1232
+800
+12383.7
+   Number of degrees of freedom: 247
+Number of non-zero Sparse Matrix entries: 1967
+   75 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 293
+Number of non-zero Sparse Matrix entries: 2345
+   98 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 341
+Number of non-zero Sparse Matrix entries: 2737
+   117 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 437
+Number of non-zero Sparse Matrix entries: 3537
+   170 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 515
+Number of non-zero Sparse Matrix entries: 4203
+   182 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 599
+Number of non-zero Sparse Matrix entries: 4911
+   223 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 687
+Number of non-zero Sparse Matrix entries: 5639
+   264 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 789
+Number of non-zero Sparse Matrix entries: 6505
+   275 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 929
+Number of non-zero Sparse Matrix entries: 7685
+   346 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 1105
+Number of non-zero Sparse Matrix entries: 9165
+   472 CG iterations needed to obtain convergence.
+   Number of active cells: 892
+   Total number of cells: 1224
+850
+12523.9
+   Number of degrees of freedom: 247
+Number of non-zero Sparse Matrix entries: 1967
+   74 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 285
+Number of non-zero Sparse Matrix entries: 2281
+   137 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 333
+Number of non-zero Sparse Matrix entries: 2677
+   179 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 411
+Number of non-zero Sparse Matrix entries: 3319
+   230 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 473
+Number of non-zero Sparse Matrix entries: 3841
+   240 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 573
+Number of non-zero Sparse Matrix entries: 4673
+   296 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 661
+Number of non-zero Sparse Matrix entries: 5405
+   308 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 763
+Number of non-zero Sparse Matrix entries: 6259
+   386 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 881
+Number of non-zero Sparse Matrix entries: 7261
+   438 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 1041
+Number of non-zero Sparse Matrix entries: 8617
+   590 CG iterations needed to obtain convergence.
+   Number of active cells: 844
+   Total number of cells: 1160
+900
+12655.9
+   Number of degrees of freedom: 251
+Number of non-zero Sparse Matrix entries: 2003
+   76 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 297
+Number of non-zero Sparse Matrix entries: 2381
+   101 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 345
+Number of non-zero Sparse Matrix entries: 2773
+   125 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 405
+Number of non-zero Sparse Matrix entries: 3265
+   150 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 465
+Number of non-zero Sparse Matrix entries: 3757
+   185 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 591
+Number of non-zero Sparse Matrix entries: 4807
+   232 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 679
+Number of non-zero Sparse Matrix entries: 5567
+   245 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 789
+Number of non-zero Sparse Matrix entries: 6481
+   306 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 893
+Number of non-zero Sparse Matrix entries: 7361
+   332 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 1069
+Number of non-zero Sparse Matrix entries: 8841
+   440 CG iterations needed to obtain convergence.
+   Number of active cells: 860
+   Total number of cells: 1184
+950
+12689.6
+   Number of degrees of freedom: 251
+Number of non-zero Sparse Matrix entries: 2003
+   78 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 297
+Number of non-zero Sparse Matrix entries: 2381
+   105 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 345
+Number of non-zero Sparse Matrix entries: 2773
+   125 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 402
+Number of non-zero Sparse Matrix entries: 3240
+   260 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 462
+Number of non-zero Sparse Matrix entries: 3732
+   304 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 584
+Number of non-zero Sparse Matrix entries: 4740
+   367 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 682
+Number of non-zero Sparse Matrix entries: 5590
+   440 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 792
+Number of non-zero Sparse Matrix entries: 6512
+   533 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 910
+Number of non-zero Sparse Matrix entries: 7510
+   604 CG iterations needed to obtain convergence.
+   Number of degrees of freedom: 1070
+Number of non-zero Sparse Matrix entries: 8858
+   810 CG iterations needed to obtain convergence.
+   Number of active cells: 863
+   Total number of cells: 1188
+1000
+12842.6
