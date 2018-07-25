@@ -96,6 +96,64 @@ void FourthOrder::cell_mesh(double r1, double r2, double sep, double x, double y
 }
 
 void FourthOrder::smoothness(){
+	// Vector<float> estimated_error_per_cell(surface.n_active_cells());
+ //    KellyErrorEstimator<dim>::estimate(doffer,  QGauss<1>(3), typename FunctionMap<2>::type(), solution, estimated_error_per_cell);
+
+	// const unsigned int N = 2;
 	
+	// std::vector<Tensor<1,dim>> k_vectors;
+	// std::vector<unsigned int> k_vectors_magnitude;
+
+	// switch(2){
+	// 	case 2: {
+	// 		for(unsigned int i=0; i<N; ++i)
+	// 			for(unsigned int j=0; j<N; ++j)
+	// 				if (!((i==0) && (j==0)) && (i*i + j*j < N*N)){
+	// 					k_vectors.push_back(Point<2>(numbers::PI * i, numbers::PI * j));
+	// 					k_vectors_magnitude.push_back (i*i+j*j);
+	// 				}
+	// 		break;
+	// 	}
+	// 	case 3: {
+	// 		for(unsigned int i=0; i<N; ++i)
+	// 			for(unsigned int j=0; j<N; ++j)
+	// 				for(unsigned int k=0; k<N; ++k)
+	// 			  		if(!((i==0) && (j==0) && (k==0)) && (i*i + j*j + k*k < N*N)){
+	// 						k_vectors.push_back (Point<dim>(numbers::PI * i, numbers::PI * j, numbers::PI * k));
+	// 						k_vectors_magnitude.push_back (i*i+j*j+k*k);
+	// 					}
+	// 		break;
+	// 	}
+
+	// 	default:
+	// 		Assert (false, ExcNotImplemented());
+	// }
+
+	// const unsigned n_fourier_modes = k_vectors.size();
+	// std::vector<double> ln_k(n_fourier_modes);
+	// for (unsigned int i=0; i<n_fourier_modes; ++i)
+	// ln_k[i] = std::log (k_vectors[i].norm());
+
+	// std::vector<Table<2,std::complex<double>>>
+ //    fourier_transform_matrices(fe_collection.size());
+
+ //    QGauss<1> base_quadrature(2);
+ //    QIterated<dim> quadrature(base_quadrature, N);
+
+ //    for(unsigned int f = 0; f < fe.size(); ++f){
+ //        fourier_transform_matrices[f].reinit(n_fourier_modes, fe[f].dofs_per_cell);
+ //        for(unsigned int k=0; k<n_fourier_modes; ++k)
+ //        	for (unsigned int j=0; j<fe[f].dofs_per_cell; ++j){
+ //            	std::complex<double> sum = 0;
+ //            	for (unsigned int q=0; q<quadrature.size(); ++q){
+ //                	const Point<dim> x_q = quadrature.point(q);
+ //                	sum += std::exp(std::complex<double>(0,1) * (k_vectors[k] * x_q)) * fe[f].shape_value(j,x_q) * quadrature.weight(q);
+ //                }
+ //            	fourier_transform_matrices[fe](k,j) = sum / std::pow(2*numbers::PI, 1.*dim/2);
+ //            }
+ //    }
+    
+ //    std::vector<std::complex<double>> fourier_coefficients(n_fourier_modes);
+ //    Vector<double> local_dof_values;
 }
 		
