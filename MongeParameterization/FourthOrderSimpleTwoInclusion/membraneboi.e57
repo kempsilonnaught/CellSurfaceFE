@@ -1,0 +1,21 @@
+
+--------------------------------------------------------
+An error occurred in line <1331> of file </usr/local/src/Original/dealii-9.0.0/include/deal.II/dofs/dof_handler.h> in function
+    const dealii::hp::FECollection<dim, spacedim>& dealii::DoFHandler<dim, spacedim>::get_fe_collection() const [with int dim = 2; int spacedim = 2]
+The violated condition was: 
+    fe_collection.size() > 0
+Additional information: 
+    You are trying to access the DoFHandler's FECollection object before it has been initialized.
+
+Stacktrace:
+-----------
+#0  /usr/local/lib/libdeal_II.g.so.9.0.0: dealii::DoFHandler<2, 2>::get_fe(unsigned int) const
+#1  /usr/local/lib/libdeal_II.g.so.9.0.0: void dealii::KellyErrorEstimator<2, 2>::estimate<dealii::Vector<double>, dealii::DoFHandler<2, 2> >(dealii::Mapping<2, 2> const&, dealii::DoFHandler<2, 2> const&, dealii::hp::QCollection<1> const&, dealii::FunctionMap<2, dealii::Vector<double>::value_type>::type const&, std::vector<dealii::Vector<double> const*, std::allocator<dealii::Vector<double> const*> > const&, std::vector<dealii::Vector<float>*, std::allocator<dealii::Vector<float>*> >&, dealii::ComponentMask const&, dealii::Function<2, double> const*, unsigned int, unsigned int, unsigned int, dealii::KellyErrorEstimator<2, 2>::Strategy)
+#2  /usr/local/lib/libdeal_II.g.so.9.0.0: void dealii::KellyErrorEstimator<2, 2>::estimate<dealii::Vector<double>, dealii::DoFHandler<2, 2> >(dealii::Mapping<2, 2> const&, dealii::DoFHandler<2, 2> const&, dealii::Quadrature<1> const&, dealii::FunctionMap<2, dealii::Vector<double>::value_type>::type const&, std::vector<dealii::Vector<double> const*, std::allocator<dealii::Vector<double> const*> > const&, std::vector<dealii::Vector<float>*, std::allocator<dealii::Vector<float>*> >&, dealii::ComponentMask const&, dealii::Function<2, double> const*, unsigned int, unsigned int, unsigned int, dealii::KellyErrorEstimator<2, 2>::Strategy)
+#3  /usr/local/lib/libdeal_II.g.so.9.0.0: void dealii::KellyErrorEstimator<2, 2>::estimate<dealii::Vector<double>, dealii::DoFHandler<2, 2> >(dealii::Mapping<2, 2> const&, dealii::DoFHandler<2, 2> const&, dealii::Quadrature<1> const&, dealii::FunctionMap<2, dealii::Vector<double>::value_type>::type const&, dealii::Vector<double> const&, dealii::Vector<float>&, dealii::ComponentMask const&, dealii::Function<2, double> const*, unsigned int, unsigned int, unsigned int, dealii::KellyErrorEstimator<2, 2>::Strategy)
+#4  /usr/local/lib/libdeal_II.g.so.9.0.0: void dealii::KellyErrorEstimator<2, 2>::estimate<dealii::Vector<double>, dealii::DoFHandler<2, 2> >(dealii::DoFHandler<2, 2> const&, dealii::Quadrature<1> const&, dealii::FunctionMap<2, dealii::Vector<double>::value_type>::type const&, dealii::Vector<double> const&, dealii::Vector<float>&, dealii::ComponentMask const&, dealii::Function<2, double> const*, unsigned int, unsigned int, unsigned int, dealii::KellyErrorEstimator<2, 2>::Strategy)
+#5  ./fourthorder: FourthOrder::run(double, double, double, double, double, double, double, double, int)
+#6  ./fourthorder: main
+--------------------------------------------------------
+
+/var/spool/torque/mom_priv/jobs/57.phage.hpc.union.edu.SC: line 8: 353165 Aborted                 (core dumped) ./fourthorder
