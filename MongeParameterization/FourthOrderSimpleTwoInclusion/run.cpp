@@ -21,14 +21,14 @@ double FourthOrder::run(double r1, double r2, double sep, double x, double y, do
 		if(refine_cycle == 0){
 			cell_mesh(r1, r2, sep, x, y, true);
 			surface.refine_global(1);
-			GridTools::remove_anisotropy(surface, 1.6180339887, 2);
+			GridTools::remove_anisotropy(surface, 1.6180339887, 4);
 		}
 
 		else{
 			Vector<float> estimated_error(surface.n_active_cells());
 			KellyErrorEstimator<2>::estimate(doffer, QGauss<1>(3), typename FunctionMap<2>::type(), solution, estimated_error);
 
-			GridRefinement::refine_and_coarsen_fixed_number(surface, estimated_error, 0.30, 0.03, 5000);
+			GridRefinement::refine_and_coarsen_fixed_number(surface, estimated_error, 0.20, 0.05, 6000);
 			surface.execute_coarsening_and_refinement();
 		}
 
