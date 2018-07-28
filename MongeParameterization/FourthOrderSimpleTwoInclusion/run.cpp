@@ -24,7 +24,7 @@ double FourthOrder::run(double r1, double r2, double sep, double x, double y, do
 			GridTools::remove_anisotropy(surface, 1.6180339887, 2);
 		}
 
-		if(refine_cycle < 5 && refine_cycle =! 0){
+		if(refine_cycle < 5 && refine_cycle != 0){
 			Vector<float> estimated_error(surface.n_active_cells());
 			KellyErrorEstimator<2>::estimate(doffer, QGauss<1>(3), typename FunctionMap<2>::type(), solution, estimated_error);
 
