@@ -33,20 +33,20 @@ double FourthOrder::run(double r1, double r2, double sep, double x, double y, do
 		}
 
 		if(refine_cycle < 8 && refine_cycle >= 5){
-			Vector<float> estimated_error(surface.n_active_cells());
-			KellyErrorEstimator<2>::estimate(doffer, QGauss<1>(3), typename FunctionMap<2>::type(), solution, estimated_error);
+			Vector<float> estimated_error2(surface.n_active_cells());
+			KellyErrorEstimator<2>::estimate(doffer, QGauss<1>(3), typename FunctionMap<2>::type(), solution, estimated_error2);
 
-			GridRefinement::refine_and_coarsen_fixed_number(surface, estimated_error, 0, 0.15);
+			GridRefinement::refine_and_coarsen_fixed_number(surface, estimated_error2, 0, 0.15);
 			surface.execute_coarsening_and_refinement();
 
 			GridTools::remove_anisotropy(surface, 1.6180339887, 1);
 		}
 
 		if(refine_cycle >= 8){
-			Vector<float> estimated_error(surface.n_active_cells());
-			KellyErrorEstimator<2>::estimate(doffer, QGauss<1>(3), typename FunctionMap<2>::type(), solution, estimated_error);
+			Vector<float> estimated_error3(surface.n_active_cells());
+			KellyErrorEstimator<2>::estimate(doffer, QGauss<1>(3), typename FunctionMap<2>::type(), solution, estimated_error3);
 
-			GridRefinement::refine_and_coarsen_fixed_number(surface, estimated_error, 0.30, 0.05, 5000);
+			GridRefinement::refine_and_coarsen_fixed_number(surface, estimated_error3, 0.30, 0.05, 5000);
 			surface.execute_coarsening_and_refinement();
 		}
 
