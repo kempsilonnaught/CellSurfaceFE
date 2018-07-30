@@ -17,14 +17,14 @@ written to a .gpl file, and the energy is of the surface is calculated using the
 double FourthOrder::run(double r1, double r2, double sep, double x, double y, double sigma, double kappa, double kappabar, int i){
 
 	
-	for(unsigned int refine_cycle = 0; refine_cycle < 12; ++refine_cycle){
+	for(unsigned int refine_cycle = 0; refine_cycle < 7; ++refine_cycle){
 		if(refine_cycle == 0){
 			cell_mesh(r1, r2, sep, x, y, true);
 			surface.refine_global(1);
 			GridTools::remove_anisotropy(surface, 1.6180339887, 2);
 		}
 
-		if(refine_cycle < 5 && refine_cycle != 0){
+		if(refine_cycle < 3 && refine_cycle != 0){
 			Vector<float> estimated_error(surface.n_active_cells());
 			KellyErrorEstimator<2>::estimate(doffer, QGauss<1>(3), typename FunctionMap<2>::type(), solution, estimated_error);
 
@@ -32,7 +32,7 @@ double FourthOrder::run(double r1, double r2, double sep, double x, double y, do
 			surface.execute_coarsening_and_refinement();
 		}
 
-		if(refine_cycle < 8 && refine_cycle >= 5){
+		if(refine_cycle < 5 && refine_cycle >= 3){
 			Vector<float> estimated_error2(surface.n_active_cells());
 			KellyErrorEstimator<2>::estimate(doffer, QGauss<1>(3), typename FunctionMap<2>::type(), solution, estimated_error2);
 
@@ -42,7 +42,7 @@ double FourthOrder::run(double r1, double r2, double sep, double x, double y, do
 			GridTools::remove_anisotropy(surface, 1.6180339887, 1);
 		}
 
-		if(refine_cycle >= 8){
+		if(refine_cycle >= 5){
 			Vector<float> estimated_error3(surface.n_active_cells());
 			KellyErrorEstimator<2>::estimate(doffer, QGauss<1>(3), typename FunctionMap<2>::type(), solution, estimated_error3);
 
