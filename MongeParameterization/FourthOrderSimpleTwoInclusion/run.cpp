@@ -68,7 +68,7 @@ double FourthOrder::run(double r1, double r2, double sep, double x, double y, do
 	cell_mesh(r1, r2, sep, x, y, true);
 	surface.refine_global(2);
 
-	for(unsigned int step=0; step<2; ++step){
+	for(unsigned int step=0; step<1; ++step){
 		Triangulation<2>::active_cell_iterator cell = surface.begin_active();
 		Triangulation<2>::active_cell_iterator endc = surface.end();
 		for(; cell!=endc; ++cell){
@@ -91,7 +91,7 @@ double FourthOrder::run(double r1, double r2, double sep, double x, double y, do
 		}
 		surface.execute_coarsening_and_refinement ();
 	}
-	GridTools::remove_anisotropy(surface, 1.6180339887, 1);
+	GridTools::remove_anisotropy(surface, 1.6180339887, 2);
 	GridTools::remove_hanging_nodes(surface, false, 20);
 
 
