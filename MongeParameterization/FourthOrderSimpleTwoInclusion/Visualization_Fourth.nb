@@ -9,15 +9,17 @@
 (* Internal cache information:
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
-NotebookDataPosition[       158,          7]
-NotebookDataLength[    731319,      12697]
-NotebookOptionsPosition[    729094,      12658]
-NotebookOutlinePosition[    729431,      12673]
-CellTagsIndexPosition[    729388,      12670]
+NotebookDataPosition[         0,          0]
+NotebookDataLength[         0,          0]
+NotebookOptionsPosition[         0,          0]
+NotebookOutlinePosition[         0,          0]
+CellTagsIndexPosition[         0,          0]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
+
+Cell[CellGroupData[{
 Cell[BoxData[{
  RowBox[{
   RowBox[{
@@ -104,7 +106,7 @@ MongeParameterization/FourthOrderSimpleTwoInclusion/gpls\>\"", "]"}],
    3.740131476802524*^9, {3.740135252165558*^9, 3.740135256990755*^9}, {
    3.7401475226752243`*^9, 3.740147534593952*^9}, {3.740147611447134*^9, 
    3.740147612059988*^9}, {3.740151305040372*^9, 3.7401513263905907`*^9}, {
-   3.7401517703965816`*^9, 3.7401517718714314`*^9}, {3.740152422426961*^9, 
+   3.7401517703965816`*^9, 3. {3.740152422426961*^9, 
    3.740152468881741*^9}, {3.74024128558576*^9, 3.740241304174739*^9}, 
    3.740241539520095*^9, {3.740241580875458*^9, 3.740241631665163*^9}, {
    3.74024240993906*^9, 3.7402425300047903`*^9}, 3.740247270374165*^9, 

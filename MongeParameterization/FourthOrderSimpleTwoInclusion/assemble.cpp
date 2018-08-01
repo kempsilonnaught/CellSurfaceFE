@@ -48,8 +48,8 @@ void FourthOrder::assemble(double sigma, double kappa, double kappabar){
 
 	std::map<types::global_dof_index, double> boundary_values;
 	VectorTools::interpolate_boundary_values(doffer, 0, ZeroFunction<2>(), boundary_values);
-	//VectorTools::interpolate_boundary_values(doffer, 5, ConstantFunction<2>(400), boundary_values);
-	//VectorTools::interpolate_boundary_values(doffer, 6, ConstantFunction<2>(400), boundary_values);
+	VectorTools::interpolate_boundary_values(doffer, 5, ConstantFunction<2>(400), boundary_values);
+	VectorTools::interpolate_boundary_values(doffer, 6, ConstantFunction<2>(400), boundary_values);
 	MatrixTools::apply_boundary_values(boundary_values, big_matrix, solution, rhs);
 
 	std::cout << "Number of non-zero Sparse Matrix entries: " << big_matrix.n_nonzero_elements() << std::endl;
