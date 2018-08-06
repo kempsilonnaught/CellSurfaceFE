@@ -18,7 +18,7 @@ each run through the program is opened.
 
 The for loop allows us to incrementally move the inclusions away from each other on the bilayer, recording differences in energy. Ultimately,
 the program overall produces the energy of the surface for a given separation of the inclusion. Thus, to take data, we loop over 
-separations starting at 50, and going to 1000 at increments of 5. The radii of the inclusions are then declared and defined, as well as 
+separations starting at 150, and going to 1050 at increments of 5. The radii of the inclusions are then declared and defined, as well as 
 a few of the constants in our equation, such as surface tension(sigma), (kappa), and (kappabar).
 
 */

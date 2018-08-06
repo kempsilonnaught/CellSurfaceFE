@@ -1,7 +1,9 @@
 #include "fourthorder.h"
 
 /*
-
+This is the output function. Relatively simple, and solely for visualization purposes. This functions outputs a gnuplot file 
+that allows us to create a three dimensional image of the surface. This can either be viewed in gnuplot or be read into a mathematica file.
+We have written a relatively basic mathematica program that parses gnuplot files, and from there writing a program to view the surface is trivial. 
 */
 
 void FourthOrder::output(int i){

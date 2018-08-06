@@ -65,7 +65,7 @@ Nextly, objects necessary throughout the program are declared, but not defined.
 	- x is a double indicating the length in of the base of the surface in the x direction.
 	- y is a double indicating the length in of the base of the surface in the y direction.
 	- doffer is a DoFHandler in two dimensions. This is used to handle and manipulate the degrees of freedom of each cell.
-	- fe ******************************************
+	- fe is our finite element object for our surface, which holds our finite element space. 
 	- big_matrix is the sparse matrix that will hold the solution to the delE equation
 	- solution is a vector that will hold all of the w values calculated from setting delE equal to zero, thus finding the w values for a minimum energy.
 	- rhs holds all of the right hand side values for the equation, which in our case, since we are minimizing, is a giant zero vector.
@@ -91,7 +91,6 @@ public :
 	double calcEnergy(double sigma, double kappa, double kappabar);
 	void output(int i);
 	double run(double r1, double r2, double sep, double x, double y, double sigma, double kappa, double kappabar, int i);
-	void smoothness();
 
 private :
 

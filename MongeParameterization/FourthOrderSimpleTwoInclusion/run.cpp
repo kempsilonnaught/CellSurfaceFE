@@ -3,68 +3,34 @@
 /*
 Firstly, obviously the header file is included. 
 
-This document contains the definition of the run function for the class that solves the membrane equation. 
-The run function returns a double, which will be the energy of the surface. The first thing done is a surface refinemnet loop is 
-written, with the KellyErrorEstimator. This checks to see if this is the first run through refinement to start, and if it is, then the 
-surface Triangulation must be empty. Thus, the cell_mesh function is run to generate a coarse surface with the parameters we want. Then, 
-the remove_anisotropy function is run on the surface with the golden ratio as its tolerance ofr size ratios between squares, and an allowance 
-for number of iterations. This will slice up the more disproportionate cells of the coarse mesh into squarer pieces. Then, the system is solved for
-w values, and the two-dimensional mesh is written into an eps file for viewing. Once the first run has been completed, the loop then estimates the error 
-each cell of the program, and refines the sections with less error, while coarsening the sections with more error. Once this is done, the final 3d surface 
-written to a .gpl file, and the energy is of the surface is calculated using the 
+This document contains the definition of the run function for the class that solves the membrane equation. Ultimnately, this file simply contains the instructions
+to calculate our energy. The method is just like a simple calculus 1 extremum problem. You take the derivative of an expression, set it equal to zero, solve for your variable,
+and then use that variable to solve your original equation for the extreme value. That is exactly what we have done here, just with a slightly more complicated expression, 
+and thickly disguised with C++ and deal.II jargon. 
+
+Firstly, we have to create a surface and setup our fe tools. We call the cell mesh function with specified inclusion radii, a rectangle size in terms of x and y, the separation between inclusions, and a boolean 
+indicating whether or not this is the first time we have called it. This generates a mesh for the surface with specified size, inclusion requirements, and separation. We then refine all of the cells twice, and then 
+refine just the cells around the inclusions another single time. Then we remove anistropy and hanging nodes. This does not make the surface uniform, but does insure that the size and shape of the cells change smoothly so 
+we do not have abrupt changes in values. We the run the setup function which applies the finite element method to our surface. 
+
+Next, we run the assemble function. We already have an expression for Energy of which we have taken the derivative which we call del E. We applied the small gradient approximation, and threw away some negligibly small
+terms. These terms will come back when we add more inclusions to our system, as they will cease to be negligible at that point. The assemble function applies our equation for del E to the surface with the finite element method. 
+From the assemble function we get a matrix of values that describes our equation thoroughly enough that we can solve for w with this matrix and the rhs values. 
+
+This occurs in the solve fucntion, which we call next. This function sets the right hand side equal to zero, and sets the rest of the expression equal to the rhs. Then,
+it solves for a vector of w values using the matrix found in the assemble function. For bookkeeping purposes, we output some useful information about the cells in the mesh. Then we output the two dimensional mesh 
+as an eps as well as the separation. Then we run the output function which makes a gnuplot file of the three dimensional final surface. 
+
+Finally, we run the calcEnergy function, which plugs our w values back into the original expression for Energy and solves for the minimum energy. This is stored in a double, and returned by this function at the end for the 
+main function to store in our data. Finally, the cell_mesh is run again with the boolean equal to false, and it will delete all pointers and references it contains, and the rest of our objects will be cleared of data
+so that they are ready for the next instantiation of the class. Typically this should be done in the deconstructor automatically when we go out of scope of the class instance, but deal.II's use of constants and statics made 
+this complicated. 
+
+Thus, this function has run the necessary functions to get energy.
 */
 
 double FourthOrder::run(double r1, double r2, double sep, double x, double y, double sigma, double kappa, double kappabar, int i){
 
-	
-	// for(unsigned int refine_cycle = 0; refine_cycle < 7; ++refine_cycle){
-	// 	if(refine_cycle == 0){
-	// 		cell_mesh(r1, r2, sep, x, y, true);
-	// 		surface.refine_global(1);
-	// 		GridTools::remove_anisotropy(surface, 1.6180339887, 2);
-	// 	}
-
-	// 	if(refine_cycle < 3 && refine_cycle != 0){
-	// 		Vector<float> estimated_error(surface.n_active_cells());
-	// 		KellyErrorEstimator<2>::estimate(doffer, QGauss<1>(3), typename FunctionMap<2>::type(), solution, estimated_error);
-
-	// 		GridRefinement::refine_and_coarsen_fixed_number(surface, estimated_error, 0.15, 0.05, 4000);
-	// 		surface.execute_coarsening_and_refinement();
-	// 	}
-
-	// 	if(refine_cycle < 5 && refine_cycle >= 3){
-	// 		Vector<float> estimated_error2(surface.n_active_cells());
-	// 		KellyErrorEstimator<2>::estimate(doffer, QGauss<1>(3), typename FunctionMap<2>::type(), solution, estimated_error2);
-
-	// 		GridRefinement::refine_and_coarsen_fixed_number(surface, estimated_error2, 0, 0.10);
-	// 		surface.execute_coarsening_and_refinement();
-
-	// 		GridTools::remove_anisotropy(surface, 1.6180339887, 1);
-	// 	}
-
-	// 	if(refine_cycle >= 5){
-	// 		Vector<float> estimated_error3(surface.n_active_cells());
-	// 		KellyErrorEstimator<2>::estimate(doffer, QGauss<1>(3), typename FunctionMap<2>::type(), solution, estimated_error3);
-
-	// 		GridRefinement::refine_and_coarsen_fixed_number(surface, estimated_error3, 0.15, 0.05, 4000);
-	// 		surface.execute_coarsening_and_refinement();
-
-	// 		GridTools::remove_anisotropy(surface, 1.6180339887, 2);
-
-	// 	}
-
-
-
-	// 	setup();
-	// 	assemble(sigma, kappa, kappabar);
-	// 	solve();
-
-
-	// 	std::ofstream out("twoDgrids/testgrid" + std::to_string(i) + ".eps");
-	// 	GridOut cell_mesho;
-	// 	cell_mesho.write_eps(surface, out);
-	// }
-	
 	cell_mesh(r1, r2, sep, x, y, true);
 	surface.refine_global(2);
 
@@ -93,9 +59,6 @@ double FourthOrder::run(double r1, double r2, double sep, double x, double y, do
 	}
 	GridTools::remove_anisotropy(surface, 1.6180339887, 2);
 	GridTools::remove_hanging_nodes(surface, false, 20);
-
-
-	
 
 	setup();
 	assemble(sigma, kappa, kappabar);
