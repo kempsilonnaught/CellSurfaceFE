@@ -1,4 +1,4 @@
-FILE(REMOVE_RECURSE
+file(REMOVE_RECURSE
   "CMakeFiles/fourthorder.dir/main.cpp.o"
   "CMakeFiles/fourthorder.dir/run.cpp.o"
   "CMakeFiles/fourthorder.dir/cell_mesh.cpp.o"
@@ -11,6 +11,6 @@ FILE(REMOVE_RECURSE
 )
 
 # Per-language clean rules from dependency scanning.
-FOREACH(lang CXX)
-  INCLUDE(CMakeFiles/fourthorder.dir/cmake_clean_${lang}.cmake OPTIONAL)
-ENDFOREACH(lang)
+foreach(lang CXX)
+  include(CMakeFiles/fourthorder.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

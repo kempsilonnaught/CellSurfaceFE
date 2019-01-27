@@ -23,16 +23,14 @@ and the circular boundaries for the inclusions are at a height of 400. We then w
 */
 
 void FourthOrder::assemble(double sigma, double kappa, double kappabar){
-	QGauss<2> quadrakill(2);
-	QGauss<1> facequads(2);
 
-	FEValues<2> fe_time(fe, quadrakill, update_values | update_gradients | update_JxW_values | update_quadrature_points | update_hessians);
-	FEFaceValues<2> face_vals(fe, facequads, update_values | update_gradients | update_JxW_values | update_hessians | update_quadrature_points | update_normal_vectors);
+
+	QGauss<2> quadrakill(2);
+
+	FEValues<2> fe_time(fe, quadrakill, update_values | update_gradients | update_JxW_values | update_hessians);
 
 	const unsigned int dofs_per_cell = fe.dofs_per_cell;
 	const unsigned int n_q_points = quadrakill.size();
-	const unsigned int n_face_q_points = facequads.size();
-	const Solution<2> neumann_solution;
 	
 	FullMatrix<double> lil_matrix(dofs_per_cell, dofs_per_cell);
 	Vector<double> lil_rhs(dofs_per_cell);
@@ -60,17 +58,6 @@ void FourthOrder::assemble(double sigma, double kappa, double kappabar){
 				
 		}
 
-		// I have started doing something with neumann values here, and have calculated said neumann values, but haven't actually done anything with them yet.
-		// I need to add the bit that actually adds the boundary values to the matrices.
-
-		for(unsigned int face_num = 0; face_num<GeometryInfo<2>::faces_per_cell>; ++face_num)
-			if(cell->face(face_num)-> at_boundary() && (cell->face(face_num)-> boundary_id == 0)){
-				face_vals.reinit(cell, face_num);
-				for(unsigned int q_index = 0; q_index < n_face_q_points; ++q_index){
-					const double neumann_val = (neumann_solution.gradient(face_vals.quadrature_point(q_index)) * face_vals.normal_vector(q_index));
-				}
-			}
-
 		cell -> get_dof_indices(local_dof_indices);
 		for(unsigned int i = 0; i < dofs_per_cell; ++i)
 			for(unsigned int j = 0; j < dofs_per_cell; ++j)
@@ -79,15 +66,11 @@ void FourthOrder::assemble(double sigma, double kappa, double kappabar){
 			rhs(local_dof_indices[i]) += lil_rhs(i);
 	}
 
-	// I have removed the constant boundary values and replace them with some solution vector. I think I have to do something more regarding the 
-	// solution vector, but what that is remains to be seen. I may have to implement a right hand side as the above integral has become more complicated with the 
-	// addition of boundary terms.
-
-	std::map<types::global_dof_index, double> boundary_values;
-	VectorTools::interpolate_boundary_values(doffer, 0, Solution<2>(), boundary_values);
-	VectorTools::interpolate_boundary_values(doffer, 5, Solution<2>(), boundary_values);
-	VectorTools::interpolate_boundary_values(doffer, 6, Solution<2>(), boundary_values);
-	MatrixTools::apply_boundary_values(boundary_values, big_matrix, solution, rhs);
+	VectorTools::interpolate_boundary_values(doffer, 0, ZeroFunction<2>(), boundary_values);
+	VectorTools::interpolate_boundary_values(doffer, 5, BoundaryValues(), boundary_values);
+	VectorTools::interpolate_boundary_values(doffer, 6, BoundaryValues(), boundary_values);
+	boundary_values.condense(big_matrix, rhs);
+	boundary_values.distribute_local_to_global(lil_matrix, lil_rhs, local_dof_indices, big_matrix, rhs);
 
 	std::cout << "Number of non-zero Sparse Matrix entries: " << big_matrix.n_nonzero_elements() << std::endl;
 
