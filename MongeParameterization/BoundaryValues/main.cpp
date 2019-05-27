@@ -1,59 +1,45 @@
-#include "fourthorder.h"
+#include "forces_inclusions.h"
 
-/*
-The main file is used to control the whole program. Thus, after including the header file,
-the contructor and destructor are definedfor our FourthOrder class, which is defined in the header
-file. The constructor initializes our fe object, which was declared in the header file,
-with a numerical argument that indicates the order of the polynomials based on Gauss-Lobatto nodes.
+SimulateSurface::SimulateSurface() : fe(1){}
+SimulateSurface::~SimulateSurface(){}
 
-Next is the main function. This function organizes the running of the program, and facilitates it 
-being run in an iterative manner. Firstly, three arrays are declared. The first two are of type double, 
-and will be where we write our data to. The Energy array will hold the Energy values for each run through the 
-program, and the Separation array will hold the separation from each run through the program. The third array is 
-an array of instantiations of the class for solving the problem. This is so when we loop to run the program multiple times
-we don't have any data leftover from the last run due to the deconstructor not being called properly. The aforementioned was a 
-large problem while writing the program. All three arrays are of an arbitrarily large size so long as they are large enough to hold all of 
-the data for the given number of loops. A counting integer i is declared and set to 0, and a text file to record the energy and separation of
-each run through the program is opened. 
+int main() {
+    int max = 50;
+    double *energy = new double[max];
+    double *separation = new double[max];
+    SimulateSurface *membrane = new SimulateSurface[max];
 
-The for loop allows us to incrementally move the inclusions away from each other on the bilayer, recording differences in energy. Ultimately,
-the program overall produces the energy of the surface for a given separation of the inclusion. Thus, to take data, we loop over 
-separations starting at 150, and going to 1050 at increments of 5. The radii of the inclusions are then declared and defined, as well as 
-a few of the constants in our equation, such as surface tension(sigma), (kappa), and (kappabar).
+    unsigned int i = 0;
+    std::ofstream energysep;
+    energysep.open("energysep.txt");
 
-*/
+    double radius_1 = 10;
+    double radius_2 = 10;
+    double sheet_x = 4000;
+    double sheet_y = 2000;
+    double sigma = 1;
+    double kappa = 1;
+    double kappabar = 1;
 
-FourthOrder::FourthOrder() : fe(1){}
-FourthOrder::~FourthOrder(){}
+    for (double sep = 150; sep <= 1050; sep += 100) {
+        if (i >= max) {
+            max = max * 2;
+            int* temp = new int[max];
+            for (int i=0; i<n; i++) {
+                temp[i] = a[i];
+            }
+            delete [] a;
+            a = temp;
+        }
+        energy[i] = membrane[i].run(radius_1, radius_2, sep, sheet_x, sheet_y, sigma, kappa, kappabar, i);
+        separation[i] = sep;
+        energysep << separation[i] << " " << energy[i] << std::endl;
+        std::cout << energy[i] << std::endl;
 
-int main(){
+        ++i;
+    }
 
-	double Energy[1000];
-	double Separation[1000];
-	FourthOrder solve_instance[1000];
-	unsigned int i = 0;
+    energysep.close();
 
-	std::ofstream energysep;
-	energysep.open("energysep.txt");
-
-	for(double sep = 150; sep <= 300; sep += 10){
-		double r1 = 10;
-		double r2 = 10;
-		double x = 400;
-		double y = 200;
-		double sigma = 1;
-		double kappa = 1;
-		double kappabar = 1;
-
-		Energy[i] = solve_instance[i].run(r1, r2, sep, x, y, sigma, kappa, kappabar, i);
-		Separation[i] = sep;
-		energysep << Separation[i] << " " << Energy[i] << std::endl;
-		std::cout << Energy[i] << std::endl;
-
-		++i;
-	}
-
-	energysep.close();
-
-	return 0;
+    return 0;
 }
