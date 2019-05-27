@@ -1,51 +1,36 @@
 #ifndef TWO_INCLUSION_LIFT_SAMKEMP
 #define TWO_INCLUSION_LIFT_SAMKEMP
 
-#include <deal.II/base/table_handler.h>
-#include <deal.II/base/logstream.h>
-#include <deal.II/base/quadrature_lib.h>
-#include <deal.II/base/function.h>
-#include <deal.II/base/utilities.h>
-
-#include <deal.II/lac/sparse_direct.h>
-#include <deal.II/lac/sparse_ilu.h>
-#include <deal.II/lac/constraint_matrix.h>
-#include <deal.II/lac/sparsity_pattern.h>
-#include <deal.II/lac/sparse_matrix.h>
-#include <deal.II/lac/full_matrix.h>
-#include <deal.II/lac/solver_cg.h>
-#include <deal.II/lac/precondition.h>
-#include <deal.II/lac/vector.h>
-#include <deal.II/lac/dynamic_sparsity_pattern.h>
-#include <deal.II/lac/block_vector.h>
-#include <deal.II/lac/block_sparse_matrix.h>
-
 #include <deal.II/grid/grid_generator.h>
 #include <deal.II/grid/grid_out.h>
 #include <deal.II/grid/grid_tools.h>
 #include <deal.II/grid/tria_boundary_lib.h>
+#include <deal.II/base/logstream.h>
 #include <deal.II/grid/tria.h>
-#include <deal.II/grid/tria_accessor.h>
-#include <deal.II/grid/tria_iterator.h>
-#include <deal.II/grid/grid_refinement.h>
-#include <deal.II/grid/manifold_lib.h>
-
 #include <deal.II/dofs/dof_handler.h>
-#include <deal.II/dofs/dof_renumbering.h>
-#include <deal.II/dofs/dof_accessor.h>
-#include <deal.II/dofs/dof_tools.h>
-
+#include <deal.II/lac/constraint_matrix.h>
+#include <deal.II/lac/sparsity_pattern.h>
+#include <deal.II/lac/sparse_matrix.h>
 #include <deal.II/fe/fe_system.h>
 #include <deal.II/fe/fe_q.h>
-#include <deal.II/fe/fe_values.h>
-
+#include <deal.II/lac/vector.h>
+#include <deal.II/grid/tria_accessor.h>
+#include <deal.II/grid/tria_iterator.h>
+#include <deal.II/dofs/dof_accessor.h>
+#include <deal.II/dofs/dof_tools.h>
+#include <deal.II/base/quadrature_lib.h>
+#include <deal.II/base/function.h>
 #include <deal.II/numerics/vector_tools.h>
 #include <deal.II/numerics/matrix_tools.h>
+#include <deal.II/lac/full_matrix.h>
+#include <deal.II/lac/solver_cg.h>
+#include <deal.II/lac/precondition.h>
 #include <deal.II/numerics/data_out.h>
+#include <deal.II/grid/grid_refinement.h>
 #include <deal.II/numerics/error_estimator.h>
-
-
-
+#include <deal.II/grid/manifold_lib.h>
+#include <deal.II/lac/dynamic_sparsity_pattern.h>
+#include <deal.II/base/table_handler.h>
 
 #include <cstdlib>
 #include <cmath>
@@ -120,44 +105,64 @@ private :
 
 	FE_Q<2> fe;
 
-	ConstraintMatrix boundary_values;
-
 	SparsityPattern sparsity_pattern;
+
 	SparseMatrix<double> big_matrix;
 
 	Vector<double> solution;
 	Vector<double> rhs;
 };
 
+template <int dim>
+class Solution : public Function<dim>, protected SolutionBase<dim>{
+	public:
+    	Solution () : Function<dim>() {}
+    	virtual double value (const Point<dim>   &p, const unsigned int  component = 0) const;
+    	virtual Tensor<1,dim> gradient (const Point<dim>   &p, const unsigned int  component = 0) const;
+};
 
-	
+template <int dim>
+double Solution<dim>::value (const Point<dim>   &p, const unsigned int) const{
+    double return_value = 0;
+    for (unsigned int i=0; i<this->n_source_centers; ++i){
+        const Tensor<1,dim> x_minus_xi = p - this->source_centers[i];
+        return_value += std::exp(-x_minus_xi.norm_square() / (this->width * this->width));
+    }
+    return return_value;
+}
 
-  class BoundaryValues : public Function<2>
-  {
-  public:
-    BoundaryValues () : Function<2>(3) {}
-    virtual double value (const Point<2>   &p,
-                          const unsigned int  component = 0) const;
-    virtual void vector_value (const Point<2> &p,
-                               Vector<double>   &value) const;
-  };
+template <int dim>
+Tensor<1,dim> Solution<dim>::gradient (const Point<dim>   &p, const unsigned int) const{
+    Tensor<1,dim> return_value;
+    for (unsigned int i=0; i<this->n_source_centers; ++i){
+        const Tensor<1,dim> x_minus_xi = p - this->source_centers[i];
+        return_value += (-2 / (this->width * this->width) * std::exp(-x_minus_xi.norm_square() / (this->width * this->width)) * x_minus_xi);
+    }
+    return return_value;
+}
 
- 
-  double BoundaryValues::value (const Point<2>  &p,
-                              const unsigned int component) const
-  {
-    Assert (component < this->n_components,
-            ExcIndexRange (component, 0, this->n_components));
-    if (component == 0)
-      return (p[0] < 0 ? -1 : (p[0] > 0 ? 1 : 0));
-    return 0;
-  }
-  
-  void
-  BoundaryValues::vector_value (const Point<2> &p,
-                                     Vector<double>   &values) const
-  {
-    for (unsigned int c=0; c<this->n_components; ++c)
-      values(c) = BoundaryValues::value (p, c);
-  }
+template <int dim>
+	class RightHandSide : public Function<dim>, protected SolutionBase<dim>{
+	public:
+    	RightHandSide () : Function<dim>() {}
+    	virtual double value (const Point<dim>   &p, const unsigned int  component = 0) const;
+};
+
+template <int dim>
+	double RightHandSide<dim>::value (const Point<dim>   &p, const unsigned int) const{
+    	double return_value = 0;
+    	for(unsigned int i=0; i<this->n_source_centers; ++i){
+        	const Tensor<1,dim> x_minus_xi = p - this->source_centers[i];
+        	return_value += ((2*dim - 4*x_minus_xi.norm_square()/
+                            (this->width * this->width)) /
+                            (this->width * this->width) *
+                            std::exp(-x_minus_xi.norm_square() /
+                            (this->width * this->width)));
+
+        	return_value += std::exp(-x_minus_xi.norm_square() / (this->width * this->width));
+        }
+    return return_value;
+}
+
+
 #endif
