@@ -32,7 +32,7 @@ void SimulateSurface::solve(){
 
 }
 
-double SimulateSurface::calcEnergy(double sigma, double kappa, double kappabar){
+double SimulateSurface::calcEnergy(double sigma, double kappa, double kappabar, double theta){
     QGauss<2> quadrakilltwo(2);
     FEValues<2> fe_val(fe, quadrakilltwo, update_values | update_gradients | update_JxW_values | update_hessians);
 

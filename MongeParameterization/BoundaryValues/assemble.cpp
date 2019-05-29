@@ -22,18 +22,17 @@ This is done for every cell, resulting in a sparse matrix with the integral valu
 and the circular boundaries for the inclusions are at a height of 400. We then write those values to our sparse matrix. Finally, for debugging purposes, we output the number of non-zero matrix elements. 
 */
 
-void FourthOrder::assemble(double sigma, double kappa, double kappabar){
+void FourthOrder::assemble(double sigma, double kappa, double kappabar, double theta){
 	QGauss<2> quadrakill(2);
+	QGauss<1> face_quadrature_formula(2);
 
 	FEValues<2> fe_time(fe, quadrakill, update_values | update_gradients | update_JxW_values | update_hessians);
-    FEFaceValues<2> fe_face_values(*fe, face_quadrature_formula, update_values | update_quadrature_points | update_normal_vectors | update_JxW_values);
+    FEFaceValues<2> fe_face_values(fe, face_quadrature_formula, update_values | update_quadrature_points | update_normal_vectors | update_JxW_values);
 
 	const unsigned int dofs_per_cell = fe.dofs_per_cell;
 	const unsigned int n_q_points = quadrakill.size();
-
-	const RightHandSide<dim> right_hand_side;
+	const unsigned int n_face_q_points = face_quadrature_formula.size();
 	std::vector<double>  rhs_values (n_q_points);
-    const Solution<dim> exact_solution;
 	
 	FullMatrix<double> lil_matrix(dofs_per_cell, dofs_per_cell);
 	Vector<double> lil_rhs(dofs_per_cell);
@@ -47,8 +46,6 @@ void FourthOrder::assemble(double sigma, double kappa, double kappabar){
 		lil_matrix = 0;
 		lil_rhs = 0;
 
-		right_hand_side.value_list(fe_values.get_quadrature_points(), rhs_values);
-
 		for(unsigned int q_index = 0; q_index < n_q_points; ++q_index){ //This is our big system integral
 			for(unsigned int i = 0; i < dofs_per_cell; ++i){
 				for(unsigned int j = 0; j < dofs_per_cell; ++j){
@@ -60,19 +57,19 @@ void FourthOrder::assemble(double sigma, double kappa, double kappabar){
 					lil_matrix(i, j) += (kappabar*(-(hess_i[0][1]))*(hess_j[0][1])*(fe_time.JxW(q_index)));
 					lil_matrix(i, j) += (sigma*(((fe_time.shape_grad(i, q_index))*(fe_time.shape_grad(j, q_index))*(fe_time.JxW(q_index)))/2));
 
-					lil_rhs(i) += tan(theta)*trace(hess_i)
+					lil_rhs(i) += tan(theta)*trace(hess_i);
 				}
 			}
 				
 		}
 
-		for (unsigned int face_number = 0; face_number<GeometryInfo<dim>::faces_per_cell; ++face_number)
+		for (unsigned int face_number = 0; face_number<GeometryInfo<2>::faces_per_cell; ++face_number)
         	if (cell->face(face_number)->at_boundary() && (cell->face(face_number)->boundary_id() == 5)){
             	fe_face_values.reinit (cell, face_number);
             	for (unsigned int q_point=0; q_point<n_face_q_points; ++q_point){
-                	const double neumann_value = (exact_solution.gradient (fe_face_values.quadrature_point(q_point)) * fe_face_values.normal_vector(q_point));
+                	const double neumann_value = tan(theta);
                 	for (unsigned int i=0; i<dofs_per_cell; ++i)
-                    	cell_rhs(i) += (neumann_value *
+                    	lil_rhs(i) += (neumann_value *
                                     fe_face_values.shape_value(i,q_point) *
                                     fe_face_values.JxW(q_point));
                 }
@@ -88,8 +85,8 @@ void FourthOrder::assemble(double sigma, double kappa, double kappabar){
 
 	std::map<types::global_dof_index, double> boundary_values;
 	VectorTools::interpolate_boundary_values(doffer, 0, ZeroFunction<2>(), boundary_values);
-	VectorTools::interpolate_boundary_values(doffer, 5, Solution<2>(), boundary_values);
-	VectorTools::interpolate_boundary_values(doffer, 6, Solution<2>(), boundary_values);
+	VectorTools::interpolate_boundary_values(doffer, 5, Solution(), boundary_values);
+	VectorTools::interpolate_boundary_values(doffer, 6, Solution(), boundary_values);
 	MatrixTools::apply_boundary_values(boundary_values, big_matrix, solution, rhs);
 
 	std::cout << "Number of non-zero Sparse Matrix entries: " << big_matrix.n_nonzero_elements() << std::endl;

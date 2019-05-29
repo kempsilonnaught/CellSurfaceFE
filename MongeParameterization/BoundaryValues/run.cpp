@@ -29,7 +29,7 @@ this complicated.
 Thus, this function has run the necessary functions to get energy.
 */
 
-double FourthOrder::run(double r1, double r2, double sep, double x, double y, double sigma, double kappa, double kappabar, int i){
+double FourthOrder::run(double r1, double r2, double sep, double x, double y, double sigma, double kappa, double kappabar, double theta, int i){
 
 	cell_mesh(r1, r2, sep, x, y, true);
 	surface.refine_global(2);
@@ -61,7 +61,7 @@ double FourthOrder::run(double r1, double r2, double sep, double x, double y, do
 	GridTools::remove_hanging_nodes(surface, false, 20);
 
 	setup();
-	assemble(sigma, kappa, kappabar);
+	assemble(sigma, kappa, kappabar, theta);
 	solve();
 
 	std::cout << "   Number of active cells: "
@@ -77,7 +77,7 @@ double FourthOrder::run(double r1, double r2, double sep, double x, double y, do
 
 	std::cout << sep << std::endl;
 	output(i);
-	double energy = calcEnergy(sigma, kappa, kappabar);
+	double energy = calcEnergy(sigma, kappa, kappabar, theta);
 
 	cell_mesh(r1, r2, sep, x, y, false);
 	doffer.clear();

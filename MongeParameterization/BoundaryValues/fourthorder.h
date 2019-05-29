@@ -86,11 +86,11 @@ public :
 
 	void cell_mesh(double r1, double r2, double sep, double x, double y, bool first_run);
 	void setup();
-	void assemble(double sigma, double kappa, double kappabar);
+	void assemble(double sigma, double kappa, double kappabar, double theta);
 	void solve();
-	double calcEnergy(double sigma, double kappa, double kappabar);
+	double calcEnergy(double sigma, double kappa, double kappabar, double theta);
 	void output(int i);
-	double run(double r1, double r2, double sep, double x, double y, double sigma, double kappa, double kappabar, int i);
+	double run(double r1, double r2, double sep, double x, double y, double sigma, double kappa, double kappabar, double theta, int i);
 
 private :
 
@@ -112,57 +112,6 @@ private :
 	Vector<double> solution;
 	Vector<double> rhs;
 };
-
-template <int dim>
-class Solution : public Function<dim>, protected SolutionBase<dim>{
-	public:
-    	Solution () : Function<dim>() {}
-    	virtual double value (const Point<dim>   &p, const unsigned int  component = 0) const;
-    	virtual Tensor<1,dim> gradient (const Point<dim>   &p, const unsigned int  component = 0) const;
-};
-
-template <int dim>
-double Solution<dim>::value (const Point<dim>   &p, const unsigned int) const{
-    double return_value = 0;
-    for (unsigned int i=0; i<this->n_source_centers; ++i){
-        const Tensor<1,dim> x_minus_xi = p - this->source_centers[i];
-        return_value += std::exp(-x_minus_xi.norm_square() / (this->width * this->width));
-    }
-    return return_value;
-}
-
-template <int dim>
-Tensor<1,dim> Solution<dim>::gradient (const Point<dim>   &p, const unsigned int) const{
-    Tensor<1,dim> return_value;
-    for (unsigned int i=0; i<this->n_source_centers; ++i){
-        const Tensor<1,dim> x_minus_xi = p - this->source_centers[i];
-        return_value += (-2 / (this->width * this->width) * std::exp(-x_minus_xi.norm_square() / (this->width * this->width)) * x_minus_xi);
-    }
-    return return_value;
-}
-
-template <int dim>
-	class RightHandSide : public Function<dim>, protected SolutionBase<dim>{
-	public:
-    	RightHandSide () : Function<dim>() {}
-    	virtual double value (const Point<dim>   &p, const unsigned int  component = 0) const;
-};
-
-template <int dim>
-	double RightHandSide<dim>::value (const Point<dim>   &p, const unsigned int) const{
-    	double return_value = 0;
-    	for(unsigned int i=0; i<this->n_source_centers; ++i){
-        	const Tensor<1,dim> x_minus_xi = p - this->source_centers[i];
-        	return_value += ((2*dim - 4*x_minus_xi.norm_square()/
-                            (this->width * this->width)) /
-                            (this->width * this->width) *
-                            std::exp(-x_minus_xi.norm_square() /
-                            (this->width * this->width)));
-
-        	return_value += std::exp(-x_minus_xi.norm_square() / (this->width * this->width));
-        }
-    return return_value;
-}
 
 
 #endif

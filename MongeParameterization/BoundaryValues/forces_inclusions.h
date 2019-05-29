@@ -90,11 +90,11 @@ public :
 
     void cell_mesh(double r1, double r2, double sep, double x, double y, bool first_run);
     void setup();
-    void assemble(double sigma, double kappa, double kappabar);
+    void assemble(double sigma, double kappa, double kappabar, double theta);
     void solve();
-    double calcEnergy(double sigma, double kappa, double kappabar);
+    double calcEnergy(double sigma, double kappa, double kappabar, double theta);
     void output(int i);
-    double run(double r1, double r2, double sep, double x, double y, double sigma, double kappa, double kappabar, int i);
+    double run(double r1, double r2, double sep, double x, double y, double sigma, double kappa, double kappabar, double theta, int i);
 
 private :
 
@@ -116,3 +116,19 @@ private :
     Vector<double> solution;
     Vector<double> rhs;
 };
+
+class Solution : public Function<2>{
+
+public:
+    Solution () : Function<2>() {}
+
+    virtual double value (const Point<2> &p, const unsigned int component = 0) const;
+
+    virtual Tensor<1,2> gradient(const Point<2> &p, const unsigned int  component = 0) const;
+};
+
+Tensor<1,2> Solution::gradient(const Point<2> &p, const unsigned int) const{
+    Tensor<1, 2> return_value;
+    return_value = tan(3.14/4);
+    return return_value;
+}

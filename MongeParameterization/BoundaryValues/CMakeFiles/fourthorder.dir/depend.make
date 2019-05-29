@@ -7,18 +7,18 @@ CMakeFiles/fourthorder.dir/assemble.cpp.o: fourthorder.h
 CMakeFiles/fourthorder.dir/cell_mesh.cpp.o: cell_mesh.cpp
 CMakeFiles/fourthorder.dir/cell_mesh.cpp.o: fourthorder.h
 
-CMakeFiles/fourthorder.dir/main.cpp.o: fourthorder.h
+CMakeFiles/fourthorder.dir/main.cpp.o: forces_inclusions.h
 CMakeFiles/fourthorder.dir/main.cpp.o: main.cpp
 
-CMakeFiles/fourthorder.dir/output.cpp.o: fourthorder.h
+CMakeFiles/fourthorder.dir/output.cpp.o: forces_inclusions.h
 CMakeFiles/fourthorder.dir/output.cpp.o: output.cpp
 
 CMakeFiles/fourthorder.dir/run.cpp.o: fourthorder.h
 CMakeFiles/fourthorder.dir/run.cpp.o: run.cpp
 
-CMakeFiles/fourthorder.dir/setup.cpp.o: fourthorder.h
+CMakeFiles/fourthorder.dir/setup.cpp.o: forces_inclusions.h
 CMakeFiles/fourthorder.dir/setup.cpp.o: setup.cpp
 
-CMakeFiles/fourthorder.dir/solve.cpp.o: fourthorder.h
+CMakeFiles/fourthorder.dir/solve.cpp.o: forces_inclusions.h
 CMakeFiles/fourthorder.dir/solve.cpp.o: solve.cpp
 

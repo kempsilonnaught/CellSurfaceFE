@@ -20,18 +20,10 @@ int main() {
     double sigma = 1;
     double kappa = 1;
     double kappabar = 1;
+    double theta = 3.14159265/4;
 
     for (double sep = 150; sep <= 1050; sep += 100) {
-        if (i >= max) {
-            max = max * 2;
-            int* temp = new int[max];
-            for (int i=0; i<n; i++) {
-                temp[i] = a[i];
-            }
-            delete [] a;
-            a = temp;
-        }
-        energy[i] = membrane[i].run(radius_1, radius_2, sep, sheet_x, sheet_y, sigma, kappa, kappabar, i);
+        energy[i] = membrane[i].run(radius_1, radius_2, sep, sheet_x, sheet_y, sigma, kappa, kappabar, theta, i);
         separation[i] = sep;
         energysep << separation[i] << " " << energy[i] << std::endl;
         std::cout << energy[i] << std::endl;
