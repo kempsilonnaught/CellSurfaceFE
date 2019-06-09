@@ -53,9 +53,9 @@ CMAKE_BINARY_DIR = /home/kempsilonnaught/Builds/CellSurfaceFE-master/CellSurface
 # Include the progress variables for this target.
 include CMakeFiles/run.dir/progress.make
 
-CMakeFiles/run: fourthorder
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/kempsilonnaught/Builds/CellSurfaceFE-master/CellSurfaceFE/MongeParameterization/BoundaryValues/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Run fourthorder with Debug configuration"
-	./fourthorder
+CMakeFiles/run: forces_inclusions
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/kempsilonnaught/Builds/CellSurfaceFE-master/CellSurfaceFE/MongeParameterization/BoundaryValues/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Run forces_inclusions with Debug configuration"
+	./forces_inclusions
 
 run: CMakeFiles/run
 run: CMakeFiles/run.dir/build.make

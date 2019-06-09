@@ -55,7 +55,7 @@ include CMakeFiles/strip_comments.dir/progress.make
 
 CMakeFiles/strip_comments:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/kempsilonnaught/Builds/CellSurfaceFE-master/CellSurfaceFE/MongeParameterization/BoundaryValues/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "strip comments"
-	/usr/bin/perl -pi -e 's#^[ \t]*//.*\n##g;' main.cpp run.cpp cell_mesh.cpp setup.cpp assemble.cpp solve.cpp output.cpp fourthorder.h
+	/usr/bin/perl -pi -e 's#^[ \t]*//.*\n##g;' main.cpp run.cpp cell_mesh.cpp setup.cpp assemble.cpp solve.cpp output.cpp forces_inclusions.h
 
 strip_comments: CMakeFiles/strip_comments
 strip_comments: CMakeFiles/strip_comments.dir/build.make

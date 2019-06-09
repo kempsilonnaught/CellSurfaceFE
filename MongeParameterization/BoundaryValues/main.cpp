@@ -15,14 +15,14 @@ int main() {
 
     double radius_1 = 10;
     double radius_2 = 10;
-    double sheet_x = 4000;
-    double sheet_y = 2000;
+    double sheet_x = 1000;
+    double sheet_y = 500;
     double sigma = 1;
     double kappa = 1;
     double kappabar = 1;
     double theta = 3.14159265/4;
 
-    for (double sep = 150; sep <= 1050; sep += 100) {
+    for (double sep = 150; sep <= 300; sep += 10) {
         energy[i] = membrane[i].run(radius_1, radius_2, sep, sheet_x, sheet_y, sigma, kappa, kappabar, theta, i);
         separation[i] = sep;
         energysep << separation[i] << " " << energy[i] << std::endl;

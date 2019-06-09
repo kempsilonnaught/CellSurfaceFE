@@ -1,7 +1,7 @@
 MESSAGE(
 "###
 #
-#  Project  fourthorder  set up with  deal.II-8.5.1  found at
+#  Project  forces_inclusions  set up with  deal.II-8.5.1  found at
 #      /usr
 #
 #  CMAKE_BUILD_TYPE:          Debug

@@ -129,7 +129,7 @@ CMAKE_OBJCOPY:FILEPATH=/usr/bin/objcopy
 CMAKE_OBJDUMP:FILEPATH=/usr/bin/objdump
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=fourthorder
+CMAKE_PROJECT_NAME:STATIC=forces_inclusions
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -188,6 +188,12 @@ PERL_EXECUTABLE:FILEPATH=/usr/bin/perl
 
 //The directory containing a CMake configuration file for deal.II.
 deal.II_DIR:PATH=/usr/share/cmake/deal.II
+
+//Value Computed by CMake
+forces_inclusions_BINARY_DIR:STATIC=/home/kempsilonnaught/Builds/CellSurfaceFE-master/CellSurfaceFE/MongeParameterization/BoundaryValues
+
+//Value Computed by CMake
+forces_inclusions_SOURCE_DIR:STATIC=/home/kempsilonnaught/Builds/CellSurfaceFE-master/CellSurfaceFE/MongeParameterization/BoundaryValues
 
 //Value Computed by CMake
 fourthorder_BINARY_DIR:STATIC=/home/kempsilonnaught/Builds/CellSurfaceFE-master/CellSurfaceFE/MongeParameterization/BoundaryValues

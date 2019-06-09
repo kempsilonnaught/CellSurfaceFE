@@ -1,4 +1,4 @@
-#include "fourthorder.h"
+#include "forces_inclusions.h"
 
 /*
 Obviously the header file is included above. This file defines the cell_mesh function which
@@ -34,7 +34,7 @@ are pulled back to be somewhere on the boundary(No specific location, just short
 explicitly deleting them ensures proper deconstruction.
 */
 
-void FourthOrder::cell_mesh(double r1, double r2, double sep, double x, double y, bool first_run){
+void SimulateSurface::cell_mesh(double r1, double r2, double sep, double x, double y, bool first_run){
 	surface.clear();
 
 		Triangulation<2> inclusion_1;
