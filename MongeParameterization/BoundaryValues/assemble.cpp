@@ -22,7 +22,7 @@ This is done for every cell, resulting in a sparse matrix with the integral valu
 and the circular boundaries for the inclusions are at a height of 400. We then write those values to our sparse matrix. Finally, for debugging purposes, we output the number of non-zero matrix elements. 
 */
 
-void SimulateSurface::assemble(double sigma, double kappa, double kappabar, double theta){
+void SimulateSurface::assemble(double sigma, double kappa, double kappabar, double neumann_value){
 	QGauss<2> quadrakill(2);
 	QGauss<1> face_quadrature_formula(2);
 
@@ -56,6 +56,8 @@ void SimulateSurface::assemble(double sigma, double kappa, double kappabar, doub
 					lil_matrix(i, j) += (kappabar*((hess_i[0][0]))*(hess_j[1][1])*(fe_time.JxW(q_index)));
 					lil_matrix(i, j) += (kappabar*(-(hess_i[0][1]))*(hess_j[0][1])*(fe_time.JxW(q_index)));
 					lil_matrix(i, j) += (sigma*(((fe_time.shape_grad(i, q_index))*(fe_time.shape_grad(j, q_index))*(fe_time.JxW(q_index)))/2));
+
+					lil_rhs(i) += 0;
 				}
 			}
 				
@@ -65,11 +67,11 @@ void SimulateSurface::assemble(double sigma, double kappa, double kappabar, doub
         	if (cell->face(face_number)->at_boundary() && (cell->face(face_number)->boundary_id() == 5)){
             	fe_face_values.reinit (cell, face_number);
             	for (unsigned int q_point=0; q_point<n_face_q_points; ++q_point){
-                	const double neumann_value = tan(theta); // (exactish_solution.gradient(fe_face_values.quadrature_point(q_point))*fe_face_values.normal_vector(q_point));
+                	// neumann_value = tan(theta); // (exactish_solution.gradient(fe_face_values.quadrature_point(q_point))*fe_face_values.normal_vector(q_point));
                 	for (unsigned int i=0; i<dofs_per_cell; ++i){
                 		hess_i = fe_face_values.shape_hessian(i, q_point);
                     	lil_rhs(i) += (neumann_value *
-                                    trace(hess_i)*
+                                    fe_face_values.shape_value(i, q_point)*
                                     fe_face_values.JxW(q_point));
                     }
                 }
@@ -79,11 +81,11 @@ void SimulateSurface::assemble(double sigma, double kappa, double kappabar, doub
         	if (cell->face(face_number)->at_boundary() && (cell->face(face_number)->boundary_id() == 6)){
             	fe_face_values.reinit (cell, face_number);
             	for (unsigned int q_point=0; q_point<n_face_q_points; ++q_point){
-                	const double neumann_value = tan(theta); // (exactish_solution.gradient(fe_face_values.quadrature_point(q_point))*fe_face_values.normal_vector(q_point));
+                	// neumann_value = tan(theta); // (exactish_solution.gradient(fe_face_values.quadrature_point(q_point))*fe_face_values.normal_vector(q_point));
                 	for (unsigned int i=0; i<dofs_per_cell; ++i){
                 		hess_i = fe_face_values.shape_hessian(i, q_point);
                     	lil_rhs(i) += (neumann_value *
-                                    trace(hess_i)*
+                                    fe_face_values.shape_value(i, q_point)*
                                     fe_face_values.JxW(q_point));
                     }
                 }
