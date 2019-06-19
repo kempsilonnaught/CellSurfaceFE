@@ -83,6 +83,8 @@ fstream
 -
 iostream
 -
+string
+-
 
 /home/kempsilonnaught/Builds/CellSurfaceFE-master/CellSurfaceFE/MongeParameterization/BoundaryValues/main.cpp
 forces_inclusions.h

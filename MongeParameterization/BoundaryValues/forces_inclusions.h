@@ -40,6 +40,7 @@
 #include <cmath>
 #include <fstream>
 #include <iostream>
+#include <string>
 
 
 #endif
@@ -90,11 +91,11 @@ public :
 
     void cell_mesh(double r1, double r2, double sep, double x, double y, bool first_run);
     void setup();
-    void assemble(double sigma, double kappa, double kappabar, double theta);
+    void assemble(double sigma, double kappa, double kappabar, double neumann_value);
     void solve();
-    double calcEnergy(double sigma, double kappa, double kappabar, double theta);
-    void output(int i);
-    double run(double r1, double r2, double sep, double x, double y, double sigma, double kappa, double kappabar, double theta, int i);
+    double calcEnergy(double sigma, double kappa, double kappabar, double neumann_value);
+    void output(int i, std::string updown);
+    double run(double r1, double r2, double sep, double x, double y, double sigma, double kappa, double kappabar, double neumann_value, int i, std::string updown);
 
 private :
 
