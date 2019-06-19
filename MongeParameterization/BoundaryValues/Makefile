@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kempsilonnaught/Builds/CellSurfaceFE-master/CellSurfaceFE/MongeParameterization/BoundaryValues
+CMAKE_SOURCE_DIR = /home/kemps/Builds/CellSurfaceFE-master/CellSurfaceFE/MongeParameterization/BoundaryValues
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kempsilonnaught/Builds/CellSurfaceFE-master/CellSurfaceFE/MongeParameterization/BoundaryValues
+CMAKE_BINARY_DIR = /home/kemps/Builds/CellSurfaceFE-master/CellSurfaceFE/MongeParameterization/BoundaryValues
 
 #=============================================================================
 # Targets provided globally by CMake.
