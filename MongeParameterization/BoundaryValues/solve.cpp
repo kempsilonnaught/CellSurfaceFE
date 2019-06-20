@@ -32,7 +32,7 @@ void SimulateSurface::solve(){
 
 }
 
-double SimulateSurface::calcEnergy(double sigma, double kappa, double kappabar, double theta){
+double SimulateSurface::calcEnergy(double sigma, double kappa, double kappabar, double neumann_value){
     QGauss<2> quadrakilltwo(2);
     QGauss<1> face_quadrature_formula2(2);
     FEValues<2> fe_val(fe, quadrakilltwo, update_values | update_gradients | update_JxW_values | update_hessians);
@@ -77,10 +77,9 @@ double SimulateSurface::calcEnergy(double sigma, double kappa, double kappabar, 
             	fe_face_val.reinit (cell, face_number);
             	cell -> get_dof_indices(local_dof_indices);
         		for(unsigned int q = 0; q < n_quadbound; ++q){
-                	const double neumann_value = tan(theta); // (exactish_solution.gradient(fe_face_values.quadrature_point(q_point))*fe_face_values.normal_vector(q_point));
                 	for (unsigned int i=0; i<numdofs; ++i)
                 		hess_i = fe_val.shape_hessian(i, q);
-                    	energy_bound += (neumann_value * trace(hess_i) * fe_face_val.JxW(q));
+                    	energy_bound += -((solution(local_dof_indices[i])) * neumann_value * trace(hess_i) * fe_face_val.JxW(q));
                 }
             }
 
@@ -89,10 +88,9 @@ double SimulateSurface::calcEnergy(double sigma, double kappa, double kappabar, 
             	fe_face_val.reinit (cell, face_number);
             	cell -> get_dof_indices(local_dof_indices);
         		for(unsigned int q = 0; q < n_quadbound; ++q){
-                	const double neumann_value = tan(theta); // (exactish_solution.gradient(fe_face_values.quadrature_point(q_point))*fe_face_values.normal_vector(q_point));
                 	for (unsigned int i=0; i<numdofs; ++i)
                 		hess_i = fe_val.shape_hessian(i, q);
-                    	energy_bound += (neumann_value * trace(hess_i) * fe_face_val.JxW(q));
+                    	energy_bound += -((solution(local_dof_indices[i])) * neumann_value * trace(hess_i) * fe_face_val.JxW(q));
                 }
             }
 
