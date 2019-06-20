@@ -77,9 +77,10 @@ double SimulateSurface::calcEnergy(double sigma, double kappa, double kappabar, 
             	fe_face_val.reinit (cell, face_number);
             	cell -> get_dof_indices(local_dof_indices);
         		for(unsigned int q = 0; q < n_quadbound; ++q){
-                	for (unsigned int i=0; i<numdofs; ++i)
+                	for (unsigned int i=0; i<numdofs; ++i){
                 		hess_i = fe_val.shape_hessian(i, q);
-                    	energy_bound += -((solution(local_dof_indices[i])) * neumann_value * trace(hess_i) * fe_face_val.JxW(q));
+                    	energy_bound += -(solution(local_dof_indices[i]) * neumann_value * trace(hess_i) * fe_face_val.JxW(q));
+                    }
                 }
             }
 
