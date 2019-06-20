@@ -5,9 +5,9 @@ SimulateSurface::~SimulateSurface(){}
 
 int main() {
     int max = 50;
-    double *energy = new double[max];
-    double *separation = new double[max];
-    SimulateSurface *membrane = new SimulateSurface[max];
+    double energy = new double[max];
+    double separation = new double[max];
+    SimulateSurface membrane = new SimulateSurface[max];
 
     unsigned int i = 0;
     std::ofstream energysep;
