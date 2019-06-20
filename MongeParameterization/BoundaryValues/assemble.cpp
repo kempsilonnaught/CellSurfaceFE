@@ -51,11 +51,11 @@ void SimulateSurface::assemble(double sigma, double kappa, double kappabar, doub
 				for(unsigned int j = 0; j < dofs_per_cell; ++j){
 					hess_i = fe_time.shape_hessian(i, q_index);
 					hess_j = fe_time.shape_hessian(j, q_index);
-					lil_matrix(i, j) += (kappa*((trace(hess_i))*(trace(hess_j))*(fe_time.JxW(q_index))/2));
-					lil_matrix(i, j) += (kappabar*((hess_j[0][0]))*(hess_i[1][1])*(fe_time.JxW(q_index)));
-					lil_matrix(i, j) += (kappabar*((hess_i[0][0]))*(hess_j[1][1])*(fe_time.JxW(q_index)));
-					lil_matrix(i, j) += (kappabar*(-(hess_i[0][1]))*(hess_j[0][1])*(fe_time.JxW(q_index)));
-					lil_matrix(i, j) += (sigma*(((fe_time.shape_grad(i, q_index))*(fe_time.shape_grad(j, q_index))*(fe_time.JxW(q_index)))/2));
+					lil_matrix(i, j) += (kappa*((trace(hess_i))*(trace(hess_j))*(fe_time.JxW(q_index)))/2);
+					lil_matrix(i, j) += (kappabar*((hess_j[0][0]))*(hess_i[1][1])*(fe_time.JxW(q_index)))/2;
+					lil_matrix(i, j) += (kappabar*((hess_i[0][0]))*(hess_j[1][1])*(fe_time.JxW(q_index)))/2;
+					lil_matrix(i, j) += -(kappabar*((hess_i[0][1]))*(hess_j[0][1])*(fe_time.JxW(q_index)));
+					lil_matrix(i, j) += (sigma*(((fe_time.shape_grad(i, q_index))*(fe_time.shape_grad(j, q_index))*(fe_time.JxW(q_index)))))/2;
 
 					lil_rhs(i) += 0;
 				}
@@ -67,7 +67,6 @@ void SimulateSurface::assemble(double sigma, double kappa, double kappabar, doub
         	if (cell->face(face_number)->at_boundary() && (cell->face(face_number)->boundary_id() == 5)){
             	fe_face_values.reinit (cell, face_number);
             	for (unsigned int q_point=0; q_point<n_face_q_points; ++q_point){
-                	// neumann_value = tan(theta); // (exactish_solution.gradient(fe_face_values.quadrature_point(q_point))*fe_face_values.normal_vector(q_point));
                 	for (unsigned int i=0; i<dofs_per_cell; ++i){
                 		hess_i = fe_face_values.shape_hessian(i, q_point);
                     	lil_rhs(i) += (neumann_value *
@@ -81,7 +80,6 @@ void SimulateSurface::assemble(double sigma, double kappa, double kappabar, doub
         	if (cell->face(face_number)->at_boundary() && (cell->face(face_number)->boundary_id() == 6)){
             	fe_face_values.reinit (cell, face_number);
             	for (unsigned int q_point=0; q_point<n_face_q_points; ++q_point){
-                	// neumann_value = tan(theta); // (exactish_solution.gradient(fe_face_values.quadrature_point(q_point))*fe_face_values.normal_vector(q_point));
                 	for (unsigned int i=0; i<dofs_per_cell; ++i){
                 		hess_i = fe_face_values.shape_hessian(i, q_point);
                     	lil_rhs(i) += (neumann_value *
