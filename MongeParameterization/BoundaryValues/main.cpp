@@ -4,7 +4,7 @@ SimulateSurface::SimulateSurface() : fe(1){}
 SimulateSurface::~SimulateSurface(){}
 
 int main() {
-    int max = 50;
+    int max = 500;
     double* energy = new double[max];
     double* separation = new double[max];
     SimulateSurface* membrane = new SimulateSurface[max];
@@ -15,13 +15,13 @@ int main() {
 
     double radius_1 = 10;
     double radius_2 = 10;
-    double sheet_x = 1000;
-    double sheet_y = 500;
+    double sheet_x = 2000;
+    double sheet_y = 1000;
     double sigma = 1;
     double kappa = 1;
     double kappabar = 1;
 
-    for (double sep = 50; sep <= 750; sep += 10) {
+    for (double sep = 50; sep <= 1750; sep += 10) {
     	double neumann_value = tan(3.14159265/4);
         energy[i] = membrane[i].run(radius_1, radius_2, sep, sheet_x, sheet_y, sigma, kappa, kappabar, neumann_value, i);
         separation[i] = sep;
