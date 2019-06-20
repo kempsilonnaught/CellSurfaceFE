@@ -70,7 +70,7 @@ void SimulateSurface::assemble(double sigma, double kappa, double kappabar, doub
                 	for (unsigned int i=0; i<dofs_per_cell; ++i){
                 		hess_i = fe_face_values.shape_hessian(i, q_point);
                     	lil_rhs(i) += (neumann_value *
-                                    fe_face_values.shape_value(i, q_point)*
+                                    trace(hess_i)*
                                     fe_face_values.JxW(q_point));
                     }
                 }
@@ -83,7 +83,7 @@ void SimulateSurface::assemble(double sigma, double kappa, double kappabar, doub
                 	for (unsigned int i=0; i<dofs_per_cell; ++i){
                 		hess_i = fe_face_values.shape_hessian(i, q_point);
                     	lil_rhs(i) += (neumann_value *
-                                    fe_face_values.shape_value(i, q_point)*
+                                    trace(hess_i)*
                                     fe_face_values.JxW(q_point));
                     }
                 }
