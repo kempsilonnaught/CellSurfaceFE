@@ -32,7 +32,7 @@ Thus, this function has run the necessary functions to get energy.
 double SimulateSurface::run(double r1, double r2, double sep, double x, double y, double sigma, double kappa, double kappabar, double neumann_value, int i){
 
 	cell_mesh(r1, r2, sep, x, y, true);
-	surface.refine_global(4);
+	surface.refine_global(3);
 
 	for(unsigned int step=0; step<2; ++step){
 		Triangulation<2>::active_cell_iterator cell = surface.begin_active();
@@ -57,8 +57,8 @@ double SimulateSurface::run(double r1, double r2, double sep, double x, double y
 		}
 		surface.execute_coarsening_and_refinement ();
 	}
-	GridTools::remove_anisotropy(surface, 1.6180339887, 4);
-	GridTools::remove_hanging_nodes(surface, false, 15);
+	GridTools::remove_anisotropy(surface, 1.6180339887, 2);
+	GridTools::remove_hanging_nodes(surface, false, 14);
 
 	setup();
 	assemble(sigma, kappa, kappabar, neumann_value);

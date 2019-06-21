@@ -21,7 +21,7 @@ calculating the scalar value for the energy of every cell, and then adding them 
 */
 
 void SimulateSurface::solve(){
-    SolverControl solver_control(1000000, 1e-11);
+    SolverControl solver_control(50000000, 1e-12);
     SolverCG<> solver(solver_control);
 
     solver.solve(big_matrix, solution, rhs, PreconditionIdentity());
