@@ -1,4 +1,4 @@
-FILE(REMOVE_RECURSE
+file(REMOVE_RECURSE
   "CMakeFiles/forces_inclusions.dir/main.cpp.o"
   "CMakeFiles/forces_inclusions.dir/run.cpp.o"
   "CMakeFiles/forces_inclusions.dir/cell_mesh.cpp.o"
@@ -11,6 +11,6 @@ FILE(REMOVE_RECURSE
 )
 
 # Per-language clean rules from dependency scanning.
-FOREACH(lang CXX)
-  INCLUDE(CMakeFiles/forces_inclusions.dir/cmake_clean_${lang}.cmake OPTIONAL)
-ENDFOREACH(lang)
+foreach(lang CXX)
+  include(CMakeFiles/forces_inclusions.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
