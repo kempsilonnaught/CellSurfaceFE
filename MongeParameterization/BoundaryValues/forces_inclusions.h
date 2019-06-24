@@ -91,11 +91,11 @@ public :
 
     void cell_mesh(double r1, double r2, double sep, double x, double y, bool first_run);
     void setup();
-    void assemble(double sigma, double kappa, double kappabar, double neumann_value);
+    void assemble(double sigma, double kappa, double kappabar, double neumann_value_1, double neumann_value_2);
     void solve();
-    double calcEnergy(double sigma, double kappa, double kappabar, double neumann_value);
+    double calcEnergy(double sigma, double kappa, double kappabar, double neumann_value_1, double neumann_value_2);
     void output(int i);
-    double run(double r1, double r2, double sep, double x, double y, double sigma, double kappa, double kappabar, double neumann_value, int i);
+    double run(double r1, double r2, double sep, double x, double y, double sigma, double kappa, double kappabar, double neumann_value_1, double neumann_value_2, int i);
 
 private :
 

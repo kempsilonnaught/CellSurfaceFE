@@ -32,7 +32,7 @@ void SimulateSurface::solve(){
 
 }
 
-double SimulateSurface::calcEnergy(double sigma, double kappa, double kappabar, double neumann_value){
+double SimulateSurface::calcEnergy(double sigma, double kappa, double kappabar, double neumann_value_1, double neumann_value_2){
     QGauss<2> quadrakilltwo(2);
     QGauss<1> face_quadrature_formula2(2);
     FEValues<2> fe_val(fe, quadrakilltwo, update_values | update_gradients | update_JxW_values | update_hessians);
@@ -79,8 +79,8 @@ double SimulateSurface::calcEnergy(double sigma, double kappa, double kappabar, 
         		for(unsigned int q = 0; q < n_quadbound; ++q){
                 	for (unsigned int i=0; i<numdofs; ++i){
                 		hess_i = fe_val.shape_hessian(i, q);
-                    	energy_bound += -(solution(local_dof_indices[i]) * kappa * neumann_value * trace(hess_i) * fe_face_val.shape_value(i, q) * fe_face_val.JxW(q));
-                        energy_bound += -(solution(local_dof_indices[i]) * sigma * neumann_value * fe_face_val.shape_value(i, q) * fe_face_val.JxW(q));
+                    	energy_bound += -(solution(local_dof_indices[i]) * kappa * neumann_value_1 * trace(hess_i) * fe_face_val.shape_value(i, q) * fe_face_val.JxW(q));
+                        energy_bound += -(solution(local_dof_indices[i]) * sigma * neumann_value_1 * fe_face_val.shape_value(i, q) * fe_face_val.JxW(q));
                     }
                 }
             }
@@ -92,8 +92,8 @@ double SimulateSurface::calcEnergy(double sigma, double kappa, double kappabar, 
         		for(unsigned int q = 0; q < n_quadbound; ++q){
                 	for (unsigned int i=0; i<numdofs; ++i){
                 		hess_i = fe_val.shape_hessian(i, q);
-                    	energy_bound += -(solution(local_dof_indices[i]) * kappa * -neumann_value * trace(hess_i) * fe_face_val.shape_value(i, q) * fe_face_val.JxW(q));
-                        energy_bound += -(solution(local_dof_indices[i]) * sigma * -neumann_value * fe_face_val.shape_value(i, q) * fe_face_val.JxW(q));
+                    	energy_bound += -(solution(local_dof_indices[i]) * kappa * neumann_value_2 * trace(hess_i) * fe_face_val.shape_value(i, q) * fe_face_val.JxW(q));
+                        energy_bound += -(solution(local_dof_indices[i]) * sigma * neumann_value_2 * fe_face_val.shape_value(i, q) * fe_face_val.JxW(q));
                     }
                 }
             }

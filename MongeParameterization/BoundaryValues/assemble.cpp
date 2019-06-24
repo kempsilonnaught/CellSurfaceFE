@@ -22,7 +22,7 @@ This is done for every cell, resulting in a sparse matrix with the integral valu
 and the circular boundaries for the inclusions are at a height of 400. We then write those values to our sparse matrix. Finally, for debugging purposes, we output the number of non-zero matrix elements. 
 */
 
-void SimulateSurface::assemble(double sigma, double kappa, double kappabar, double neumann_value){
+void SimulateSurface::assemble(double sigma, double kappa, double kappabar, double neumann_value_1, double neumann_value_2){
 	QGauss<2> quadrakill(2);
 	QGauss<1> face_quadrature_formula(2);
 
@@ -69,8 +69,8 @@ void SimulateSurface::assemble(double sigma, double kappa, double kappabar, doub
             	for (unsigned int q_point=0; q_point<n_face_q_points; ++q_point){
                 	for (unsigned int i=0; i<dofs_per_cell; ++i){
                 		hess_i = fe_face_values.shape_hessian(i, q_point);
-                    	lil_rhs(i) += (kappa * neumann_value * trace(hess_i) * fe_face_values.shape_value(i, q_point) * fe_face_values.JxW(q_point));
-                    	lil_rhs(i) += (sigma * neumann_value * fe_face_values.shape_value(i, q_point) * fe_face_values.JxW(q_point));
+                    	lil_rhs(i) += (kappa * neumann_value_1 * trace(hess_i) * fe_face_values.shape_value(i, q_point) * fe_face_values.JxW(q_point));
+                    	lil_rhs(i) += (sigma * neumann_value_1 * fe_face_values.shape_value(i, q_point) * fe_face_values.JxW(q_point));
                     }
                 }
             }
@@ -81,8 +81,8 @@ void SimulateSurface::assemble(double sigma, double kappa, double kappabar, doub
             	for (unsigned int q_point=0; q_point<n_face_q_points; ++q_point){
                 	for (unsigned int i=0; i<dofs_per_cell; ++i){
                 		hess_i = fe_face_values.shape_hessian(i, q_point);
-                    	lil_rhs(i) += (kappa * -neumann_value * trace(hess_i) * fe_face_values.shape_value(i, q_point) * fe_face_values.JxW(q_point));
-                    	lil_rhs(i) += (sigma * -neumann_value * fe_face_values.shape_value(i, q_point) * fe_face_values.JxW(q_point));
+                    	lil_rhs(i) += (kappa * neumann_value_2 * trace(hess_i) * fe_face_values.shape_value(i, q_point) * fe_face_values.JxW(q_point));
+                    	lil_rhs(i) += (sigma * neumann_value_2 * fe_face_values.shape_value(i, q_point) * fe_face_values.JxW(q_point));
                     }
                 }
             }

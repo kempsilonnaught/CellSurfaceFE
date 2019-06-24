@@ -29,7 +29,7 @@ this complicated.
 Thus, this function has run the necessary functions to get energy.
 */
 
-double SimulateSurface::run(double r1, double r2, double sep, double x, double y, double sigma, double kappa, double kappabar, double neumann_value, int i){
+double SimulateSurface::run(double r1, double r2, double sep, double x, double y, double sigma, double kappa, double kappabar, double neumann_value_1, double neumann_value_2, int i){
 
 	cell_mesh(r1, r2, sep, x, y, true);
 	surface.refine_global(3);
@@ -61,7 +61,7 @@ double SimulateSurface::run(double r1, double r2, double sep, double x, double y
 	//GridTools::remove_hanging_nodes(surface, false, 14);
 
 	setup();
-	assemble(sigma, kappa, kappabar, neumann_value);
+	assemble(sigma, kappa, kappabar, neumann_value_1, neumann_value_2);
 	solve();
 
 
@@ -78,7 +78,7 @@ double SimulateSurface::run(double r1, double r2, double sep, double x, double y
 
 	std::cout << sep << std::endl;
 	output(i);
-	double energy = calcEnergy(sigma, kappa, kappabar, neumann_value);
+	double energy = calcEnergy(sigma, kappa, kappabar, neumann_value_1, neumann_value_2);
 
 	cell_mesh(r1, r2, sep, x, y, false);
 	doffer.clear();
