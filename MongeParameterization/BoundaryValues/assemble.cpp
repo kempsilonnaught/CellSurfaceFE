@@ -63,7 +63,7 @@ void SimulateSurface::assemble(double sigma, double kappa, double kappabar, doub
 				
 		}
 
-		for (unsigned int face_number = 0; face_number<GeometryInfo<2>::faces_per_cell; ++face_number){
+		for (unsigned int face_number = 0; face_number<GeometryInfo<2>::faces_per_cell; ++face_number)
         	if (cell->face(face_number)->at_boundary() && (cell->face(face_number)->boundary_id() == 5)){
             	fe_face_values.reinit (cell, face_number);
             	for (unsigned int q_point=0; q_point<n_face_q_points; ++q_point){
@@ -74,20 +74,18 @@ void SimulateSurface::assemble(double sigma, double kappa, double kappabar, doub
                     }
                 }
             }
-        }
-
-        for (unsigned int face_number = 0; face_number<GeometryInfo<2>::faces_per_cell; ++face_number){
-        	if (cell->face(face_number)->at_boundary() && (cell->face(face_number)->boundary_id() == 6)){
-            	fe_face_values.reinit (cell, face_number);
-            	for (unsigned int q_point=0; q_point<n_face_q_points; ++q_point){
-                	for (unsigned int i=0; i<dofs_per_cell; ++i){
-                		hess_i = fe_face_values.shape_hessian(i, q_point);
-                    	lil_rhs(i) += (kappa * neumann_value_2 * trace(hess_i) * fe_face_values.shape_value(i, q_point) * fe_face_values.JxW(q_point));
-                    	lil_rhs(i) += (sigma * neumann_value_2 * fe_face_values.shape_value(i, q_point) * fe_face_values.JxW(q_point));
-                    }
-                }
-            }
-        }
+ 
+        //for (unsigned int face_number = 0; face_number<GeometryInfo<2>::faces_per_cell; ++face_number)
+        //	if (cell->face(face_number)->at_boundary() && (cell->face(face_number)->boundary_id() == 6)){
+        //    	fe_face_values.reinit (cell, face_number);
+        //    	for (unsigned int q_point=0; q_point<n_face_q_points; ++q_point){
+        //        	for (unsigned int i=0; i<dofs_per_cell; ++i){
+        //        		hess_i = fe_face_values.shape_hessian(i, q_point);
+        //            	lil_rhs(i) += (kappa * neumann_value_2 * trace(hess_i) * fe_face_values.shape_value(i, q_point) * fe_face_values.JxW(q_point));
+        //            	lil_rhs(i) += (sigma * neumann_value_2 * fe_face_values.shape_value(i, q_point) * fe_face_values.JxW(q_point));
+        //            }
+        //        }
+        //    }
 
 		cell -> get_dof_indices(local_dof_indices);
 		for(unsigned int i = 0; i < dofs_per_cell; ++i)
@@ -100,6 +98,9 @@ void SimulateSurface::assemble(double sigma, double kappa, double kappabar, doub
 
 	std::map<types::global_dof_index, double> boundary_values;
 	VectorTools::interpolate_boundary_values(doffer, 0, ZeroFunction<2>(), boundary_values);
+	//VectorTools::interpolate_boundary_values(doffer, 5, ConstantFunction<2>(100), boundary_values);
+	VectorTools::interpolate_boundary_values(doffer, 6, ConstantFunction<2>(100), boundary_values);
+
 	MatrixTools::apply_boundary_values(boundary_values, big_matrix, solution, rhs);
 
 	std::cout << "Number of non-zero Sparse Matrix entries: " << big_matrix.n_nonzero_elements() << std::endl;
