@@ -72,31 +72,31 @@ double SimulateSurface::calcEnergy(double sigma, double kappa, double kappabar, 
 		}
 
 
-        for (unsigned int face_number = 0; face_number<GeometryInfo<2>::faces_per_cell; ++face_number)
-        	if (cell->face(face_number)->at_boundary() && (cell->face(face_number)->boundary_id() == 5)){
-            	fe_face_val.reinit (cell, face_number);
-            	cell -> get_dof_indices(local_dof_indices);
-        		for(unsigned int q = 0; q < n_quadbound; ++q){
-                	for (unsigned int i=0; i<numdofs; ++i){
-                		hess_i = fe_val.shape_hessian(i, q);
-                    	energy_bound += -(solution(local_dof_indices[i]) * kappa * neumann_value * trace(hess_i) * fe_face_val.shape_value(i, q) * fe_face_val.JxW(q));
-                        energy_bound += -(solution(local_dof_indices[i]) * sigma * neumann_value * fe_face_val.shape_value(i, q) * fe_face_val.JxW(q));
-                    }
-                }
-            }
-
-        for (unsigned int face_number = 0; face_number<GeometryInfo<2>::faces_per_cell; ++face_number)
-        	if (cell->face(face_number)->at_boundary() && (cell->face(face_number)->boundary_id() == 6)){
-            	fe_face_val.reinit (cell, face_number);
-            	cell -> get_dof_indices(local_dof_indices);
-        		for(unsigned int q = 0; q < n_quadbound; ++q){
-                	for (unsigned int i=0; i<numdofs; ++i){
-                		hess_i = fe_val.shape_hessian(i, q);
-                    	energy_bound += -(solution(local_dof_indices[i]) * kappa * neumann_value * trace(hess_i) * fe_face_val.shape_value(i, q) * fe_face_val.JxW(q));
-                        energy_bound += -(solution(local_dof_indices[i]) * sigma * neumann_value * fe_face_val.shape_value(i, q) * fe_face_val.JxW(q));
-                    }
-                }
-            }
+        //for (unsigned int face_number = 0; face_number<GeometryInfo<2>::faces_per_cell; ++face_number)
+        //	if (cell->face(face_number)->at_boundary() && (cell->face(face_number)->boundary_id() == 5)){
+        //    	fe_face_val.reinit (cell, face_number);
+        //    	cell -> get_dof_indices(local_dof_indices);
+        //		for(unsigned int q = 0; q < n_quadbound; ++q){
+        //        	for (unsigned int i=0; i<numdofs; ++i){
+        //        		hess_i = fe_val.shape_hessian(i, q);
+        //            	energy_bound += -(solution(local_dof_indices[i]) * kappa * neumann_value * trace(hess_i) * fe_face_val.shape_value(i, q) * fe_face_val.JxW(q));
+        //                energy_bound += -(solution(local_dof_indices[i]) * sigma * neumann_value * fe_face_val.shape_value(i, q) * fe_face_val.JxW(q));
+        //            }
+        //        }
+        //    }
+//
+        //for (unsigned int face_number = 0; face_number<GeometryInfo<2>::faces_per_cell; ++face_number)
+        //	if (cell->face(face_number)->at_boundary() && (cell->face(face_number)->boundary_id() == 6)){
+        //    	fe_face_val.reinit (cell, face_number);
+        //    	cell -> get_dof_indices(local_dof_indices);
+        //		for(unsigned int q = 0; q < n_quadbound; ++q){
+        //        	for (unsigned int i=0; i<numdofs; ++i){
+        //        		hess_i = fe_val.shape_hessian(i, q);
+        //            	energy_bound += -(solution(local_dof_indices[i]) * kappa * neumann_value * trace(hess_i) * fe_face_val.shape_value(i, q) * fe_face_val.JxW(q));
+        //                energy_bound += -(solution(local_dof_indices[i]) * sigma * neumann_value * fe_face_val.shape_value(i, q) * fe_face_val.JxW(q));
+        //            }
+        //        }
+        //    }
 
         energy += energy_bound + energy_surf;
     }
