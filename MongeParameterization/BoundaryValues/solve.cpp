@@ -98,12 +98,10 @@ double SimulateSurface::calcEnergy(double sigma, double kappa, double kappabar, 
                 }
             }
 
+        std::cout << "Surface Energy" << energy_surf << std::endl;
+        std::cout << "Boundary Energy" << energy_bound << std::endl;        
         energy += energy_bound + energy_surf;
     }
 
-
-    std::cout << "Surface Energy" << energy_surf << std::endl;
-    std::cout << "Boundary Energy" << energy_bound << std::endl;
-    
     return energy;
 }
