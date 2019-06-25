@@ -141,7 +141,7 @@ void SimulateSurface::cell_mesh(double r1, double r2, double sep, double x, doub
 					for(unsigned int l_2 = 0; l_2 < GeometryInfo<2>::lines_per_cell; ++l_2){
 						Point<2> edge_center_2 = cell_2 -> line(l_2) -> center(true, true);
 							if(cell_2 -> line(l_2) -> at_boundary()){
-								if(sqrt((std::pow((edge_center_2[0]-(x/2 - sep)), 2))+std::pow(edge_center_2[1], 2)) <= (r2))
+								if(sqrt((std::pow((edge_center_2[0]-(x/2 - sep/2)), 2))+std::pow(edge_center_2[1], 2)) <= (r2))
 									cell_2 -> line(l_2) -> set_all_boundary_ids(6);
 							}
 					}
