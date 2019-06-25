@@ -57,8 +57,10 @@ double SimulateSurface::run(double r1, double r2, double sep, double x, double y
 		}
 		surface.execute_coarsening_and_refinement ();
 	}
-	//GridTools::remove_anisotropy(surface, 1.6180339887, 2);
-	//GridTools::remove_hanging_nodes(surface, false, 14);
+
+	std::ofstream out("twoDgrids/testgrid" + std::to_string(i) + ".eps");
+	GridOut cell_mesho;
+	cell_mesho.write_eps(surface, out);
 
 	setup();
 	assemble(sigma, kappa, kappabar, neumann_value_1, neumann_value_2);
@@ -72,9 +74,9 @@ double SimulateSurface::run(double r1, double r2, double sep, double x, double y
 	<< surface.n_cells()
 	<< std::endl;
 
-	std::ofstream out("twoDgrids/testgrid" + std::to_string(i) + ".eps");
-	GridOut cell_mesho;
-	cell_mesho.write_eps(surface, out);
+	//std::ofstream out("twoDgrids/testgrid" + std::to_string(i) + ".eps");
+	//GridOut cell_mesho;
+	//cell_mesho.write_eps(surface, out);
 
 	std::cout << sep << std::endl;
 	output(i);
