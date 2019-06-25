@@ -41,7 +41,7 @@ double SimulateSurface::run(double r1, double r2, double sep, double x, double y
 			for(unsigned int l_1 = 0; l_1 < GeometryInfo<2>::lines_per_cell; ++l_1){
 				Point<2> edge_center_1 = cell -> line(l_1) -> center(true, true);
 				if(cell -> line(l_1) -> at_boundary()){
-					if(sqrt((std::pow((edge_center_1[0]-(x/2 + sep)), 2))+std::pow(edge_center_1[1], 2)) <= (r1))
+					if(sqrt((std::pow((edge_center_1[0]-sep/2), 2))+std::pow(edge_center_1[1], 2)) <= (r1))
 						cell->set_refine_flag ();
 						break;
 				}
@@ -49,7 +49,7 @@ double SimulateSurface::run(double r1, double r2, double sep, double x, double y
 			for(unsigned int l_2 = 0; l_2 < GeometryInfo<2>::lines_per_cell; ++l_2){
 				Point<2> edge_center_2 = cell -> line(l_2) -> center(true, true);
 					if(cell -> line(l_2) -> at_boundary()){
-						if(sqrt((std::pow((edge_center_2[0]-(x/2 - sep)), 2))+std::pow(edge_center_2[1], 2)) <= (r2))
+						if(sqrt((std::pow((edge_center_2[0]+sep/2), 2))+std::pow(edge_center_2[1], 2)) <= (r2))
 							cell->set_refine_flag ();
 							break;
 					}
@@ -57,10 +57,8 @@ double SimulateSurface::run(double r1, double r2, double sep, double x, double y
 		}
 		surface.execute_coarsening_and_refinement ();
 	}
-
-	std::ofstream out("twoDgrids/testgrid" + std::to_string(i) + ".eps");
-	GridOut cell_mesho;
-	cell_mesho.write_eps(surface, out);
+	//GridTools::remove_anisotropy(surface, 1.6180339887, 2);
+	//GridTools::remove_hanging_nodes(surface, false, 14);
 
 	setup();
 	assemble(sigma, kappa, kappabar, neumann_value_1, neumann_value_2);
@@ -74,9 +72,9 @@ double SimulateSurface::run(double r1, double r2, double sep, double x, double y
 	<< surface.n_cells()
 	<< std::endl;
 
-	//std::ofstream out("twoDgrids/testgrid" + std::to_string(i) + ".eps");
-	//GridOut cell_mesho;
-	//cell_mesho.write_eps(surface, out);
+	std::ofstream out("twoDgrids/testgrid" + std::to_string(i) + ".eps");
+	GridOut cell_mesho;
+	cell_mesho.write_eps(surface, out);
 
 	std::cout << sep << std::endl;
 	output(i);
