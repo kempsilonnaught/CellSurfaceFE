@@ -71,7 +71,6 @@ void SimulateSurface::assemble(double sigma, double kappa, double kappabar, doub
                 		hess_i = fe_face_values.shape_hessian(i, q_point);
                     	lil_rhs(i) += (kappa * neumann_value_1 * trace(hess_i) * fe_face_values.shape_value(i, q_point) * fe_face_values.JxW(q_point));
                     	lil_rhs(i) += (sigma * neumann_value_1 * fe_face_values.shape_value(i, q_point) * fe_face_values.JxW(q_point));
-                    	std::cout << "Boundary 5: " << trace(hess_i) << std::endl;
                     }
                 }
             }
@@ -85,8 +84,6 @@ void SimulateSurface::assemble(double sigma, double kappa, double kappabar, doub
                 		hess_i = fe_face_values.shape_hessian(i, q_point);
                     	lil_rhs(i) += (kappa * neumann_value_2 * trace(hess_i) * fe_face_values.shape_value(i, q_point) * fe_face_values.JxW(q_point));
                     	lil_rhs(i) += (sigma * neumann_value_2 * fe_face_values.shape_value(i, q_point) * fe_face_values.JxW(q_point));
-                       	std::cout << "Boundary 6: " << trace(hess_i) << std::endl;
-
                     }
                 }
             }
