@@ -23,8 +23,8 @@ and the circular boundaries for the inclusions are at a height of 400. We then w
 */
 
 void SimulateSurface::assemble(double sigma, double kappa, double kappabar, double neumann_value_1, double neumann_value_2){
-	QGauss<2> quadrakill(2);
-	QGauss<1> face_quadrature_formula(2);
+	QGauss<2> quadrakill(4);
+	QGauss<1> face_quadrature_formula(4);
 
 	FEValues<2> fe_time(fe, quadrakill, update_values | update_gradients | update_JxW_values | update_hessians);
     FEFaceValues<2> fe_face_values(fe, face_quadrature_formula, update_values | update_quadrature_points | update_normal_vectors | update_hessians | update_JxW_values);
