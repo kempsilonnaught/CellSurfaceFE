@@ -72,7 +72,7 @@ double SimulateSurface::calcEnergy(double sigma, double kappa, double kappabar, 
 		}
 
 
-        for (unsigned int face_number = 0; face_number<GeometryInfo<2>::faces_per_cell; ++face_number)
+        for (unsigned int face_number = 0; face_number<GeometryInfo<2>::faces_per_cell; ++face_number){
         	if (cell->face(face_number)->at_boundary() && (cell->face(face_number)->boundary_id() == 5)){
             	fe_face_val.reinit (cell, face_number);
             	cell -> get_dof_indices(local_dof_indices);
@@ -84,8 +84,9 @@ double SimulateSurface::calcEnergy(double sigma, double kappa, double kappabar, 
                     }
                 }
             }
+        }
 
-        for (unsigned int face_number = 0; face_number<GeometryInfo<2>::faces_per_cell; ++face_number)
+        for (unsigned int face_number = 0; face_number<GeometryInfo<2>::faces_per_cell; ++face_number){
         	if (cell->face(face_number)->at_boundary() && (cell->face(face_number)->boundary_id() == 6)){
             	fe_face_val.reinit (cell, face_number);
             	cell -> get_dof_indices(local_dof_indices);
@@ -97,6 +98,7 @@ double SimulateSurface::calcEnergy(double sigma, double kappa, double kappabar, 
                     }
                 }
             }
+        }
 
         std::cout << "Surface Energy" << energy_surf << std::endl;
         std::cout << "Boundary Energy" << energy_bound << std::endl;        
