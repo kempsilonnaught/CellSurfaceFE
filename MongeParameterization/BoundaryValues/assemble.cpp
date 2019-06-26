@@ -29,8 +29,6 @@ void SimulateSurface::assemble(double sigma, double kappa, double kappabar, doub
 	FEValues<2> fe_time(fe, quadrakill, update_values | update_gradients | update_JxW_values | update_hessians);
     FEFaceValues<2> fe_face_values(fe, face_quadrature_formula, update_values | update_quadrature_points | update_normal_vectors | update_hessians | update_JxW_values);
 
-    const Solution<2> exactish_solution;
-
 	const unsigned int dofs_per_cell = fe.dofs_per_cell;
 	const unsigned int n_q_points = quadrakill.size();
 	const unsigned int n_face_q_points = face_quadrature_formula.size();
