@@ -118,28 +118,3 @@ private :
     Vector<double> rhs;
 };
 
-
-template<int dim>
-class Solution : public Function<dim>{
-
-    public:
-        Solution () : Function<dim>() {}
-    
-        virtual double value (const Point<dim> &p, const unsigned int component = 0) const;
-    
-        virtual Tensor<1, dim> gradient(const Point<dim> &p, const unsigned int  component = 0) const;
-};
-
-template<int dim>
-double Solution<dim>::value(const Point<dim> &p, const unsigned int) const{
-    double return_value;
-
-    return return_value;
-}
-
-template<int dim>
-Tensor<1, dim> Solution<dim>::gradient(const Point<dim> &p, const unsigned int) const{
-    Tensor<1, dim> return_value;
-
-    return return_value;
-}

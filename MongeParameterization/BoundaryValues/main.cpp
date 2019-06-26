@@ -32,20 +32,6 @@ int main() {
         ++i;
     }
 
-    //i = 0;
-    //std::ofstream energysep2;
-    //energysep2.open("energysep.txt");
-//
-    //for (double sep = 50; sep <= 750; sep += 10) {
-    //	double neumann_value = -tan(3.14159265/4);
-    //    energy[i] = membrane[i].run(radius_1, radius_2, sep, sheet_x, sheet_y, sigma, kappa, kappabar, neumann_value, i, "negative");
-    //    separation[i] = sep;
-    //    energysep2 << separation[i] << " " << energy[i] << std::endl;
-    //    std::cout << energy[i] << std::endl;
-//
-    //    ++i;
-    //}
-
     energysep.close();
 
     return 0;

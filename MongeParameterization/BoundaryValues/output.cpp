@@ -21,7 +21,4 @@ void SimulateSurface::output(int i){
     
     std::ofstream out("gpls/positive/surface" + std::to_string(i) + "positive.gpl");
 	data_out.write_gnuplot(out);
-
-    //std::ofstream outt("matrix" + std::to_string(i) + ".txt");
-    //big_matrix.print_formatted(outt, 10, false);
 }
