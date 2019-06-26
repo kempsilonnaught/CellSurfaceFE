@@ -1,6 +1,6 @@
 #include "forces_inclusions.h"
 
-SimulateSurface::SimulateSurface() : fe(1){}
+SimulateSurface::SimulateSurface() : fe(3){}
 SimulateSurface::~SimulateSurface(){}
 
 int main() {
@@ -13,15 +13,15 @@ int main() {
     std::ofstream energysep;
     energysep.open("energysep.txt");
 
-    double radius_1 = 10;
-    double radius_2 = 10;
+    double radius_1 = 5;
+    double radius_2 = 5;
     double sheet_x = 2000;
     double sheet_y = 1000;
     double sigma = 1;
     double kappa = 1;
     double kappabar = 1;
 
-    for (double sep = 50; sep <= 1750; sep += 10) {
+    for (double sep = 30; sep <= 1500; sep += 5) {
     	const double neumann_value_1 = tan(3.14159265/4);
         const double neumann_value_2 = tan(3.14159265/4);
         energy[i] = membrane[i].run(radius_1, radius_2, sep, sheet_x, sheet_y, sigma, kappa, kappabar, neumann_value_1, neumann_value_2, i);

@@ -57,7 +57,7 @@ double SimulateSurface::run(double r1, double r2, double sep, double x, double y
 		surface.execute_coarsening_and_refinement ();
 	}
 
-	surface.refine_global(4);
+	surface.refine_global(3);
 
 	setup();
 	assemble(sigma, kappa, kappabar, neumann_value_1, neumann_value_2);
