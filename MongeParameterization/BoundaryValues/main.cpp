@@ -1,6 +1,6 @@
 #include "forces_inclusions.h"
 
-SimulateSurface::SimulateSurface() : fe(3){}
+SimulateSurface::SimulateSurface() : fe(2){}
 SimulateSurface::~SimulateSurface(){}
 
 int main() {
