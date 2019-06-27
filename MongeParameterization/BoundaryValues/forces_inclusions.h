@@ -94,8 +94,8 @@ public :
     void assemble(double sigma, double kappa, double kappabar, double neumann_value_1, double neumann_value_2);
     void solve();
     double calcEnergy(double sigma, double kappa, double kappabar, double neumann_value_1, double neumann_value_2);
-    void output(int i);
-    double run(double r1, double r2, double sep, double x, double y, double sigma, double kappa, double kappabar, double neumann_value_1, double neumann_value_2, int i);
+    void output(int i, int j);
+    double run(double r1, double r2, double sep, double x, double y, double sigma, double kappa, double kappabar, double neumann_value_1, double neumann_value_2, int i, int j);
 
 private :
 

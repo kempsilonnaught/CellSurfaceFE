@@ -29,7 +29,7 @@ this complicated.
 Thus, this function has run the necessary functions to get energy.
 */
 
-double SimulateSurface::run(double r1, double r2, double sep, double x, double y, double sigma, double kappa, double kappabar, double neumann_value_1, double neumann_value_2, int i){
+double SimulateSurface::run(double r1, double r2, double sep, double x, double y, double sigma, double kappa, double kappabar, double neumann_value_1, double neumann_value_2, int i, int j){
 
 	cell_mesh(r1, r2, sep, x, y, true);
 
@@ -76,7 +76,7 @@ double SimulateSurface::run(double r1, double r2, double sep, double x, double y
 	cell_mesho.write_eps(surface, out);
 
 	std::cout << sep << std::endl;
-	output(i);
+	output(i, j);
 	double energy = calcEnergy(sigma, kappa, kappabar, neumann_value_1, neumann_value_2);
 
 	cell_mesh(r1, r2, sep, x, y, false);
