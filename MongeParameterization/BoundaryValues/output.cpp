@@ -18,10 +18,10 @@ void SimulateSurface::output(int i, int j){
 
     data_out.build_patches();
 
-    if(j = 1){
+    if(j == 1){
         std::ofstream out("gpls/positive/surface" + std::to_string(i) + "positive.gpl");
     	data_out.write_gnuplot(out);
-    }else if(j = -1){
+    }else if(j == -1){
         std::ofstream out("gpls/negative/surface" + std::to_string(i) + "negative.gpl");
         data_out.write_gnuplot(out);
     }else{
