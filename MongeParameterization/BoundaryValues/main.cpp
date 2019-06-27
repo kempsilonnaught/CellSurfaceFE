@@ -10,7 +10,7 @@ int main() {
     SimulateSurface* membrane = new SimulateSurface[max];
 
     unsigned int i = 0;
-    int j = 1;
+    int j;
     std::ofstream energysep;
     energysep.open("energysep.txt");
 
@@ -23,6 +23,7 @@ int main() {
     double kappabar = 1;
 
     for (double sep = 50; sep <= 1500; sep += 5) {
+        j = 1;
     	const double neumann_value_1 = tan(3.14159265/4);
         const double neumann_value_2 = tan(3.14159265/4);
         energy[i] = membrane[i].run(radius_1, radius_2, sep, sheet_x, sheet_y, sigma, kappa, kappabar, neumann_value_1, neumann_value_2, i, j);
@@ -36,15 +37,15 @@ int main() {
     energysep.close();
 
     i = 0;
-    j = -1;
     std::ofstream energysep2;
     energysep2.open("energysep2.txt");
 
-    for (double sep = 50; sep <= 1500; sep += 5) {
+    for (double sep2 = 50; sep <= 1500; sep += 5) {
+        j = -1;
         const double neumann_value_3 = tan(3.14159265/4);
         const double neumann_value_4 = -tan(3.14159265/4);
-        energy[i] = membrane[i].run(radius_1, radius_2, sep, sheet_x, sheet_y, sigma, kappa, kappabar, neumann_value_3, neumann_value_4, i, j);
-        separation[i] = sep;
+        energy[i] = membrane[i].run(radius_1, radius_2, sep2, sheet_x, sheet_y, sigma, kappa, kappabar, neumann_value_3, neumann_value_4, i, j);
+        separation[i] = sep2;
         energysep2 << separation[i] << " " << energy[i] << std::endl;
         std::cout << energy[i] << std::endl;
 
