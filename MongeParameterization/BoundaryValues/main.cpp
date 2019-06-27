@@ -43,7 +43,7 @@ int main() {
     for (double sep = 50; sep <= 1500; sep += 5) {
         const double neumann_value_3 = tan(3.14159265/4);
         const double neumann_value_4 = -tan(3.14159265/4);
-        energy[i] = membrane[i].run(radius_1, radius_2, sep, sheet_x, sheet_y, sigma, kappa, kappabar, neumann_value_1, neumann_value_2, i, j);
+        energy[i] = membrane[i].run(radius_1, radius_2, sep, sheet_x, sheet_y, sigma, kappa, kappabar, neumann_value_3, neumann_value_4, i, j);
         separation[i] = sep;
         energysep2 << separation[i] << " " << energy[i] << std::endl;
         std::cout << energy[i] << std::endl;
