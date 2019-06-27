@@ -40,7 +40,7 @@ int main() {
     std::ofstream energysep2;
     energysep2.open("energysep2.txt");
 
-    for (double sep2 = 50; sep <= 1500; sep += 5) {
+    for (double sep2 = 50; sep2 <= 1500; sep2 += 5) {
         j = -1;
         const double neumann_value_3 = tan(3.14159265/4);
         const double neumann_value_4 = -tan(3.14159265/4);
