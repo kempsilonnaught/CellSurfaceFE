@@ -27,3 +27,5 @@ void SimulateSurface::output(int i, int j){
     }else{
         std::cout << "Error: Inclusion direction indicator (j) has an invalid value." << std::endl;
     }
+
+}
