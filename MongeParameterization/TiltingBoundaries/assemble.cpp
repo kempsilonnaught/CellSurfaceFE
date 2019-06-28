@@ -95,6 +95,11 @@ void SimulateSurface::assemble(double sigma, double kappa, double kappabar, doub
 			rhs(local_dof_indices[i]) += lil_rhs(i);
 	}
 
+	const double avg_rhs = rhs.mean_value();
+	for(int i = 0; i < rhs.size(); i++){
+		rhs(i) = avg_rhs;
+	}
+
 
 	std::map<types::global_dof_index, double> boundary_values;
 	VectorTools::interpolate_boundary_values(doffer, 0, ZeroFunction<2>(), boundary_values);
