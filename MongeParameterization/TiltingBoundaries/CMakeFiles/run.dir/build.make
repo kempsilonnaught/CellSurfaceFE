@@ -38,10 +38,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/BoundaryValues
+CMAKE_SOURCE_DIR = /home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/TiltingBoundaries
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/BoundaryValues
+CMAKE_BINARY_DIR = /home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/TiltingBoundaries
 
 # Utility rule file for run.
 
@@ -49,7 +49,7 @@ CMAKE_BINARY_DIR = /home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameter
 include CMakeFiles/run.dir/progress.make
 
 CMakeFiles/run: forces_inclusions
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/BoundaryValues/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/TiltingBoundaries/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Run forces_inclusions with Debug configuration"
 	./forces_inclusions
 
@@ -66,6 +66,6 @@ CMakeFiles/run.dir/clean:
 .PHONY : CMakeFiles/run.dir/clean
 
 CMakeFiles/run.dir/depend:
-	cd /home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/BoundaryValues && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/BoundaryValues /home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/BoundaryValues /home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/BoundaryValues /home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/BoundaryValues /home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/BoundaryValues/CMakeFiles/run.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/TiltingBoundaries && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/TiltingBoundaries /home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/TiltingBoundaries /home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/TiltingBoundaries /home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/TiltingBoundaries /home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/TiltingBoundaries/CMakeFiles/run.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/run.dir/depend
 

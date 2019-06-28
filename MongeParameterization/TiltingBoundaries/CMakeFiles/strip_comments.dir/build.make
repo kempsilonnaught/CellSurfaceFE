@@ -38,10 +38,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/BoundaryValues
+CMAKE_SOURCE_DIR = /home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/TiltingBoundaries
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/BoundaryValues
+CMAKE_BINARY_DIR = /home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/TiltingBoundaries
 
 # Utility rule file for strip_comments.
 
@@ -49,7 +49,7 @@ CMAKE_BINARY_DIR = /home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameter
 include CMakeFiles/strip_comments.dir/progress.make
 
 CMakeFiles/strip_comments:
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/BoundaryValues/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/TiltingBoundaries/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "strip comments"
 	/usr/bin/perl -pi -e 's#^[ \t]*//.*\n##g;' main.cpp run.cpp cell_mesh.cpp setup.cpp assemble.cpp solve.cpp output.cpp forces_inclusions.h
 
@@ -66,6 +66,6 @@ CMakeFiles/strip_comments.dir/clean:
 .PHONY : CMakeFiles/strip_comments.dir/clean
 
 CMakeFiles/strip_comments.dir/depend:
-	cd /home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/BoundaryValues && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/BoundaryValues /home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/BoundaryValues /home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/BoundaryValues /home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/BoundaryValues /home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/BoundaryValues/CMakeFiles/strip_comments.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/TiltingBoundaries && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/TiltingBoundaries /home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/TiltingBoundaries /home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/TiltingBoundaries /home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/TiltingBoundaries /home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/TiltingBoundaries/CMakeFiles/strip_comments.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/strip_comments.dir/depend
 

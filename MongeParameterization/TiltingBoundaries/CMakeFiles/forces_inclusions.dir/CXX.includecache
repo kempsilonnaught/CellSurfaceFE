@@ -6,7 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/BoundaryValues/forces_inclusions.h
+/home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/TiltingBoundaries/assemble.cpp
+forces_inclusions.h
+/home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/TiltingBoundaries/forces_inclusions.h
+
+/home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/TiltingBoundaries/cell_mesh.cpp
+forces_inclusions.h
+/home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/TiltingBoundaries/forces_inclusions.h
+
+/home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/TiltingBoundaries/forces_inclusions.h
 deal.II/grid/grid_generator.h
 -
 deal.II/grid/grid_out.h
@@ -78,9 +86,25 @@ iostream
 string
 -
 
-/home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/BoundaryValues/output.cpp
+/home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/TiltingBoundaries/main.cpp
 forces_inclusions.h
-/home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/BoundaryValues/forces_inclusions.h
+/home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/TiltingBoundaries/forces_inclusions.h
+
+/home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/TiltingBoundaries/output.cpp
+forces_inclusions.h
+/home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/TiltingBoundaries/forces_inclusions.h
+
+/home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/TiltingBoundaries/run.cpp
+forces_inclusions.h
+/home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/TiltingBoundaries/forces_inclusions.h
+
+/home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/TiltingBoundaries/setup.cpp
+forces_inclusions.h
+/home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/TiltingBoundaries/forces_inclusions.h
+
+/home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/TiltingBoundaries/solve.cpp
+forces_inclusions.h
+/home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/TiltingBoundaries/forces_inclusions.h
 
 /usr/local/include/deal.II/base/aligned_vector.h
 deal.II/base/config.h
