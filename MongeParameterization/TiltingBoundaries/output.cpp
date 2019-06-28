@@ -17,7 +17,7 @@ void SimulateSurface::output(int i, int j){
     data_out.add_data_vector(solution, "solution");
 
     data_out.build_patches();
-    std::cout << "J = " << j << std::endl;
+    std::cout << "J2 = " << j << std::endl;
 
     if(j == 1){
         std::ofstream out("gpls/positive/surface" + std::to_string(i) + "positive.gpl");
