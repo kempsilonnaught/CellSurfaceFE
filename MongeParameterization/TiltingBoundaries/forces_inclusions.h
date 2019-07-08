@@ -115,6 +115,8 @@ private :
     SparseMatrix<double> big_matrix;
 
     Vector<double> solution;
+    Vector<double> rhs5;
+    Vector<double> rhs6;
     Vector<double> rhs;
 };
 

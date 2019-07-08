@@ -34,7 +34,8 @@ void SimulateSurface::assemble(double sigma, double kappa, double kappabar, doub
 	const unsigned int n_face_q_points = face_quadrature_formula.size();
 	
 	FullMatrix<double> lil_matrix(dofs_per_cell, dofs_per_cell);
-	Vector<double> lil_rhs(dofs_per_cell);
+	Vector<double> lil_rhs5(dofs_per_cell);
+	Vector<double> lil_rhs6(dofs_per_cell);
 	std::vector<types::global_dof_index>local_dof_indices(dofs_per_cell);
 
 	Tensor<2,2> hess_i;
@@ -43,7 +44,8 @@ void SimulateSurface::assemble(double sigma, double kappa, double kappabar, doub
 	for(auto cell : doffer.active_cell_iterators()){
 		fe_time.reinit(cell);
 		lil_matrix = 0;
-		lil_rhs = 0;
+		lil_rhs5 = 0;
+		lil_rhs6 = 0;
 		for(unsigned int q_index = 0; q_index < n_q_points; ++q_index){ //This is our big system integral
 			for(unsigned int i = 0; i < dofs_per_cell; ++i){
 				for(unsigned int j = 0; j < dofs_per_cell; ++j){
@@ -55,7 +57,8 @@ void SimulateSurface::assemble(double sigma, double kappa, double kappabar, doub
 					lil_matrix(i, j) += -(kappabar*((hess_i[0][1]))*(hess_j[0][1])*(fe_time.JxW(q_index)));
 					lil_matrix(i, j) += (sigma*(((fe_time.shape_grad(i, q_index))*(fe_time.shape_grad(j, q_index))*(fe_time.JxW(q_index)))))/2;
 
-					lil_rhs(i) += 0;
+					lil_rhs5(i) += 0;
+					lil_rhs6(i) += 0;
 				}
 			}
 				
@@ -67,8 +70,8 @@ void SimulateSurface::assemble(double sigma, double kappa, double kappabar, doub
             	for (unsigned int q_point=0; q_point<n_face_q_points; ++q_point){
                 	for (unsigned int i=0; i<dofs_per_cell; ++i){
                 		hess_i = fe_face_values.shape_hessian(i, q_point);
-                    	lil_rhs(i) += (kappa * neumann_value_1 * trace(hess_i) * fe_face_values.shape_value(i, q_point) * fe_face_values.JxW(q_point));
-                    	lil_rhs(i) += (sigma * neumann_value_1 * fe_face_values.shape_value(i, q_point) * fe_face_values.JxW(q_point));
+                    	lil_rhs5(i) += (kappa * neumann_value_1 * trace(hess_i) * fe_face_values.shape_value(i, q_point) * fe_face_values.JxW(q_point));
+                    	lil_rhs5(i) += (sigma * neumann_value_1 * fe_face_values.shape_value(i, q_point) * fe_face_values.JxW(q_point));
                     }
                 }
             }
@@ -91,13 +94,26 @@ void SimulateSurface::assemble(double sigma, double kappa, double kappabar, doub
 		for(unsigned int i = 0; i < dofs_per_cell; ++i)
 			for(unsigned int j = 0; j < dofs_per_cell; ++j)
 				big_matrix.add(local_dof_indices[i], local_dof_indices[j], lil_matrix(i, j));
-		for(unsigned int i = 0; i < dofs_per_cell; ++i)
-			rhs(local_dof_indices[i]) += lil_rhs(i);
+		for(unsigned int i = 0; i < dofs_per_cell; ++i){
+			rhs5(local_dof_indices[i]) += lil_rhs5(i);
+			rhs6(local_dof_indices[i]) += lil_rhs6(i);
+		}
 	}
 
-	const double avg_rhs = rhs.mean_value();
-	for(int i = 0; i < rhs.size(); i++){
-		rhs(i) = avg_rhs;
+	const double avg_rhs5 = rhs5.mean_value();
+	const double avg_rhs6 = rhs6.mean_value();
+
+	for(auto cell : doffer.active_cell_iterators()){
+		fe_time.reinit(cell);
+		cell -> get_dof_indices(local_dof_indices);
+		for(unsigned int i = 0; i < dofs_per_cell; ++i){
+			if(cell->face(face_number)->at_boundary() && (cell->face(face_number)->boundary_id() == 5)){
+				rhs(local_dof_indices[i]) += avg_rhs5;
+			}
+			if(cell->face(face_number)->at_boundary() && (cell->face(face_number)->boundary_id() == 6)){
+				rhs(local_dof_indices[i]) += avg_rhs6;
+			}
+		}
 	}
 
 
