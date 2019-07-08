@@ -109,7 +109,9 @@ void SimulateSurface::assemble(double sigma, double kappa, double kappabar, doub
             	fe_face_values.reinit (cell, face_number);
             	cell -> get_dof_indices(local_dof_indices);
         		for(unsigned int q = 0; q < n_face_q_points; ++q){
-                	rhs(local_dof_indices[i]) += avg_rhs5;
+                	for (unsigned int i=0; i<dofs_per_cell; ++i){
+                		rhs(local_dof_indices[i]) += avg_rhs5;
+                    }
                 }
             }
         }
@@ -119,7 +121,9 @@ void SimulateSurface::assemble(double sigma, double kappa, double kappabar, doub
             	fe_face_values.reinit (cell, face_number);
             	cell -> get_dof_indices(local_dof_indices);
         		for(unsigned int q = 0; q < n_face_q_points; ++q){
-        			rhs(local_dof_indices[i]) += avg_rhs6;
+                	for (unsigned int i=0; i<dofs_per_cell; ++i){
+                		rhs(local_dof_indices[i]) += avg_rhs6;
+                    }
                 }
             }
         }
