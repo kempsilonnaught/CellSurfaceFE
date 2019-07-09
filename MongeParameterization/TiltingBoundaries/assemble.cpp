@@ -90,6 +90,9 @@ void SimulateSurface::assemble(double sigma, double kappa, double kappabar, doub
             }
         }
 
+        std::cout << "The first part worked!" << std::endl;
+
+
 		cell -> get_dof_indices(local_dof_indices);
 		for(unsigned int i = 0; i < dofs_per_cell; ++i)
 			for(unsigned int j = 0; j < dofs_per_cell; ++j)
@@ -100,7 +103,7 @@ void SimulateSurface::assemble(double sigma, double kappa, double kappabar, doub
 		}
 	}
 
-	std::cout << "The first part worked!" << std::endl;
+	std::cout << "The second part worked!" << std::endl;
 
 	const double avg_rhs5 = rhs5.mean_value();
 	const double avg_rhs6 = rhs6.mean_value();
