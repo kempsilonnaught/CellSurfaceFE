@@ -98,6 +98,7 @@ void SimulateSurface::assemble(double sigma, double kappa, double kappabar, doub
 			for(unsigned int j = 0; j < dofs_per_cell; ++j)
 				big_matrix.add(local_dof_indices[i], local_dof_indices[j], lil_matrix(i, j));
 		for(unsigned int i = 0; i < dofs_per_cell; ++i){
+			std::cout << "It's this loop that is the problem." << std::endl;
 			rhs5(local_dof_indices[i]) += lil_rhs5(i);
 			rhs6(local_dof_indices[i]) += lil_rhs6(i);
 		}
