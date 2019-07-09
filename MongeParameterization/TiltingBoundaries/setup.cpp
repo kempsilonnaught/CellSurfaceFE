@@ -25,6 +25,8 @@ void SimulateSurface::setup(){
 
     solution.reinit(doffer.n_dofs(), false);
     rhs.reinit(doffer.n_dofs(), false);
+    rhs5.reinit(doffer.n_dofs(), false);
+    rhs6.reinit(doffer.n_dofs(), false);
 
 
     std::cout << "   Number of degrees of freedom: "

@@ -90,21 +90,16 @@ void SimulateSurface::assemble(double sigma, double kappa, double kappabar, doub
             }
         }
 
-        std::cout << "The first part worked!" << std::endl;
-
 
 		cell -> get_dof_indices(local_dof_indices);
 		for(unsigned int i = 0; i < dofs_per_cell; ++i)
 			for(unsigned int j = 0; j < dofs_per_cell; ++j)
 				big_matrix.add(local_dof_indices[i], local_dof_indices[j], lil_matrix(i, j));
 		for(unsigned int i = 0; i < dofs_per_cell; ++i){
-			std::cout << "It's this loop that is the problem." << std::endl;
 			rhs5(local_dof_indices[i]) += lil_rhs5(i);
 			rhs6(local_dof_indices[i]) += lil_rhs6(i);
 		}
 	}
-
-	std::cout << "The second part worked!" << std::endl;
 
 	const double avg_rhs5 = rhs5.mean_value();
 	const double avg_rhs6 = rhs6.mean_value();
@@ -112,25 +107,25 @@ void SimulateSurface::assemble(double sigma, double kappa, double kappabar, doub
 	for(auto cell : doffer.active_cell_iterators()){
 		for (unsigned int face_number = 0; face_number<GeometryInfo<2>::faces_per_cell; ++face_number){
         	if (cell->face(face_number)->at_boundary() && (cell->face(face_number)->boundary_id() == 5)){
-            	//fe_face_values.reinit (cell, face_number);
+            	fe_face_values.reinit (cell, face_number);
             	cell -> get_dof_indices(local_dof_indices);
-        		//for(unsigned int q = 0; q < n_face_q_points; ++q){
+        		for(unsigned int q = 0; q < n_face_q_points; ++q){
                 	for (unsigned int i=0; i<dofs_per_cell; ++i){
                 		rhs(local_dof_indices[i]) += avg_rhs5;
                     }
-                //}
+                }
             }
         }
 
         for (unsigned int face_number = 0; face_number<GeometryInfo<2>::faces_per_cell; ++face_number){
         	if (cell->face(face_number)->at_boundary() && (cell->face(face_number)->boundary_id() == 6)){
-            	//fe_face_values.reinit (cell, face_number);
+            	fe_face_values.reinit (cell, face_number);
             	cell -> get_dof_indices(local_dof_indices);
-        		//for(unsigned int q = 0; q < n_face_q_points; ++q){
+        		for(unsigned int q = 0; q < n_face_q_points; ++q){
                 	for (unsigned int i=0; i<dofs_per_cell; ++i){
                 		rhs(local_dof_indices[i]) += avg_rhs6;
                     }
-                //}
+                }
             }
         }
 	}
