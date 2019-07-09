@@ -100,13 +100,15 @@ void SimulateSurface::assemble(double sigma, double kappa, double kappabar, doub
 		}
 	}
 
+	std::cout << "The first part worked!" << std::endl;
+
 	const double avg_rhs5 = rhs5.mean_value();
 	const double avg_rhs6 = rhs6.mean_value();
 
 	for(auto cell : doffer.active_cell_iterators()){
 		for (unsigned int face_number = 0; face_number<GeometryInfo<2>::faces_per_cell; ++face_number){
         	if (cell->face(face_number)->at_boundary() && (cell->face(face_number)->boundary_id() == 5)){
-            	fe_face_values.reinit (cell, face_number);
+            	//fe_face_values.reinit (cell, face_number);
             	cell -> get_dof_indices(local_dof_indices);
         		//for(unsigned int q = 0; q < n_face_q_points; ++q){
                 	for (unsigned int i=0; i<dofs_per_cell; ++i){
@@ -118,7 +120,7 @@ void SimulateSurface::assemble(double sigma, double kappa, double kappabar, doub
 
         for (unsigned int face_number = 0; face_number<GeometryInfo<2>::faces_per_cell; ++face_number){
         	if (cell->face(face_number)->at_boundary() && (cell->face(face_number)->boundary_id() == 6)){
-            	fe_face_values.reinit (cell, face_number);
+            	//fe_face_values.reinit (cell, face_number);
             	cell -> get_dof_indices(local_dof_indices);
         		//for(unsigned int q = 0; q < n_face_q_points; ++q){
                 	for (unsigned int i=0; i<dofs_per_cell; ++i){
