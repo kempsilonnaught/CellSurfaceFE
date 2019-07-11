@@ -17,17 +17,29 @@ in debugging, we print out the number of degrees of freedom.
 void SimulateSurface::setup(){
     doffer.initialize(surface, fe);
 
+    std::vector<bool> boundary_dofs(doffer.n_dofs(), false);
+    DoFTools::extract_boundary_dofs(doffer, ComponentMask(), boundary_dofs);
+
+    const unsigned int first_boundary_dof = std::distance(boundary_dofs.begin(), std::find(boundary_dofs.begin(), boundary_dofs.end(), true));
+
+    constraints.clear();
+    constraints.add_line(first_boundary_dof);
+    for(unsigned int i = first_boundary_dof + 1; i < doffer.n_dofs(); ++i){
+        if(boundary_dofs[i] == true){
+            constraints.add_entry(first_boundary_dof, i, -1);
+        }
+    }
+    constraints.close();
+
     DynamicSparsityPattern dynspar(doffer.n_dofs());
     DoFTools::make_sparsity_pattern(doffer, dynspar);
     sparsity_pattern.copy_from(dynspar);
+    constraints.condense(dynspar);
 
     big_matrix.reinit(sparsity_pattern);
 
     solution.reinit(doffer.n_dofs(), false);
     rhs.reinit(doffer.n_dofs(), false);
-    rhs5.reinit(doffer.n_dofs(), false);
-    rhs6.reinit(doffer.n_dofs(), false);
-
 
     std::cout << "   Number of degrees of freedom: "
               << doffer.n_dofs()
