@@ -31,7 +31,6 @@
 #include <deal.II/lac/dynamic_sparsity_pattern.h>
 #include <deal.II/lac/block_vector.h>
 #include <deal.II/lac/block_sparse_matrix.h>
-#include <deal.II/lac/affine_constraints.h>
 
 #include <deal.II/fe/fe_system.h>
 #include <deal.II/fe/fe_values.h>
@@ -121,7 +120,7 @@ private :
 
     FE_Q<2> fe;
 
-    AffineConstraints<double> constraints;
+    ConstraintMatrix constraints;
 
     SparsityPattern sparsity_pattern;
 
