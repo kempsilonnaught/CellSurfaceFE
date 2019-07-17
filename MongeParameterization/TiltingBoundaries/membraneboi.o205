@@ -1,0 +1,5238 @@
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+830 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 50
+Surface Energy: 29509.9
+Boundary Energy: 10417
+Energy: 39926.9
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+763 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 55
+Surface Energy: 26558.5
+Boundary Energy: 10505.3
+Energy: 37063.8
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+725 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 60
+Surface Energy: 24073.1
+Boundary Energy: 10501.7
+Energy: 34574.9
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+694 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 65
+Surface Energy: 21946.8
+Boundary Energy: 10435.9
+Energy: 32382.8
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+663 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 70
+Surface Energy: 20105.2
+Boundary Energy: 10327.3
+Energy: 30432.6
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+635 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 75
+Surface Energy: 18494.4
+Boundary Energy: 10189.2
+Energy: 28683.6
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+599 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 80
+Surface Energy: 17073.9
+Boundary Energy: 10030.9
+Energy: 27104.8
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+584 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 85
+Surface Energy: 15812.7
+Boundary Energy: 9858.85
+Energy: 25671.5
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+567 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 90
+Surface Energy: 14686.2
+Boundary Energy: 9678.01
+Energy: 24364.2
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+547 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 95
+Surface Energy: 13674.8
+Boundary Energy: 9491.86
+Energy: 23166.7
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+530 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 100
+Surface Energy: 12762.6
+Boundary Energy: 9303.01
+Energy: 22065.7
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+521 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 105
+Surface Energy: 11936.6
+Boundary Energy: 9113.38
+Energy: 21050
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+501 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 110
+Surface Energy: 11185.9
+Boundary Energy: 8924.44
+Energy: 20110.4
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+488 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 115
+Surface Energy: 10501.4
+Boundary Energy: 8737.24
+Energy: 19238.6
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+478 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 120
+Surface Energy: 9875.3
+Boundary Energy: 8552.58
+Energy: 18427.9
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+470 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 125
+Surface Energy: 9301.11
+Boundary Energy: 8371.06
+Energy: 17672.2
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+463 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 130
+Surface Energy: 8773.18
+Boundary Energy: 8193.09
+Energy: 16966.3
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+452 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 135
+Surface Energy: 8286.65
+Boundary Energy: 8018.97
+Energy: 16305.6
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+444 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 140
+Surface Energy: 7837.31
+Boundary Energy: 7848.91
+Energy: 15686.2
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+435 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 145
+Surface Energy: 7421.47
+Boundary Energy: 7683.04
+Energy: 15104.5
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+430 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 150
+Surface Energy: 7035.92
+Boundary Energy: 7521.42
+Energy: 14557.3
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+427 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 155
+Surface Energy: 6677.81
+Boundary Energy: 7364.09
+Energy: 14041.9
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+417 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 160
+Surface Energy: 6344.65
+Boundary Energy: 7211.02
+Energy: 13555.7
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+411 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 165
+Surface Energy: 6034.21
+Boundary Energy: 7062.2
+Energy: 13096.4
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+399 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 170
+Surface Energy: 5744.52
+Boundary Energy: 6917.56
+Energy: 12662.1
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+398 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 175
+Surface Energy: 5473.81
+Boundary Energy: 6777.03
+Energy: 12250.8
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+392 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 180
+Surface Energy: 5220.5
+Boundary Energy: 6640.52
+Energy: 11861
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+387 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 185
+Surface Energy: 4983.17
+Boundary Energy: 6507.95
+Energy: 11491.1
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+382 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 190
+Surface Energy: 4760.56
+Boundary Energy: 6379.21
+Energy: 11139.8
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+378 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 195
+Surface Energy: 4551.5
+Boundary Energy: 6254.21
+Energy: 10805.7
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+375 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 200
+Surface Energy: 4354.96
+Boundary Energy: 6132.84
+Energy: 10487.8
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+374 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 205
+Surface Energy: 4169.99
+Boundary Energy: 6015
+Energy: 10185
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+368 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 210
+Surface Energy: 3995.73
+Boundary Energy: 5900.58
+Energy: 9896.31
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+366 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 215
+Surface Energy: 3831.42
+Boundary Energy: 5789.47
+Energy: 9620.89
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+366 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 220
+Surface Energy: 3676.33
+Boundary Energy: 5681.56
+Energy: 9357.9
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+361 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 225
+Surface Energy: 3529.82
+Boundary Energy: 5576.77
+Energy: 9106.59
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+357 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 230
+Surface Energy: 3391.29
+Boundary Energy: 5474.98
+Energy: 8866.28
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+355 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 235
+Surface Energy: 3260.2
+Boundary Energy: 5376.11
+Energy: 8636.31
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+352 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 240
+Surface Energy: 3136.06
+Boundary Energy: 5280.04
+Energy: 8416.1
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+349 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 245
+Surface Energy: 3018.39
+Boundary Energy: 5186.7
+Energy: 8205.09
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+343 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 250
+Surface Energy: 2906.79
+Boundary Energy: 5095.99
+Energy: 8002.77
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+342 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 255
+Surface Energy: 2800.85
+Boundary Energy: 5007.82
+Energy: 7808.67
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+340 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 260
+Surface Energy: 2700.23
+Boundary Energy: 4922.1
+Energy: 7622.33
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+339 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 265
+Surface Energy: 2604.58
+Boundary Energy: 4838.76
+Energy: 7443.35
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+335 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 270
+Surface Energy: 2513.62
+Boundary Energy: 4757.72
+Energy: 7271.34
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+334 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 275
+Surface Energy: 2427.04
+Boundary Energy: 4678.9
+Energy: 7105.94
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+329 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 280
+Surface Energy: 2344.58
+Boundary Energy: 4602.23
+Energy: 6946.81
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+329 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 285
+Surface Energy: 2266.01
+Boundary Energy: 4527.63
+Energy: 6793.64
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+323 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 290
+Surface Energy: 2191.09
+Boundary Energy: 4455.04
+Energy: 6646.13
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+322 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 295
+Surface Energy: 2119.62
+Boundary Energy: 4384.38
+Energy: 6504
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+318 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 300
+Surface Energy: 2051.39
+Boundary Energy: 4315.61
+Energy: 6367
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+316 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 305
+Surface Energy: 1986.23
+Boundary Energy: 4248.65
+Energy: 6234.88
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+316 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 310
+Surface Energy: 1923.97
+Boundary Energy: 4183.44
+Energy: 6107.41
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+314 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 315
+Surface Energy: 1864.43
+Boundary Energy: 4119.94
+Energy: 5984.37
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+310 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 320
+Surface Energy: 1807.49
+Boundary Energy: 4058.07
+Energy: 5865.56
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+310 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 325
+Surface Energy: 1752.98
+Boundary Energy: 3997.8
+Energy: 5750.79
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+306 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 330
+Surface Energy: 1700.8
+Boundary Energy: 3939.08
+Energy: 5639.88
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+304 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 335
+Surface Energy: 1650.81
+Boundary Energy: 3881.84
+Energy: 5532.65
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+303 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 340
+Surface Energy: 1602.9
+Boundary Energy: 3826.05
+Energy: 5428.95
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+299 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 345
+Surface Energy: 1556.96
+Boundary Energy: 3771.66
+Energy: 5328.62
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+299 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 350
+Surface Energy: 1512.89
+Boundary Energy: 3718.62
+Energy: 5231.51
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+298 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 355
+Surface Energy: 1470.61
+Boundary Energy: 3666.9
+Energy: 5137.5
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+296 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 360
+Surface Energy: 1430.01
+Boundary Energy: 3616.45
+Energy: 5046.46
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+295 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 365
+Surface Energy: 1391.02
+Boundary Energy: 3567.23
+Energy: 4958.25
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+293 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 370
+Surface Energy: 1353.55
+Boundary Energy: 3519.21
+Energy: 4872.76
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+291 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 375
+Surface Energy: 1317.54
+Boundary Energy: 3472.35
+Energy: 4789.89
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+291 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 380
+Surface Energy: 1282.91
+Boundary Energy: 3426.62
+Energy: 4709.53
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+289 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 385
+Surface Energy: 1249.6
+Boundary Energy: 3381.98
+Energy: 4631.58
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+285 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 390
+Surface Energy: 1217.54
+Boundary Energy: 3338.4
+Energy: 4555.94
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+284 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 395
+Surface Energy: 1186.69
+Boundary Energy: 3295.85
+Energy: 4482.53
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+284 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 400
+Surface Energy: 1156.97
+Boundary Energy: 3254.29
+Energy: 4411.26
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+284 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 405
+Surface Energy: 1128.34
+Boundary Energy: 3213.7
+Energy: 4342.05
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+285 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 410
+Surface Energy: 1100.76
+Boundary Energy: 3174.06
+Energy: 4274.81
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+284 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 415
+Surface Energy: 1074.17
+Boundary Energy: 3135.32
+Energy: 4209.49
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+283 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 420
+Surface Energy: 1048.53
+Boundary Energy: 3097.48
+Energy: 4146
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+279 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 425
+Surface Energy: 1023.79
+Boundary Energy: 3060.5
+Energy: 4084.29
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+279 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 430
+Surface Energy: 999.928
+Boundary Energy: 3024.35
+Energy: 4024.28
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+279 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 435
+Surface Energy: 976.894
+Boundary Energy: 2989.02
+Energy: 3965.91
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+278 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 440
+Surface Energy: 954.654
+Boundary Energy: 2954.48
+Energy: 3909.14
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+278 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 445
+Surface Energy: 933.176
+Boundary Energy: 2920.71
+Energy: 3853.89
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+277 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 450
+Surface Energy: 912.427
+Boundary Energy: 2887.69
+Energy: 3800.12
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+276 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 455
+Surface Energy: 892.377
+Boundary Energy: 2855.4
+Energy: 3747.78
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+277 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 460
+Surface Energy: 872.997
+Boundary Energy: 2823.82
+Energy: 3696.82
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+276 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 465
+Surface Energy: 854.258
+Boundary Energy: 2792.93
+Energy: 3647.18
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+275 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 470
+Surface Energy: 836.136
+Boundary Energy: 2762.7
+Energy: 3598.84
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+276 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 475
+Surface Energy: 818.605
+Boundary Energy: 2733.13
+Energy: 3551.74
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+271 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 480
+Surface Energy: 801.642
+Boundary Energy: 2704.2
+Energy: 3505.84
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+268 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 485
+Surface Energy: 785.223
+Boundary Energy: 2675.89
+Energy: 3461.11
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+267 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 490
+Surface Energy: 769.329
+Boundary Energy: 2648.18
+Energy: 3417.51
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+268 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 495
+Surface Energy: 753.937
+Boundary Energy: 2621.05
+Energy: 3374.99
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+267 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 500
+Surface Energy: 739.028
+Boundary Energy: 2594.5
+Energy: 3333.53
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+268 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 505
+Surface Energy: 724.585
+Boundary Energy: 2568.51
+Energy: 3293.1
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+265 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 510
+Surface Energy: 710.589
+Boundary Energy: 2543.06
+Energy: 3253.65
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+264 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 515
+Surface Energy: 697.023
+Boundary Energy: 2518.14
+Energy: 3215.17
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+264 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 520
+Surface Energy: 683.872
+Boundary Energy: 2493.74
+Energy: 3177.61
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+263 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 525
+Surface Energy: 671.119
+Boundary Energy: 2469.84
+Energy: 3140.96
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+263 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 530
+Surface Energy: 658.75
+Boundary Energy: 2446.43
+Energy: 3105.19
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+263 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 535
+Surface Energy: 646.752
+Boundary Energy: 2423.51
+Energy: 3070.26
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+259 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 540
+Surface Energy: 635.109
+Boundary Energy: 2401.05
+Energy: 3036.16
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+259 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 545
+Surface Energy: 623.811
+Boundary Energy: 2379.04
+Energy: 3002.85
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+255 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 550
+Surface Energy: 612.843
+Boundary Energy: 2357.49
+Energy: 2970.33
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+255 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 555
+Surface Energy: 602.196
+Boundary Energy: 2336.36
+Energy: 2938.56
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+255 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 560
+Surface Energy: 591.856
+Boundary Energy: 2315.66
+Energy: 2907.52
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+254 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 565
+Surface Energy: 581.814
+Boundary Energy: 2295.38
+Energy: 2877.19
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+253 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 570
+Surface Energy: 572.06
+Boundary Energy: 2275.5
+Energy: 2847.56
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+253 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 575
+Surface Energy: 562.582
+Boundary Energy: 2256.02
+Energy: 2818.6
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+253 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 580
+Surface Energy: 553.373
+Boundary Energy: 2236.92
+Energy: 2790.29
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+253 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 585
+Surface Energy: 544.422
+Boundary Energy: 2218.2
+Energy: 2762.62
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+252 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 590
+Surface Energy: 535.721
+Boundary Energy: 2199.85
+Energy: 2735.57
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+251 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 595
+Surface Energy: 527.262
+Boundary Energy: 2181.86
+Energy: 2709.12
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+250 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 600
+Surface Energy: 519.036
+Boundary Energy: 2164.22
+Energy: 2683.25
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+251 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 605
+Surface Energy: 511.037
+Boundary Energy: 2146.92
+Energy: 2657.96
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+249 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 610
+Surface Energy: 503.256
+Boundary Energy: 2129.97
+Energy: 2633.22
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+250 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 615
+Surface Energy: 495.687
+Boundary Energy: 2113.34
+Energy: 2609.03
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+247 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 620
+Surface Energy: 488.322
+Boundary Energy: 2097.04
+Energy: 2585.36
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+250 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 625
+Surface Energy: 481.156
+Boundary Energy: 2081.05
+Energy: 2562.2
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+247 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 630
+Surface Energy: 474.181
+Boundary Energy: 2065.37
+Energy: 2539.55
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+247 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 635
+Surface Energy: 467.393
+Boundary Energy: 2049.99
+Energy: 2517.38
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+246 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 640
+Surface Energy: 460.784
+Boundary Energy: 2034.91
+Energy: 2495.69
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+246 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 645
+Surface Energy: 454.35
+Boundary Energy: 2020.12
+Energy: 2474.47
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+246 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 650
+Surface Energy: 448.085
+Boundary Energy: 2005.61
+Energy: 2453.69
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+245 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 655
+Surface Energy: 441.984
+Boundary Energy: 1991.38
+Energy: 2433.36
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+245 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 660
+Surface Energy: 436.043
+Boundary Energy: 1977.42
+Energy: 2413.46
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+245 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 665
+Surface Energy: 430.255
+Boundary Energy: 1963.73
+Energy: 2393.98
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+243 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 670
+Surface Energy: 424.617
+Boundary Energy: 1950.3
+Energy: 2374.91
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+241 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 675
+Surface Energy: 419.124
+Boundary Energy: 1937.12
+Energy: 2356.24
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+240 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 680
+Surface Energy: 413.773
+Boundary Energy: 1924.2
+Energy: 2337.97
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+240 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 685
+Surface Energy: 408.558
+Boundary Energy: 1911.52
+Energy: 2320.07
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+239 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 690
+Surface Energy: 403.476
+Boundary Energy: 1899.08
+Energy: 2302.56
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+239 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 695
+Surface Energy: 398.523
+Boundary Energy: 1886.88
+Energy: 2285.4
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+239 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 700
+Surface Energy: 393.696
+Boundary Energy: 1874.91
+Energy: 2268.6
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+238 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 705
+Surface Energy: 388.99
+Boundary Energy: 1863.17
+Energy: 2252.16
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+237 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 710
+Surface Energy: 384.403
+Boundary Energy: 1851.65
+Energy: 2236.05
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+236 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 715
+Surface Energy: 379.931
+Boundary Energy: 1840.35
+Energy: 2220.28
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+237 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 720
+Surface Energy: 375.572
+Boundary Energy: 1829.26
+Energy: 2204.83
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+236 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 725
+Surface Energy: 371.321
+Boundary Energy: 1818.39
+Energy: 2189.71
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+237 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 730
+Surface Energy: 367.176
+Boundary Energy: 1807.72
+Energy: 2174.9
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+236 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 735
+Surface Energy: 363.135
+Boundary Energy: 1797.25
+Energy: 2160.39
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+236 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 740
+Surface Energy: 359.193
+Boundary Energy: 1786.99
+Energy: 2146.18
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+237 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 745
+Surface Energy: 355.35
+Boundary Energy: 1776.92
+Energy: 2132.27
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+236 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 750
+Surface Energy: 351.602
+Boundary Energy: 1767.04
+Energy: 2118.65
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+237 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 755
+Surface Energy: 347.947
+Boundary Energy: 1757.36
+Energy: 2105.3
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+237 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 760
+Surface Energy: 344.382
+Boundary Energy: 1747.86
+Energy: 2092.24
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+235 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 765
+Surface Energy: 340.905
+Boundary Energy: 1738.54
+Energy: 2079.44
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+235 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 770
+Surface Energy: 337.514
+Boundary Energy: 1729.4
+Energy: 2066.91
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+236 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 775
+Surface Energy: 334.206
+Boundary Energy: 1720.43
+Energy: 2054.64
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+235 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 780
+Surface Energy: 330.981
+Boundary Energy: 1711.65
+Energy: 2042.63
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+234 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 785
+Surface Energy: 327.834
+Boundary Energy: 1703.03
+Energy: 2030.86
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+234 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 790
+Surface Energy: 324.766
+Boundary Energy: 1694.58
+Energy: 2019.34
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+233 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 795
+Surface Energy: 321.773
+Boundary Energy: 1686.29
+Energy: 2008.06
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+234 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 800
+Surface Energy: 318.855
+Boundary Energy: 1678.17
+Energy: 1997.02
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+231 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 805
+Surface Energy: 316.008
+Boundary Energy: 1670.2
+Energy: 1986.21
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+231 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 810
+Surface Energy: 313.232
+Boundary Energy: 1662.4
+Energy: 1975.63
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+231 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 815
+Surface Energy: 310.525
+Boundary Energy: 1654.75
+Energy: 1965.27
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+231 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 820
+Surface Energy: 307.885
+Boundary Energy: 1647.25
+Energy: 1955.13
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+229 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 825
+Surface Energy: 305.311
+Boundary Energy: 1639.9
+Energy: 1945.21
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+229 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 830
+Surface Energy: 302.802
+Boundary Energy: 1632.7
+Energy: 1935.5
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+230 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 835
+Surface Energy: 300.355
+Boundary Energy: 1625.65
+Energy: 1926
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+230 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 840
+Surface Energy: 297.97
+Boundary Energy: 1618.73
+Energy: 1916.7
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+229 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 845
+Surface Energy: 295.645
+Boundary Energy: 1611.97
+Energy: 1907.61
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+229 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 850
+Surface Energy: 293.379
+Boundary Energy: 1605.34
+Energy: 1898.71
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+229 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 855
+Surface Energy: 291.17
+Boundary Energy: 1598.84
+Energy: 1890.01
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+229 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 860
+Surface Energy: 289.018
+Boundary Energy: 1592.49
+Energy: 1881.5
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+230 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 865
+Surface Energy: 286.921
+Boundary Energy: 1586.26
+Energy: 1873.18
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+229 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 870
+Surface Energy: 284.878
+Boundary Energy: 1580.17
+Energy: 1865.05
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+229 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 875
+Surface Energy: 282.889
+Boundary Energy: 1574.21
+Energy: 1857.1
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+228 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 880
+Surface Energy: 280.951
+Boundary Energy: 1568.38
+Energy: 1849.33
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+226 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 885
+Surface Energy: 279.064
+Boundary Energy: 1562.67
+Energy: 1841.73
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+225 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 890
+Surface Energy: 277.227
+Boundary Energy: 1557.09
+Energy: 1834.31
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+226 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 895
+Surface Energy: 275.439
+Boundary Energy: 1551.63
+Energy: 1827.07
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+226 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 900
+Surface Energy: 273.699
+Boundary Energy: 1546.29
+Energy: 1819.99
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+226 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 905
+Surface Energy: 272.006
+Boundary Energy: 1541.08
+Energy: 1813.08
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+226 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 910
+Surface Energy: 270.36
+Boundary Energy: 1535.98
+Energy: 1806.34
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+226 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 915
+Surface Energy: 268.759
+Boundary Energy: 1531
+Energy: 1799.76
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+225 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 920
+Surface Energy: 267.203
+Boundary Energy: 1526.13
+Energy: 1793.34
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+226 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 925
+Surface Energy: 265.69
+Boundary Energy: 1521.38
+Energy: 1787.07
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+226 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 930
+Surface Energy: 264.221
+Boundary Energy: 1516.75
+Energy: 1780.97
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+224 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 935
+Surface Energy: 262.794
+Boundary Energy: 1512.22
+Energy: 1775.02
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+224 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 940
+Surface Energy: 261.409
+Boundary Energy: 1507.81
+Energy: 1769.22
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+224 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 945
+Surface Energy: 260.065
+Boundary Energy: 1503.5
+Energy: 1763.57
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+224 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 950
+Surface Energy: 258.761
+Boundary Energy: 1499.31
+Energy: 1758.07
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+224 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 955
+Surface Energy: 257.497
+Boundary Energy: 1495.22
+Energy: 1752.71
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+224 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 960
+Surface Energy: 256.272
+Boundary Energy: 1491.23
+Energy: 1747.51
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+224 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 965
+Surface Energy: 255.086
+Boundary Energy: 1487.35
+Energy: 1742.44
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+224 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 970
+Surface Energy: 253.937
+Boundary Energy: 1483.58
+Energy: 1737.52
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+224 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 975
+Surface Energy: 252.826
+Boundary Energy: 1479.91
+Energy: 1732.73
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+224 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 980
+Surface Energy: 251.752
+Boundary Energy: 1476.34
+Energy: 1728.09
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+222 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 985
+Surface Energy: 250.714
+Boundary Energy: 1472.87
+Energy: 1723.58
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+223 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 990
+Surface Energy: 249.713
+Boundary Energy: 1469.5
+Energy: 1719.21
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+224 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 995
+Surface Energy: 248.746
+Boundary Energy: 1466.23
+Energy: 1714.98
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+223 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1000
+Surface Energy: 247.815
+Boundary Energy: 1463.06
+Energy: 1710.87
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+223 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1005
+Surface Energy: 246.918
+Boundary Energy: 1459.98
+Energy: 1706.9
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+223 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1010
+Surface Energy: 246.055
+Boundary Energy: 1457
+Energy: 1703.06
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+222 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1015
+Surface Energy: 245.226
+Boundary Energy: 1454.12
+Energy: 1699.35
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+222 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1020
+Surface Energy: 244.43
+Boundary Energy: 1451.33
+Energy: 1695.76
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+221 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1025
+Surface Energy: 243.667
+Boundary Energy: 1448.64
+Energy: 1692.31
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+222 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1030
+Surface Energy: 242.937
+Boundary Energy: 1446.04
+Energy: 1688.98
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+222 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1035
+Surface Energy: 242.239
+Boundary Energy: 1443.53
+Energy: 1685.77
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+222 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1040
+Surface Energy: 241.573
+Boundary Energy: 1441.11
+Energy: 1682.69
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+223 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1045
+Surface Energy: 240.939
+Boundary Energy: 1438.79
+Energy: 1679.73
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+222 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1050
+Surface Energy: 240.336
+Boundary Energy: 1436.56
+Energy: 1676.89
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+222 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1055
+Surface Energy: 239.765
+Boundary Energy: 1434.41
+Energy: 1674.18
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+221 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1060
+Surface Energy: 239.224
+Boundary Energy: 1432.36
+Energy: 1671.58
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+220 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1065
+Surface Energy: 238.714
+Boundary Energy: 1430.39
+Energy: 1669.11
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+222 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1070
+Surface Energy: 238.234
+Boundary Energy: 1428.52
+Energy: 1666.75
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+220 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1075
+Surface Energy: 237.784
+Boundary Energy: 1426.73
+Energy: 1664.51
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+220 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1080
+Surface Energy: 237.364
+Boundary Energy: 1425.03
+Energy: 1662.39
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+220 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1085
+Surface Energy: 236.974
+Boundary Energy: 1423.41
+Energy: 1660.39
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+219 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1090
+Surface Energy: 236.614
+Boundary Energy: 1421.88
+Energy: 1658.5
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+220 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1095
+Surface Energy: 236.283
+Boundary Energy: 1420.44
+Energy: 1656.73
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+219 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1100
+Surface Energy: 235.981
+Boundary Energy: 1419.09
+Energy: 1655.07
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+219 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1105
+Surface Energy: 235.708
+Boundary Energy: 1417.82
+Energy: 1653.52
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+221 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1110
+Surface Energy: 235.465
+Boundary Energy: 1416.63
+Energy: 1652.09
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+218 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1115
+Surface Energy: 235.25
+Boundary Energy: 1415.53
+Energy: 1650.78
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+218 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1120
+Surface Energy: 235.064
+Boundary Energy: 1414.51
+Energy: 1649.57
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+215 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1125
+Surface Energy: 234.906
+Boundary Energy: 1413.58
+Energy: 1648.48
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+218 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1130
+Surface Energy: 234.778
+Boundary Energy: 1412.73
+Energy: 1647.51
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+219 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1135
+Surface Energy: 234.677
+Boundary Energy: 1411.96
+Energy: 1646.64
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+218 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1140
+Surface Energy: 234.606
+Boundary Energy: 1411.28
+Energy: 1645.88
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+218 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1145
+Surface Energy: 234.563
+Boundary Energy: 1410.68
+Energy: 1645.24
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+216 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1150
+Surface Energy: 234.548
+Boundary Energy: 1410.16
+Energy: 1644.71
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+220 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1155
+Surface Energy: 234.561
+Boundary Energy: 1409.72
+Energy: 1644.29
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+221 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1160
+Surface Energy: 234.603
+Boundary Energy: 1409.37
+Energy: 1643.97
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+221 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1165
+Surface Energy: 234.674
+Boundary Energy: 1409.1
+Energy: 1643.77
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+220 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1170
+Surface Energy: 234.772
+Boundary Energy: 1408.91
+Energy: 1643.68
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+221 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1175
+Surface Energy: 234.9
+Boundary Energy: 1408.8
+Energy: 1643.7
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+220 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1180
+Surface Energy: 235.055
+Boundary Energy: 1408.78
+Energy: 1643.83
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+220 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1185
+Surface Energy: 235.24
+Boundary Energy: 1408.83
+Energy: 1644.07
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+222 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1190
+Surface Energy: 235.453
+Boundary Energy: 1408.97
+Energy: 1644.43
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+222 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1195
+Surface Energy: 235.694
+Boundary Energy: 1409.19
+Energy: 1644.89
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+220 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1200
+Surface Energy: 235.965
+Boundary Energy: 1409.49
+Energy: 1645.46
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+222 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1205
+Surface Energy: 236.264
+Boundary Energy: 1409.88
+Energy: 1646.14
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+222 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1210
+Surface Energy: 236.592
+Boundary Energy: 1410.34
+Energy: 1646.93
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+220 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1215
+Surface Energy: 236.95
+Boundary Energy: 1410.88
+Energy: 1647.83
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+223 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1220
+Surface Energy: 237.336
+Boundary Energy: 1411.51
+Energy: 1648.85
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+223 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1225
+Surface Energy: 237.752
+Boundary Energy: 1412.22
+Energy: 1649.97
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+221 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1230
+Surface Energy: 238.198
+Boundary Energy: 1413.01
+Energy: 1651.21
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+223 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1235
+Surface Energy: 238.673
+Boundary Energy: 1413.88
+Energy: 1652.56
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+220 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1240
+Surface Energy: 239.179
+Boundary Energy: 1414.84
+Energy: 1654.01
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+220 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1245
+Surface Energy: 239.714
+Boundary Energy: 1415.87
+Energy: 1655.59
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+222 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1250
+Surface Energy: 240.28
+Boundary Energy: 1416.99
+Energy: 1657.27
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+220 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1255
+Surface Energy: 240.877
+Boundary Energy: 1418.19
+Energy: 1659.07
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+220 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1260
+Surface Energy: 241.504
+Boundary Energy: 1419.47
+Energy: 1660.98
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+221 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1265
+Surface Energy: 242.163
+Boundary Energy: 1420.84
+Energy: 1663
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+222 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1270
+Surface Energy: 242.853
+Boundary Energy: 1422.29
+Energy: 1665.14
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+222 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1275
+Surface Energy: 243.575
+Boundary Energy: 1423.82
+Energy: 1667.39
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+224 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1280
+Surface Energy: 244.328
+Boundary Energy: 1425.43
+Energy: 1669.76
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+221 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1285
+Surface Energy: 245.114
+Boundary Energy: 1427.13
+Energy: 1672.25
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+224 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1290
+Surface Energy: 245.933
+Boundary Energy: 1428.91
+Energy: 1674.85
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+224 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1295
+Surface Energy: 246.784
+Boundary Energy: 1430.78
+Energy: 1677.57
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+224 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1300
+Surface Energy: 247.669
+Boundary Energy: 1432.73
+Energy: 1680.4
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+224 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1305
+Surface Energy: 248.587
+Boundary Energy: 1434.77
+Energy: 1683.36
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+225 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1310
+Surface Energy: 249.54
+Boundary Energy: 1436.89
+Energy: 1686.43
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+225 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1315
+Surface Energy: 250.527
+Boundary Energy: 1439.1
+Energy: 1689.63
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+225 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1320
+Surface Energy: 251.549
+Boundary Energy: 1441.39
+Energy: 1692.94
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+225 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1325
+Surface Energy: 252.607
+Boundary Energy: 1443.77
+Energy: 1696.38
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+225 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1330
+Surface Energy: 253.7
+Boundary Energy: 1446.24
+Energy: 1699.94
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+225 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1335
+Surface Energy: 254.83
+Boundary Energy: 1448.8
+Energy: 1703.63
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+224 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1340
+Surface Energy: 255.997
+Boundary Energy: 1451.44
+Energy: 1707.44
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+226 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1345
+Surface Energy: 257.201
+Boundary Energy: 1454.17
+Energy: 1711.37
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+224 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1350
+Surface Energy: 258.443
+Boundary Energy: 1456.99
+Energy: 1715.43
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+225 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1355
+Surface Energy: 259.723
+Boundary Energy: 1459.9
+Energy: 1719.62
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+225 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1360
+Surface Energy: 261.043
+Boundary Energy: 1462.9
+Energy: 1723.94
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+225 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1365
+Surface Energy: 262.402
+Boundary Energy: 1465.99
+Energy: 1728.39
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+225 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1370
+Surface Energy: 263.801
+Boundary Energy: 1469.17
+Energy: 1732.97
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+226 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1375
+Surface Energy: 265.241
+Boundary Energy: 1472.45
+Energy: 1737.69
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+226 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1380
+Surface Energy: 266.723
+Boundary Energy: 1475.81
+Energy: 1742.54
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+226 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1385
+Surface Energy: 268.248
+Boundary Energy: 1479.27
+Energy: 1747.52
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+225 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1390
+Surface Energy: 269.815
+Boundary Energy: 1482.83
+Energy: 1752.64
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+227 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1395
+Surface Energy: 271.426
+Boundary Energy: 1486.48
+Energy: 1757.9
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+225 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1400
+Surface Energy: 273.081
+Boundary Energy: 1490.22
+Energy: 1763.3
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+225 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1405
+Surface Energy: 274.782
+Boundary Energy: 1494.06
+Energy: 1768.84
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+226 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1410
+Surface Energy: 276.529
+Boundary Energy: 1498
+Energy: 1774.53
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+228 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1415
+Surface Energy: 278.323
+Boundary Energy: 1502.03
+Energy: 1780.36
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+226 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1420
+Surface Energy: 280.165
+Boundary Energy: 1506.17
+Energy: 1786.33
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+226 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1425
+Surface Energy: 282.056
+Boundary Energy: 1510.4
+Energy: 1792.46
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+227 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1430
+Surface Energy: 283.996
+Boundary Energy: 1514.73
+Energy: 1798.73
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+227 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1435
+Surface Energy: 285.987
+Boundary Energy: 1519.17
+Energy: 1805.16
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+229 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1440
+Surface Energy: 288.03
+Boundary Energy: 1523.71
+Energy: 1811.74
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+227 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1445
+Surface Energy: 290.125
+Boundary Energy: 1528.35
+Energy: 1818.47
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+229 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1450
+Surface Energy: 292.275
+Boundary Energy: 1533.09
+Energy: 1825.37
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+231 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1455
+Surface Energy: 294.479
+Boundary Energy: 1537.94
+Energy: 1832.42
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+229 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1460
+Surface Energy: 296.739
+Boundary Energy: 1542.9
+Energy: 1839.64
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+229 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1465
+Surface Energy: 299.056
+Boundary Energy: 1547.96
+Energy: 1847.02
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+230 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1470
+Surface Energy: 301.432
+Boundary Energy: 1553.14
+Energy: 1854.57
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+231 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1475
+Surface Energy: 303.868
+Boundary Energy: 1558.42
+Energy: 1862.29
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+230 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1480
+Surface Energy: 306.365
+Boundary Energy: 1563.81
+Energy: 1870.18
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+231 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1485
+Surface Energy: 308.924
+Boundary Energy: 1569.32
+Energy: 1878.24
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+230 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1490
+Surface Energy: 311.547
+Boundary Energy: 1574.94
+Energy: 1886.48
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+232 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1495
+Surface Energy: 314.235
+Boundary Energy: 1580.67
+Energy: 1894.91
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+232 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1500
+Surface Energy: 316.989
+Boundary Energy: 1586.52
+Energy: 1903.51
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+809 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 50
+Surface Energy: 7086.63
+Boundary Energy: 2501.57
+Energy: 9588.19
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+692 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 55
+Surface Energy: 7052.37
+Boundary Energy: 2789.6
+Energy: 9841.97
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+646 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 60
+Surface Energy: 6945.58
+Boundary Energy: 3029.96
+Energy: 9975.54
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+606 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 65
+Surface Energy: 6791.91
+Boundary Energy: 3229.62
+Energy: 10021.5
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+592 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 70
+Surface Energy: 6608.6
+Boundary Energy: 3394.6
+Energy: 10003.2
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+566 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 75
+Surface Energy: 6407.39
+Boundary Energy: 3530.06
+Energy: 9937.44
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+545 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 80
+Surface Energy: 6196.42
+Boundary Energy: 3640.36
+Energy: 9836.78
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+524 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 85
+Surface Energy: 5981.34
+Boundary Energy: 3729.23
+Energy: 9710.57
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+504 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 90
+Surface Energy: 5766.1
+Boundary Energy: 3799.79
+Energy: 9565.88
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+490 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 95
+Surface Energy: 5553.42
+Boundary Energy: 3854.71
+Energy: 9408.13
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+476 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 100
+Surface Energy: 5345.19
+Boundary Energy: 3896.24
+Energy: 9241.43
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+463 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 105
+Surface Energy: 5142.66
+Boundary Energy: 3926.31
+Energy: 9068.97
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+453 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 110
+Surface Energy: 4946.63
+Boundary Energy: 3946.56
+Energy: 8893.19
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+446 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 115
+Surface Energy: 4757.61
+Boundary Energy: 3958.37
+Energy: 8715.98
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+438 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 120
+Surface Energy: 4575.85
+Boundary Energy: 3962.95
+Energy: 8538.8
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+425 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 125
+Surface Energy: 4401.44
+Boundary Energy: 3961.32
+Energy: 8362.76
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+416 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 130
+Surface Energy: 4234.34
+Boundary Energy: 3954.36
+Energy: 8188.71
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+410 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 135
+Surface Energy: 4074.45
+Boundary Energy: 3942.84
+Energy: 8017.29
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+403 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 140
+Surface Energy: 3921.59
+Boundary Energy: 3927.4
+Energy: 7848.98
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+396 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 145
+Surface Energy: 3775.54
+Boundary Energy: 3908.61
+Energy: 7684.14
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+388 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 150
+Surface Energy: 3636.06
+Boundary Energy: 3886.96
+Energy: 7523.02
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+380 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 155
+Surface Energy: 3502.9
+Boundary Energy: 3862.88
+Energy: 7365.78
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+376 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 160
+Surface Energy: 3375.78
+Boundary Energy: 3836.75
+Energy: 7212.53
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+370 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 165
+Surface Energy: 3254.45
+Boundary Energy: 3808.87
+Energy: 7063.32
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+367 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 170
+Surface Energy: 3138.63
+Boundary Energy: 3779.55
+Energy: 6918.18
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+359 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 175
+Surface Energy: 3028.07
+Boundary Energy: 3749.01
+Energy: 6777.08
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+359 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 180
+Surface Energy: 2922.52
+Boundary Energy: 3717.47
+Energy: 6639.99
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+354 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 185
+Surface Energy: 2821.72
+Boundary Energy: 3685.13
+Energy: 6506.85
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+349 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 190
+Surface Energy: 2725.45
+Boundary Energy: 3652.14
+Energy: 6377.59
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+344 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 195
+Surface Energy: 2633.47
+Boundary Energy: 3618.66
+Energy: 6252.13
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+341 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 200
+Surface Energy: 2545.58
+Boundary Energy: 3584.8
+Energy: 6130.37
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+333 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 205
+Surface Energy: 2461.56
+Boundary Energy: 3550.67
+Energy: 6012.23
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+336 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 210
+Surface Energy: 2381.22
+Boundary Energy: 3516.39
+Energy: 5897.6
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+334 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 215
+Surface Energy: 2304.37
+Boundary Energy: 3482.02
+Energy: 5786.38
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+332 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 220
+Surface Energy: 2230.84
+Boundary Energy: 3447.64
+Energy: 5678.48
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+326 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 225
+Surface Energy: 2160.46
+Boundary Energy: 3413.32
+Energy: 5573.78
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+322 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 230
+Surface Energy: 2093.08
+Boundary Energy: 3379.11
+Energy: 5472.19
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+321 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 235
+Surface Energy: 2028.53
+Boundary Energy: 3345.07
+Energy: 5373.61
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+319 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 240
+Surface Energy: 1966.69
+Boundary Energy: 3311.24
+Energy: 5277.93
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+314 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 245
+Surface Energy: 1907.42
+Boundary Energy: 3277.65
+Energy: 5185.07
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+312 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 250
+Surface Energy: 1850.59
+Boundary Energy: 3244.33
+Energy: 5094.92
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+312 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 255
+Surface Energy: 1796.08
+Boundary Energy: 3211.32
+Energy: 5007.4
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+312 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 260
+Surface Energy: 1743.77
+Boundary Energy: 3178.64
+Energy: 4922.41
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+309 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 265
+Surface Energy: 1693.57
+Boundary Energy: 3146.3
+Energy: 4839.87
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+307 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 270
+Surface Energy: 1645.37
+Boundary Energy: 3114.33
+Energy: 4759.7
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+305 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 275
+Surface Energy: 1599.08
+Boundary Energy: 3082.74
+Energy: 4681.82
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+302 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 280
+Surface Energy: 1554.59
+Boundary Energy: 3051.54
+Energy: 4606.14
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+300 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 285
+Surface Energy: 1511.84
+Boundary Energy: 3020.75
+Energy: 4532.59
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+298 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 290
+Surface Energy: 1470.73
+Boundary Energy: 2990.36
+Energy: 4461.09
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+295 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 295
+Surface Energy: 1431.19
+Boundary Energy: 2960.39
+Energy: 4391.59
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+294 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 300
+Surface Energy: 1393.16
+Boundary Energy: 2930.84
+Energy: 4324
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+293 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 305
+Surface Energy: 1356.55
+Boundary Energy: 2901.72
+Energy: 4258.26
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+290 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 310
+Surface Energy: 1321.3
+Boundary Energy: 2873.02
+Energy: 4194.32
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+288 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 315
+Surface Energy: 1287.36
+Boundary Energy: 2844.75
+Energy: 4132.11
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+287 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 320
+Surface Energy: 1254.66
+Boundary Energy: 2816.9
+Energy: 4071.57
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+286 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 325
+Surface Energy: 1223.15
+Boundary Energy: 2789.49
+Energy: 4012.64
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+287 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 330
+Surface Energy: 1192.78
+Boundary Energy: 2762.5
+Energy: 3955.28
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+287 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 335
+Surface Energy: 1163.49
+Boundary Energy: 2735.93
+Energy: 3899.42
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+283 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 340
+Surface Energy: 1135.25
+Boundary Energy: 2709.78
+Energy: 3845.03
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+283 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 345
+Surface Energy: 1107.99
+Boundary Energy: 2684.06
+Energy: 3792.05
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+281 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 350
+Surface Energy: 1081.69
+Boundary Energy: 2658.74
+Energy: 3740.43
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+280 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 355
+Surface Energy: 1056.3
+Boundary Energy: 2633.84
+Energy: 3690.14
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+278 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 360
+Surface Energy: 1031.78
+Boundary Energy: 2609.35
+Energy: 3641.13
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+278 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 365
+Surface Energy: 1008.1
+Boundary Energy: 2585.25
+Energy: 3593.35
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+275 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 370
+Surface Energy: 985.218
+Boundary Energy: 2561.56
+Energy: 3546.77
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+275 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 375
+Surface Energy: 963.105
+Boundary Energy: 2538.25
+Energy: 3501.36
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+275 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 380
+Surface Energy: 941.729
+Boundary Energy: 2515.34
+Energy: 3457.07
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+273 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 385
+Surface Energy: 921.059
+Boundary Energy: 2492.8
+Energy: 3413.86
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+271 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 390
+Surface Energy: 901.067
+Boundary Energy: 2470.65
+Energy: 3371.71
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+270 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 395
+Surface Energy: 881.725
+Boundary Energy: 2448.86
+Energy: 3330.59
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+270 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 400
+Surface Energy: 863.009
+Boundary Energy: 2427.45
+Energy: 3290.46
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+266 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 405
+Surface Energy: 844.893
+Boundary Energy: 2406.39
+Energy: 3251.28
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+269 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 410
+Surface Energy: 827.354
+Boundary Energy: 2385.69
+Energy: 3213.04
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+266 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 415
+Surface Energy: 810.369
+Boundary Energy: 2365.34
+Energy: 3175.71
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+265 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 420
+Surface Energy: 793.917
+Boundary Energy: 2345.33
+Energy: 3139.25
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+260 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 425
+Surface Energy: 777.977
+Boundary Energy: 2325.66
+Energy: 3103.64
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+260 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 430
+Surface Energy: 762.531
+Boundary Energy: 2306.33
+Energy: 3068.86
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+262 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 435
+Surface Energy: 747.559
+Boundary Energy: 2287.32
+Energy: 3034.88
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+262 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 440
+Surface Energy: 733.043
+Boundary Energy: 2268.63
+Energy: 3001.68
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+262 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 445
+Surface Energy: 718.967
+Boundary Energy: 2250.27
+Energy: 2969.23
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+260 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 450
+Surface Energy: 705.314
+Boundary Energy: 2232.21
+Energy: 2937.53
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+258 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 455
+Surface Energy: 692.069
+Boundary Energy: 2214.46
+Energy: 2906.53
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+257 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 460
+Surface Energy: 679.217
+Boundary Energy: 2197.01
+Energy: 2876.23
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+257 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 465
+Surface Energy: 666.744
+Boundary Energy: 2179.86
+Energy: 2846.61
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+256 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 470
+Surface Energy: 654.636
+Boundary Energy: 2163
+Energy: 2817.64
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+256 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 475
+Surface Energy: 642.88
+Boundary Energy: 2146.43
+Energy: 2789.31
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+252 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 480
+Surface Energy: 631.463
+Boundary Energy: 2130.13
+Energy: 2761.6
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+251 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 485
+Surface Energy: 620.375
+Boundary Energy: 2114.12
+Energy: 2734.49
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+251 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 490
+Surface Energy: 609.603
+Boundary Energy: 2098.37
+Energy: 2707.97
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+250 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 495
+Surface Energy: 599.136
+Boundary Energy: 2082.89
+Energy: 2682.03
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+249 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 500
+Surface Energy: 588.964
+Boundary Energy: 2067.67
+Energy: 2656.64
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+249 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 505
+Surface Energy: 579.077
+Boundary Energy: 2052.71
+Energy: 2631.79
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+249 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 510
+Surface Energy: 569.466
+Boundary Energy: 2038.01
+Energy: 2607.47
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+247 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 515
+Surface Energy: 560.12
+Boundary Energy: 2023.55
+Energy: 2583.67
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+248 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 520
+Surface Energy: 551.031
+Boundary Energy: 2009.34
+Energy: 2560.37
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+246 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 525
+Surface Energy: 542.191
+Boundary Energy: 1995.36
+Energy: 2537.55
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+245 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 530
+Surface Energy: 533.591
+Boundary Energy: 1981.63
+Energy: 2515.22
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+244 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 535
+Surface Energy: 525.224
+Boundary Energy: 1968.12
+Energy: 2493.34
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+243 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 540
+Surface Energy: 517.082
+Boundary Energy: 1954.84
+Energy: 2471.92
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+244 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 545
+Surface Energy: 509.158
+Boundary Energy: 1941.79
+Energy: 2450.95
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+241 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 550
+Surface Energy: 501.444
+Boundary Energy: 1928.95
+Energy: 2430.4
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+240 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 555
+Surface Energy: 493.934
+Boundary Energy: 1916.34
+Energy: 2410.27
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+239 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 560
+Surface Energy: 486.623
+Boundary Energy: 1903.93
+Energy: 2390.56
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+238 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 565
+Surface Energy: 479.502
+Boundary Energy: 1891.74
+Energy: 2371.24
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+238 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 570
+Surface Energy: 472.567
+Boundary Energy: 1879.75
+Energy: 2352.31
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+238 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 575
+Surface Energy: 465.812
+Boundary Energy: 1867.96
+Energy: 2333.77
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+238 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 580
+Surface Energy: 459.232
+Boundary Energy: 1856.37
+Energy: 2315.6
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+237 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 585
+Surface Energy: 452.82
+Boundary Energy: 1844.97
+Energy: 2297.79
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+236 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 590
+Surface Energy: 446.572
+Boundary Energy: 1833.77
+Energy: 2280.35
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+236 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 595
+Surface Energy: 440.484
+Boundary Energy: 1822.76
+Energy: 2263.24
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+235 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 600
+Surface Energy: 434.549
+Boundary Energy: 1811.93
+Energy: 2246.48
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+235 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 605
+Surface Energy: 428.764
+Boundary Energy: 1801.29
+Energy: 2230.05
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+234 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 610
+Surface Energy: 423.125
+Boundary Energy: 1790.82
+Energy: 2213.95
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+235 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 615
+Surface Energy: 417.627
+Boundary Energy: 1780.54
+Energy: 2198.16
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+234 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 620
+Surface Energy: 412.265
+Boundary Energy: 1770.42
+Energy: 2182.69
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+233 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 625
+Surface Energy: 407.037
+Boundary Energy: 1760.48
+Energy: 2167.52
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+234 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 630
+Surface Energy: 401.939
+Boundary Energy: 1750.7
+Energy: 2152.64
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+231 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 635
+Surface Energy: 396.965
+Boundary Energy: 1741.1
+Energy: 2138.06
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+232 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 640
+Surface Energy: 392.115
+Boundary Energy: 1731.65
+Energy: 2123.77
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+231 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 645
+Surface Energy: 387.382
+Boundary Energy: 1722.37
+Energy: 2109.75
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+227 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 650
+Surface Energy: 382.766
+Boundary Energy: 1713.24
+Energy: 2096.01
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+231 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 655
+Surface Energy: 378.261
+Boundary Energy: 1704.27
+Energy: 2082.53
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+230 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 660
+Surface Energy: 373.866
+Boundary Energy: 1695.45
+Energy: 2069.32
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+230 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 665
+Surface Energy: 369.577
+Boundary Energy: 1686.79
+Energy: 2056.36
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+230 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 670
+Surface Energy: 365.392
+Boundary Energy: 1678.27
+Energy: 2043.66
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+229 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 675
+Surface Energy: 361.307
+Boundary Energy: 1669.9
+Energy: 2031.21
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+229 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 680
+Surface Energy: 357.321
+Boundary Energy: 1661.67
+Energy: 2018.99
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+229 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 685
+Surface Energy: 353.43
+Boundary Energy: 1653.59
+Energy: 2007.02
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+229 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 690
+Surface Energy: 349.631
+Boundary Energy: 1645.65
+Energy: 1995.28
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+229 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 695
+Surface Energy: 345.924
+Boundary Energy: 1637.84
+Energy: 1983.76
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+228 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 700
+Surface Energy: 342.305
+Boundary Energy: 1630.17
+Energy: 1972.47
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+228 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 705
+Surface Energy: 338.772
+Boundary Energy: 1622.63
+Energy: 1961.41
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+228 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 710
+Surface Energy: 335.323
+Boundary Energy: 1615.23
+Energy: 1950.55
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+225 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 715
+Surface Energy: 331.956
+Boundary Energy: 1607.96
+Energy: 1939.91
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+225 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 720
+Surface Energy: 328.668
+Boundary Energy: 1600.81
+Energy: 1929.48
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+224 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 725
+Surface Energy: 325.459
+Boundary Energy: 1593.8
+Energy: 1919.25
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+224 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 730
+Surface Energy: 322.325
+Boundary Energy: 1586.9
+Energy: 1909.23
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+224 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 735
+Surface Energy: 319.266
+Boundary Energy: 1580.14
+Energy: 1899.4
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+224 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 740
+Surface Energy: 316.279
+Boundary Energy: 1573.49
+Energy: 1889.77
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+226 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 745
+Surface Energy: 313.362
+Boundary Energy: 1566.96
+Energy: 1880.32
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+224 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 750
+Surface Energy: 310.515
+Boundary Energy: 1560.55
+Energy: 1871.07
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+223 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 755
+Surface Energy: 307.735
+Boundary Energy: 1554.26
+Energy: 1862
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+223 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 760
+Surface Energy: 305.021
+Boundary Energy: 1548.09
+Energy: 1853.11
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+223 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 765
+Surface Energy: 302.371
+Boundary Energy: 1542.02
+Energy: 1844.39
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+223 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 770
+Surface Energy: 299.784
+Boundary Energy: 1536.07
+Energy: 1835.86
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+223 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 775
+Surface Energy: 297.259
+Boundary Energy: 1530.24
+Energy: 1827.5
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+222 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 780
+Surface Energy: 294.794
+Boundary Energy: 1524.51
+Energy: 1819.3
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+222 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 785
+Surface Energy: 292.388
+Boundary Energy: 1518.89
+Energy: 1811.28
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+221 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 790
+Surface Energy: 290.039
+Boundary Energy: 1513.38
+Energy: 1803.42
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+222 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 795
+Surface Energy: 287.747
+Boundary Energy: 1507.97
+Energy: 1795.72
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+222 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 800
+Surface Energy: 285.51
+Boundary Energy: 1502.67
+Energy: 1788.18
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+221 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 805
+Surface Energy: 283.326
+Boundary Energy: 1497.47
+Energy: 1780.8
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+221 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 810
+Surface Energy: 281.196
+Boundary Energy: 1492.38
+Energy: 1773.57
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+221 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 815
+Surface Energy: 279.118
+Boundary Energy: 1487.38
+Energy: 1766.5
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+221 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 820
+Surface Energy: 277.09
+Boundary Energy: 1482.49
+Energy: 1759.58
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+221 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 825
+Surface Energy: 275.112
+Boundary Energy: 1477.69
+Energy: 1752.8
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+220 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 830
+Surface Energy: 273.182
+Boundary Energy: 1472.99
+Energy: 1746.17
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+220 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 835
+Surface Energy: 271.301
+Boundary Energy: 1468.39
+Energy: 1739.69
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+219 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 840
+Surface Energy: 269.466
+Boundary Energy: 1463.89
+Energy: 1733.35
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+221 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 845
+Surface Energy: 267.677
+Boundary Energy: 1459.48
+Energy: 1727.15
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+220 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 850
+Surface Energy: 265.934
+Boundary Energy: 1455.16
+Energy: 1721.09
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+220 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 855
+Surface Energy: 264.234
+Boundary Energy: 1450.94
+Energy: 1715.17
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+220 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 860
+Surface Energy: 262.578
+Boundary Energy: 1446.8
+Energy: 1709.38
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+219 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 865
+Surface Energy: 260.965
+Boundary Energy: 1442.76
+Energy: 1703.73
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+219 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 870
+Surface Energy: 259.394
+Boundary Energy: 1438.81
+Energy: 1698.21
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+219 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 875
+Surface Energy: 257.864
+Boundary Energy: 1434.95
+Energy: 1692.81
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+219 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 880
+Surface Energy: 256.374
+Boundary Energy: 1431.18
+Energy: 1687.55
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+219 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 885
+Surface Energy: 254.924
+Boundary Energy: 1427.49
+Energy: 1682.42
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+218 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 890
+Surface Energy: 253.513
+Boundary Energy: 1423.9
+Energy: 1677.41
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+218 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 895
+Surface Energy: 252.141
+Boundary Energy: 1420.38
+Energy: 1672.52
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+218 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 900
+Surface Energy: 250.806
+Boundary Energy: 1416.96
+Energy: 1667.76
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+218 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 905
+Surface Energy: 249.509
+Boundary Energy: 1413.62
+Energy: 1663.13
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+218 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 910
+Surface Energy: 248.249
+Boundary Energy: 1410.36
+Energy: 1658.61
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+216 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 915
+Surface Energy: 247.024
+Boundary Energy: 1407.18
+Energy: 1654.21
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+216 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 920
+Surface Energy: 245.835
+Boundary Energy: 1404.09
+Energy: 1649.93
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+216 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 925
+Surface Energy: 244.681
+Boundary Energy: 1401.08
+Energy: 1645.76
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+215 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 930
+Surface Energy: 243.562
+Boundary Energy: 1398.15
+Energy: 1641.72
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+216 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 935
+Surface Energy: 242.477
+Boundary Energy: 1395.31
+Energy: 1637.78
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+216 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 940
+Surface Energy: 241.425
+Boundary Energy: 1392.54
+Energy: 1633.96
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+215 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 945
+Surface Energy: 240.406
+Boundary Energy: 1389.85
+Energy: 1630.26
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+215 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 950
+Surface Energy: 239.421
+Boundary Energy: 1387.24
+Energy: 1626.66
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+215 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 955
+Surface Energy: 238.467
+Boundary Energy: 1384.71
+Energy: 1623.18
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+215 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 960
+Surface Energy: 237.545
+Boundary Energy: 1382.26
+Energy: 1619.81
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+214 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 965
+Surface Energy: 236.655
+Boundary Energy: 1379.89
+Energy: 1616.54
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+215 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 970
+Surface Energy: 235.795
+Boundary Energy: 1377.59
+Energy: 1613.38
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+215 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 975
+Surface Energy: 234.967
+Boundary Energy: 1375.37
+Energy: 1610.33
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+214 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 980
+Surface Energy: 234.168
+Boundary Energy: 1373.22
+Energy: 1607.39
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+215 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 985
+Surface Energy: 233.4
+Boundary Energy: 1371.15
+Energy: 1604.55
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+213 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 990
+Surface Energy: 232.662
+Boundary Energy: 1369.16
+Energy: 1601.82
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+212 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 995
+Surface Energy: 231.953
+Boundary Energy: 1367.24
+Energy: 1599.19
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+214 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1000
+Surface Energy: 231.273
+Boundary Energy: 1365.4
+Energy: 1596.67
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+215 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1005
+Surface Energy: 230.621
+Boundary Energy: 1363.63
+Energy: 1594.25
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+214 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1010
+Surface Energy: 229.999
+Boundary Energy: 1361.93
+Energy: 1591.93
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+214 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1015
+Surface Energy: 229.405
+Boundary Energy: 1360.31
+Energy: 1589.71
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+216 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1020
+Surface Energy: 228.838
+Boundary Energy: 1358.76
+Energy: 1587.59
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+213 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1025
+Surface Energy: 228.3
+Boundary Energy: 1357.28
+Energy: 1585.58
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+214 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1030
+Surface Energy: 227.789
+Boundary Energy: 1355.87
+Energy: 1583.66
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+213 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1035
+Surface Energy: 227.306
+Boundary Energy: 1354.54
+Energy: 1581.85
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+213 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1040
+Surface Energy: 226.85
+Boundary Energy: 1353.28
+Energy: 1580.13
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+213 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1045
+Surface Energy: 226.421
+Boundary Energy: 1352.09
+Energy: 1578.51
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+212 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1050
+Surface Energy: 226.018
+Boundary Energy: 1350.97
+Energy: 1576.99
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+212 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1055
+Surface Energy: 225.643
+Boundary Energy: 1349.93
+Energy: 1575.57
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+213 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1060
+Surface Energy: 225.294
+Boundary Energy: 1348.95
+Energy: 1574.25
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+212 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1065
+Surface Energy: 224.971
+Boundary Energy: 1348.05
+Energy: 1573.02
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+211 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1070
+Surface Energy: 224.675
+Boundary Energy: 1347.22
+Energy: 1571.89
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+212 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1075
+Surface Energy: 224.405
+Boundary Energy: 1346.45
+Energy: 1570.86
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+211 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1080
+Surface Energy: 224.161
+Boundary Energy: 1345.76
+Energy: 1569.92
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+211 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1085
+Surface Energy: 223.943
+Boundary Energy: 1345.14
+Energy: 1569.08
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+210 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1090
+Surface Energy: 223.75
+Boundary Energy: 1344.58
+Energy: 1568.33
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+211 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1095
+Surface Energy: 223.584
+Boundary Energy: 1344.1
+Energy: 1567.69
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+210 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1100
+Surface Energy: 223.443
+Boundary Energy: 1343.69
+Energy: 1567.13
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+208 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1105
+Surface Energy: 223.328
+Boundary Energy: 1343.35
+Energy: 1566.67
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+208 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1110
+Surface Energy: 223.238
+Boundary Energy: 1343.07
+Energy: 1566.31
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+208 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1115
+Surface Energy: 223.175
+Boundary Energy: 1342.87
+Energy: 1566.05
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+204 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1120
+Surface Energy: 223.136
+Boundary Energy: 1342.74
+Energy: 1565.87
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+150 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1125
+Surface Energy: 223.124
+Boundary Energy: 1342.67
+Energy: 1565.8
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+204 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1130
+Surface Energy: 223.136
+Boundary Energy: 1342.68
+Energy: 1565.81
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+206 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1135
+Surface Energy: 223.175
+Boundary Energy: 1342.75
+Energy: 1565.93
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+208 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1140
+Surface Energy: 223.238
+Boundary Energy: 1342.9
+Energy: 1566.14
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+208 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1145
+Surface Energy: 223.328
+Boundary Energy: 1343.11
+Energy: 1566.44
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+209 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1150
+Surface Energy: 223.443
+Boundary Energy: 1343.4
+Energy: 1566.84
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+210 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1155
+Surface Energy: 223.584
+Boundary Energy: 1343.75
+Energy: 1567.33
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+211 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1160
+Surface Energy: 223.75
+Boundary Energy: 1344.17
+Energy: 1567.92
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+211 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1165
+Surface Energy: 223.943
+Boundary Energy: 1344.67
+Energy: 1568.61
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+211 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1170
+Surface Energy: 224.161
+Boundary Energy: 1345.23
+Energy: 1569.39
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+211 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1175
+Surface Energy: 224.405
+Boundary Energy: 1345.86
+Energy: 1570.27
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+211 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1180
+Surface Energy: 224.675
+Boundary Energy: 1346.56
+Energy: 1571.24
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+212 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1185
+Surface Energy: 224.971
+Boundary Energy: 1347.34
+Energy: 1572.31
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+212 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1190
+Surface Energy: 225.294
+Boundary Energy: 1348.18
+Energy: 1573.48
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+212 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1195
+Surface Energy: 225.643
+Boundary Energy: 1349.1
+Energy: 1574.74
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+211 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1200
+Surface Energy: 226.018
+Boundary Energy: 1350.08
+Energy: 1576.1
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+211 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1205
+Surface Energy: 226.421
+Boundary Energy: 1351.14
+Energy: 1577.56
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+214 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1210
+Surface Energy: 226.85
+Boundary Energy: 1352.26
+Energy: 1579.11
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+214 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1215
+Surface Energy: 227.306
+Boundary Energy: 1353.46
+Energy: 1580.77
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+214 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1220
+Surface Energy: 227.789
+Boundary Energy: 1354.73
+Energy: 1582.52
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+214 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1225
+Surface Energy: 228.3
+Boundary Energy: 1356.07
+Energy: 1584.37
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+215 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1230
+Surface Energy: 228.838
+Boundary Energy: 1357.49
+Energy: 1586.33
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+215 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1235
+Surface Energy: 229.405
+Boundary Energy: 1358.97
+Energy: 1588.38
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+213 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1240
+Surface Energy: 229.999
+Boundary Energy: 1360.53
+Energy: 1590.53
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+214 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1245
+Surface Energy: 230.621
+Boundary Energy: 1362.16
+Energy: 1592.78
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+211 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1250
+Surface Energy: 231.273
+Boundary Energy: 1363.87
+Energy: 1595.14
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+214 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1255
+Surface Energy: 231.953
+Boundary Energy: 1365.65
+Energy: 1597.6
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+212 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1260
+Surface Energy: 232.662
+Boundary Energy: 1367.5
+Energy: 1600.16
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+212 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1265
+Surface Energy: 233.4
+Boundary Energy: 1369.42
+Energy: 1602.82
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+212 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1270
+Surface Energy: 234.168
+Boundary Energy: 1371.42
+Energy: 1605.59
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+212 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1275
+Surface Energy: 234.967
+Boundary Energy: 1373.5
+Energy: 1608.47
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+213 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1280
+Surface Energy: 235.795
+Boundary Energy: 1375.65
+Energy: 1611.45
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+213 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1285
+Surface Energy: 236.655
+Boundary Energy: 1377.88
+Energy: 1614.53
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+213 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1290
+Surface Energy: 237.545
+Boundary Energy: 1380.18
+Energy: 1617.73
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+213 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1295
+Surface Energy: 238.467
+Boundary Energy: 1382.56
+Energy: 1621.03
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+212 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1300
+Surface Energy: 239.421
+Boundary Energy: 1385.02
+Energy: 1624.44
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+213 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1305
+Surface Energy: 240.406
+Boundary Energy: 1387.55
+Energy: 1627.96
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+213 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1310
+Surface Energy: 241.425
+Boundary Energy: 1390.16
+Energy: 1631.59
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+214 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1315
+Surface Energy: 242.477
+Boundary Energy: 1392.86
+Energy: 1635.33
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+214 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1320
+Surface Energy: 243.562
+Boundary Energy: 1395.63
+Energy: 1639.19
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+213 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1325
+Surface Energy: 244.681
+Boundary Energy: 1398.48
+Energy: 1643.16
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+218 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1330
+Surface Energy: 245.835
+Boundary Energy: 1401.41
+Energy: 1647.24
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+218 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1335
+Surface Energy: 247.024
+Boundary Energy: 1404.42
+Energy: 1651.44
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+217 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1340
+Surface Energy: 248.249
+Boundary Energy: 1407.51
+Energy: 1655.76
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+217 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1345
+Surface Energy: 249.509
+Boundary Energy: 1410.68
+Energy: 1660.19
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+218 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1350
+Surface Energy: 250.806
+Boundary Energy: 1413.94
+Energy: 1664.75
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+217 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1355
+Surface Energy: 252.141
+Boundary Energy: 1417.28
+Energy: 1669.42
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+218 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1360
+Surface Energy: 253.513
+Boundary Energy: 1420.71
+Energy: 1674.22
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+218 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1365
+Surface Energy: 254.924
+Boundary Energy: 1424.21
+Energy: 1679.14
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+221 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1370
+Surface Energy: 256.374
+Boundary Energy: 1427.81
+Energy: 1684.18
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+219 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1375
+Surface Energy: 257.864
+Boundary Energy: 1431.49
+Energy: 1689.35
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+220 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1380
+Surface Energy: 259.394
+Boundary Energy: 1435.26
+Energy: 1694.65
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+220 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1385
+Surface Energy: 260.965
+Boundary Energy: 1439.11
+Energy: 1700.08
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+219 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1390
+Surface Energy: 262.578
+Boundary Energy: 1443.06
+Energy: 1705.64
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+219 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1395
+Surface Energy: 264.234
+Boundary Energy: 1447.09
+Energy: 1711.32
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+219 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1400
+Surface Energy: 265.934
+Boundary Energy: 1451.21
+Energy: 1717.15
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+219 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1405
+Surface Energy: 267.677
+Boundary Energy: 1455.43
+Energy: 1723.11
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+221 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1410
+Surface Energy: 269.466
+Boundary Energy: 1459.73
+Energy: 1729.2
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+220 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1415
+Surface Energy: 271.301
+Boundary Energy: 1464.13
+Energy: 1735.43
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+219 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1420
+Surface Energy: 273.182
+Boundary Energy: 1468.63
+Energy: 1741.81
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+221 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1425
+Surface Energy: 275.112
+Boundary Energy: 1473.21
+Energy: 1748.33
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+223 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1430
+Surface Energy: 277.09
+Boundary Energy: 1477.9
+Energy: 1754.99
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+221 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1435
+Surface Energy: 279.118
+Boundary Energy: 1482.68
+Energy: 1761.8
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+222 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1440
+Surface Energy: 281.196
+Boundary Energy: 1487.56
+Energy: 1768.75
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+222 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1445
+Surface Energy: 283.326
+Boundary Energy: 1492.53
+Energy: 1775.86
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+222 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1450
+Surface Energy: 285.51
+Boundary Energy: 1497.61
+Energy: 1783.12
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+221 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1455
+Surface Energy: 287.747
+Boundary Energy: 1502.79
+Energy: 1790.53
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+222 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1460
+Surface Energy: 290.039
+Boundary Energy: 1508.06
+Energy: 1798.1
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+222 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1465
+Surface Energy: 292.388
+Boundary Energy: 1513.45
+Energy: 1805.83
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+223 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1470
+Surface Energy: 294.794
+Boundary Energy: 1518.93
+Energy: 1813.73
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+223 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1475
+Surface Energy: 297.259
+Boundary Energy: 1524.53
+Energy: 1821.78
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+222 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1480
+Surface Energy: 299.784
+Boundary Energy: 1530.22
+Energy: 1830.01
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+222 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1485
+Surface Energy: 302.371
+Boundary Energy: 1536.03
+Energy: 1838.4
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+222 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1490
+Surface Energy: 305.021
+Boundary Energy: 1541.95
+Energy: 1846.97
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+223 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1495
+Surface Energy: 307.735
+Boundary Energy: 1547.98
+Energy: 1855.71
+Number of degrees of freedom: 791
+Number of non-zero Sparse Matrix entries: 11415
+223 CG iterations needed to obtain convergence.
+Number of active cells: 160
+Total number of cells: 208
+Separation: 1500
+Surface Energy: 310.515
+Boundary Energy: 1554.12
+Energy: 1864.63

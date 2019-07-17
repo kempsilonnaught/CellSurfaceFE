@@ -2,7 +2,7 @@ MESSAGE(
 "###
 #
 #  Project  forces_inclusions  set up with  deal.II-9.1.1  found at
-#      /usr
+#      /usr/local
 #
 #  CMAKE_BUILD_TYPE:          Debug
 #
