@@ -18,6 +18,7 @@ SET(TARGET "forces_inclusions")
 SET(TARGET_SRC
   main.cpp
   run.cpp
+  refine_mesh.cpp
   cell_mesh.cpp
   setup.cpp
   assemble.cpp

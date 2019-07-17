@@ -33,59 +33,43 @@ double SimulateSurface::run(double r1, double r2, double sep, double x, double y
 
 	cell_mesh(r1, r2, sep, x, y, true);
 
-	surface.refine_global(1);
+	for(unsigned int cycle = 0; cycle < 8; ++cycle){
+		std::cout << "Cycle " << cycle << std::endl;
 
-	for(unsigned int step=0; step<1; ++step){
-		Triangulation<2>::active_cell_iterator cell = surface.begin_active();
-		Triangulation<2>::active_cell_iterator endc = surface.end();
-		for(; cell!=endc; ++cell){
-			for(unsigned int l_1 = 0; l_1 < GeometryInfo<2>::lines_per_cell; ++l_1){
-				Point<2> edge_center_1 = cell -> line(l_1) -> center(true, true);
-				if(cell -> line(l_1) -> at_boundary()){
-					if(sqrt((std::pow((edge_center_1[0]-sep/2), 2))+std::pow(edge_center_1[1], 2)) <= (r1))
-						cell->set_refine_flag ();
-					break;
-				}
-			}
-			for(unsigned int l_2 = 0; l_2 < GeometryInfo<2>::lines_per_cell; ++l_2){
-				Point<2> edge_center_2 = cell -> line(l_2) -> center(true, true);
-					if(cell -> line(l_2) -> at_boundary()){
-						if(sqrt((std::pow((edge_center_2[0]+sep/2), 2))+std::pow(edge_center_2[1], 2)) <= (r2))
-							cell->set_refine_flag ();
-						break;
-					}
-			}
+		if(cycle == 0){
+			GridTools::remove_anisotropy(surface, 1.8, 8);
+			surface.refine_global(1);
+		}else{
+			refine_mesh();
 		}
-		surface.execute_coarsening_and_refinement ();
+
+		setup();
+		assemble(sigma, kappa, kappabar, neumann_value_1, neumann_value_2);
+	
+		constraints5.condense(big_matrix);
+		constraints6.condense(big_matrix);
+		constraints5.condense(rhs);
+		constraints6.condense(rhs);
+		
+		solve();
+		
+		constraints5.distribute(solution);
+		constraints6.distribute(solution);
+	
+		std::cout << "Number of active cells: "
+		<< surface.n_active_cells()
+		<< std::endl
+		<< "Total number of cells: "
+		<< surface.n_cells()
+		<< std::endl;
+	
+		std::cout << "Separation: " << sep << std::endl;
+		output(i, j);
 	}
 
-	setup();
-	assemble(sigma, kappa, kappabar, neumann_value_1, neumann_value_2);
-
-	constraints5.condense(big_matrix);
-	constraints6.condense(big_matrix);
-	
-	constraints5.condense(rhs);
-	constraints6.condense(rhs);
-	
-	solve();
-	
-	constraints5.distribute(solution);
-	constraints6.distribute(solution);
-
-	std::cout << "Number of active cells: "
-	<< surface.n_active_cells()
-	<< std::endl
-	<< "Total number of cells: "
-	<< surface.n_cells()
-	<< std::endl;
-
 	std::ofstream out("twoDgrids/testgrid" + std::to_string(i) + ".eps");
-	GridOut cell_mesho;
-	cell_mesho.write_eps(surface, out);
-
-	std::cout << "Separation: " << sep << std::endl;
-	output(i, j);
+	GridOut twoDmesh;
+	twoDmesh.write_eps(surface, out);
 
 	double energy = calcEnergy(sigma, kappa, kappabar, neumann_value_1, neumann_value_2);
 

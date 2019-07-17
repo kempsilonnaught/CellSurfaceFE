@@ -37,46 +37,78 @@ explicitly deleting them ensures proper deconstruction.
 void SimulateSurface::cell_mesh(double r1, double r2, double sep, double x, double y, bool first_run){
 	surface.clear();
 
-		Triangulation<2> inclusion_1;
-		GridGenerator::hyper_cube_with_cylindrical_hole(inclusion_1, r1, sep/2, true);
-		GridTools::shift(Point<2>(sep/2, 0), inclusion_1);  
+	const Point<2> inclusion_1_location = Point<2>(sep/2, 0);
+	const Point<2> inclusion_2_location = Point<2>(-sep/2, 0);
+	const SphericalManifold<2> manifold1(inclusion_1_location);
+	const SphericalManifold<2> manifold2(inclusion_2_location);
 
-		Triangulation<2> inclusion_2;
-		GridGenerator::hyper_cube_with_cylindrical_hole(inclusion_2, r2, sep/2, true);
-		GridTools::shift(Point<2>(-sep/2, 0), inclusion_2);
+	Triangulation<2> inclusion_1;
+	GridGenerator::hyper_cube_with_cylindrical_hole(inclusion_1, r1, sep/2, true);
+	GridTools::shift(Point<2>(sep/2, 0), inclusion_1);  
 
-		GridGenerator::merge_triangulations(inclusion_1, inclusion_2, surface);
+	Triangulation<2> inclusion_2;
+	GridGenerator::hyper_cube_with_cylindrical_hole(inclusion_2, r2, sep/2, true);
+	GridTools::shift(Point<2>(-sep/2, 0), inclusion_2);
 
-		for(unsigned int aa = 0; aa < 10; ++aa){
+	// std::vector<types::boundary_id> the_boundary_ids = inclusion_2.get_boundary_ids();
+	// for(unsigned int i = 0; i < the_boundary_ids.size(); i++){
+	// 	std::cout << i << "th Element of Boundary Vector: " << the_boundary_ids[i] << std::endl;
+	// }
+
+	// std::vector<types::boundary_id> the_manifold_ids = inclusion_2.get_manifold_ids();
+	// for(unsigned int i = 0; i < the_manifold_ids.size(); i++){
+	// 	std::cout << i << "th Element of Manifold Vector: " << the_manifold_ids[i] << std::endl;
+	// }
+
+	GridGenerator::merge_triangulations(inclusion_1, inclusion_2, surface, true);
+
+	for(unsigned int aa = 0; aa < 10; ++aa){
 			typename Triangulation<2>::active_cell_iterator cell_1 = surface.begin_active(), endc_1 = surface.end();
-				for(; cell_1 != endc_1; ++cell_1)
-					for(unsigned int l_1 = 0; l_1 < GeometryInfo<2>::lines_per_cell; ++l_1){
-						Point<2> edge_center_1 = cell_1 -> line(l_1) -> center(true, true);
-							if(cell_1 -> line(l_1) -> at_boundary()){
-								if(sqrt((std::pow((edge_center_1[0]-sep/2), 2))+std::pow(edge_center_1[1], 2)) <= (r1))
-									cell_1 -> line(l_1) -> set_all_boundary_ids(5);
-							}
+			for(; cell_1 != endc_1; ++cell_1){
+				for(unsigned int l_1 = 0; l_1 < GeometryInfo<2>::lines_per_cell; ++l_1){
+					Point<2> edge_center_1 = cell_1 -> line(l_1) -> center(true, true);
+					if(cell_1 -> line(l_1) -> at_boundary()){
+						if(sqrt((std::pow((edge_center_1[0]-sep/2), 2))+std::pow(edge_center_1[1], 2)) <= (r1)){
+							cell_1 -> line(l_1) -> set_all_boundary_ids(5);
+							cell_1 -> line(l_1) -> set_all_manifold_ids(1);
+						}
 					}
-		}
-
-	
+				}
+			}
+	}
 		
-		for(unsigned int aa = 0; aa < 10; ++aa){
+	for(unsigned int aa = 0; aa < 10; ++aa){
 			typename Triangulation<2>::active_cell_iterator cell_2 = surface.begin_active(), endc_2 = surface.end();
-				for(; cell_2 != endc_2; ++cell_2)
-					for(unsigned int l_2 = 0; l_2 < GeometryInfo<2>::lines_per_cell; ++l_2){
-						Point<2> edge_center_2 = cell_2 -> line(l_2) -> center(true, true);
-							if(cell_2 -> line(l_2) -> at_boundary()){
-								if(sqrt((std::pow((edge_center_2[0]+sep/2), 2))+std::pow(edge_center_2[1], 2)) <= (r2))
-									cell_2 -> line(l_2) -> set_all_boundary_ids(6);
-							}
+			for(; cell_2 != endc_2; ++cell_2){
+				for(unsigned int l_2 = 0; l_2 < GeometryInfo<2>::lines_per_cell; ++l_2){
+					Point<2> edge_center_2 = cell_2 -> line(l_2) -> center(true, true);
+					if(cell_2 -> line(l_2) -> at_boundary()){
+						if(sqrt((std::pow((edge_center_2[0]+sep/2), 2))+std::pow(edge_center_2[1], 2)) <= (r2)){
+							cell_2 -> line(l_2) -> set_all_boundary_ids(6);
+							cell_2 -> line(l_2) -> set_all_manifold_ids(2);
+						}
 					}
-		}
+				}
+			}
+	}
 
-		typename Triangulation<2>::active_cell_iterator 
-		cell = surface.begin_active(), 
-		endc = surface.end();
-		for (; cell != endc; ++cell){
+	surface.set_manifold(1, manifold1);
+	surface.set_manifold(2, manifold2);
+
+	std::vector<types::boundary_id> the_boundary_ids = surface.get_boundary_ids();
+	for(unsigned int i = 0; i < the_boundary_ids.size(); i++){
+			std::cout << i << "th Element of Boundary Vector: " << the_boundary_ids[i] << std::endl;
+	}
+
+	std::vector<types::boundary_id> the_manifold_ids = surface.get_manifold_ids();
+	for(unsigned int i = 0; i < the_manifold_ids.size(); i++){
+			std::cout << i << "th Element of Manifold Vector: " << the_manifold_ids[i] << std::endl;
+	}
+
+	typename Triangulation<2>::active_cell_iterator 
+	cell = surface.begin_active(), 
+	endc = surface.end();
+	for (; cell != endc; ++cell){
 			for(unsigned int i = 0; i < GeometryInfo<2>::vertices_per_cell; ++i){
 				Point<2> &v = cell -> vertex(i);
 				if(v(0) == sep)
@@ -90,15 +122,15 @@ void SimulateSurface::cell_mesh(double r1, double r2, double sep, double x, doub
 			
 			}
 
-		}
+	}
 
-		// std::vector<types::boundary_id> the_boundary_ids = surface.get_boundary_ids();
-		// for(unsigned int i = 0; i < the_boundary_ids.size(); i++){
-		// 	std::cout << i << "th Element of Boundary Vector: " << the_boundary_ids[i] << std::endl;
-		// }
+	// std::vector<types::boundary_id> the_boundary_ids = surface.get_boundary_ids();
+	// for(unsigned int i = 0; i < the_boundary_ids.size(); i++){
+	// 	std::cout << i << "th Element of Boundary Vector: " << the_boundary_ids[i] << std::endl;
+	// }
 
-		if(first_run == false){ 
-		 	surface.clear();
-		}
+	if(first_run == false){ 
+	 	surface.clear();
+	}
 
 }

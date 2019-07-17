@@ -100,6 +100,7 @@ public :
 
     void cell_mesh(double r1, double r2, double sep, double x, double y, bool first_run);
     void setup();
+    void refine_mesh();
     void assemble(double sigma, double kappa, double kappabar, double neumann_value_1, double neumann_value_2);
     void solve();
     double calcEnergy(double sigma, double kappa, double kappabar, double neumann_value_1, double neumann_value_2);
