@@ -47,9 +47,6 @@ void SimulateSurface::cell_mesh(double r1, double r2, double sep, double x, doub
 
 		GridGenerator::merge_triangulations(inclusion_1, inclusion_2, surface);
 
-		HyperBallBoundary<2>* inclusion_boundary_1 = new HyperBallBoundary<2>(Point<2>(sep/2, 0), r1);
-		surface.set_boundary(5, *inclusion_boundary_1); 
-
 		for(unsigned int aa = 0; aa < 10; ++aa){
 			typename Triangulation<2>::active_cell_iterator cell_1 = surface.begin_active(), endc_1 = surface.end();
 				for(; cell_1 != endc_1; ++cell_1)
@@ -62,8 +59,7 @@ void SimulateSurface::cell_mesh(double r1, double r2, double sep, double x, doub
 					}
 		}
 
-		HyperBallBoundary<2>* inclusion_boundary_2 = new HyperBallBoundary<2>(Point<2>(-sep/2, 0), r2);
-		surface.set_boundary(6, *inclusion_boundary_2); 
+	
 		
 		for(unsigned int aa = 0; aa < 10; ++aa){
 			typename Triangulation<2>::active_cell_iterator cell_2 = surface.begin_active(), endc_2 = surface.end();
@@ -96,10 +92,13 @@ void SimulateSurface::cell_mesh(double r1, double r2, double sep, double x, doub
 
 		}
 
+		// std::vector<types::boundary_id> the_boundary_ids = surface.get_boundary_ids();
+		// for(unsigned int i = 0; i < the_boundary_ids.size(); i++){
+		// 	std::cout << i << "th Element of Boundary Vector: " << the_boundary_ids[i] << std::endl;
+		// }
+
 		if(first_run == false){ 
-			surface.clear();
-			delete inclusion_boundary_1;
-			delete inclusion_boundary_2;
+		 	surface.clear();
 		}
 
 }

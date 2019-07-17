@@ -26,7 +26,7 @@ void SimulateSurface::solve(){
 
     solver.solve(big_matrix, solution, rhs, PreconditionIdentity());
 
-    std::cout << "   " << solver_control.last_step()
+    std::cout << solver_control.last_step()
               << " CG iterations needed to obtain convergence."
               << std::endl;
 
@@ -101,8 +101,8 @@ double SimulateSurface::calcEnergy(double sigma, double kappa, double kappabar, 
         }
     }
 
-    std::cout << "Surface Energy" << energy_surf << std::endl;
-    std::cout << "Boundary Energy" << energy_bound << std::endl;        
+    std::cout << "Surface Energy: " << energy_surf << std::endl;
+    std::cout << "Boundary Energy: " << energy_bound << std::endl;        
     energy += energy_bound + energy_surf;
 
     return energy;

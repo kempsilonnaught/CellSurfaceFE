@@ -43,8 +43,7 @@ void SimulateSurface::assemble(double sigma, double kappa, double kappabar, doub
 	for(auto cell : doffer.active_cell_iterators()){
 		fe_time.reinit(cell);
 		lil_matrix = 0;
-		lil_rhs5 = 0;
-		lil_rhs6 = 0;
+		lil_rhs = 0;
 		for(unsigned int q_index = 0; q_index < n_q_points; ++q_index){ //This is our big system integral
 			for(unsigned int i = 0; i < dofs_per_cell; ++i){
 				for(unsigned int j = 0; j < dofs_per_cell; ++j){
@@ -88,7 +87,6 @@ void SimulateSurface::assemble(double sigma, double kappa, double kappabar, doub
             }
         }
 
-
 		cell -> get_dof_indices(local_dof_indices);
 		for(unsigned int i = 0; i < dofs_per_cell; ++i)
 			for(unsigned int j = 0; j < dofs_per_cell; ++j)
@@ -100,10 +98,6 @@ void SimulateSurface::assemble(double sigma, double kappa, double kappabar, doub
 
 	std::map<types::global_dof_index, double> boundary_values;
 	VectorTools::interpolate_boundary_values(doffer, 0, ZeroFunction<2>(), boundary_values);
-	VectorTools::create_boundary_right_hand_side(doffer, quadrakill, ConstantFunction<2>(), rhs, 5);
-	VectorTools::create_boundary_right_hand_side(doffer, quadrakill, ConstantFunction<2>(), rhs, 5);
-
-
 	MatrixTools::apply_boundary_values(boundary_values, big_matrix, solution, rhs);
 
 	std::cout << "Number of non-zero Sparse Matrix entries: " << big_matrix.n_nonzero_elements() << std::endl;

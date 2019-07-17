@@ -27,7 +27,7 @@ int main() {
         energy[i] = membrane[i].run(radius_1, radius_2, sep, sheet_x, sheet_y, sigma, kappa, kappabar, neumann_value_1, neumann_value_2, i, 1);
         separation[i] = sep;
         energysep << separation[i] << " " << energy[i] << std::endl;
-        std::cout << energy[i] << std::endl;
+        std::cout << "Energy: " << energy[i] << std::endl;
 
         ++i;
     }
@@ -44,7 +44,7 @@ int main() {
         energy[i] = membrane[i].run(radius_1, radius_2, sep2, sheet_x, sheet_y, sigma, kappa, kappabar, neumann_value_3, neumann_value_4, i, -1);
         separation[i] = sep2;
         energysep2 << separation[i] << " " << energy[i] << std::endl;
-        std::cout << energy[i] << std::endl;
+        std::cout << "Energy: " << energy[i] << std::endl;
 
         ++i;
     }

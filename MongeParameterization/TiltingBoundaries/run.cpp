@@ -33,6 +33,8 @@ double SimulateSurface::run(double r1, double r2, double sep, double x, double y
 
 	cell_mesh(r1, r2, sep, x, y, true);
 
+	surface.refine_global(1);
+
 	for(unsigned int step=0; step<1; ++step){
 		Triangulation<2>::active_cell_iterator cell = surface.begin_active();
 		Triangulation<2>::active_cell_iterator endc = surface.end();
@@ -42,7 +44,7 @@ double SimulateSurface::run(double r1, double r2, double sep, double x, double y
 				if(cell -> line(l_1) -> at_boundary()){
 					if(sqrt((std::pow((edge_center_1[0]-sep/2), 2))+std::pow(edge_center_1[1], 2)) <= (r1))
 						cell->set_refine_flag ();
-						break;
+					break;
 				}
 			}
 			for(unsigned int l_2 = 0; l_2 < GeometryInfo<2>::lines_per_cell; ++l_2){
@@ -50,24 +52,31 @@ double SimulateSurface::run(double r1, double r2, double sep, double x, double y
 					if(cell -> line(l_2) -> at_boundary()){
 						if(sqrt((std::pow((edge_center_2[0]+sep/2), 2))+std::pow(edge_center_2[1], 2)) <= (r2))
 							cell->set_refine_flag ();
-							break;
+						break;
 					}
 			}
 		}
 		surface.execute_coarsening_and_refinement ();
 	}
 
-	surface.refine_global(1);
-
 	setup();
 	assemble(sigma, kappa, kappabar, neumann_value_1, neumann_value_2);
+
+	constraints5.condense(big_matrix);
+	constraints6.condense(big_matrix);
+	
+	constraints5.condense(rhs);
+	constraints6.condense(rhs);
+	
 	solve();
+	
+	constraints5.distribute(solution);
+	constraints6.distribute(solution);
 
-
-	std::cout << "   Number of active cells: "
+	std::cout << "Number of active cells: "
 	<< surface.n_active_cells()
 	<< std::endl
-	<< "   Total number of cells: "
+	<< "Total number of cells: "
 	<< surface.n_cells()
 	<< std::endl;
 
@@ -75,10 +84,8 @@ double SimulateSurface::run(double r1, double r2, double sep, double x, double y
 	GridOut cell_mesho;
 	cell_mesho.write_eps(surface, out);
 
-	std::cout << sep << std::endl;
-	std::cout << "J1 = " << j << std::endl;
+	std::cout << "Separation: " << sep << std::endl;
 	output(i, j);
-    std::cout << "J3 = " << j << std::endl;
 
 	double energy = calcEnergy(sigma, kappa, kappabar, neumann_value_1, neumann_value_2);
 
