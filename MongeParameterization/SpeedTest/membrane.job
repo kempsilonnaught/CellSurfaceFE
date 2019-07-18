@@ -1,0 +1,9 @@
+#!/bin/bash
+#PBS -N membraneboi
+#PBS -l nodes=1:ppn=8
+#PBS -l mem=64GB
+#PBS -l walltime=16:00:00
+#PBS -q phage
+#PBS tracejob $PBS_JOBID > $PBS_O_WWORKDIR/$PBS_JOBID.tracejob
+cd /home/kemps/Builds/CellSurfaceFE/CellSurfaceFE/MongeParameterization/SpeedTest
+./forces_inclusions

@@ -37,7 +37,7 @@ double SimulateSurface::run(double r1, double r2, double sep, double x, double y
 		std::cout << "Cycle " << cycle << std::endl;
 
 		if(cycle == 0){
-			GridTools::remove_anisotropy(surface, 1.8, 8);
+			GridTools::remove_anisotropy(surface, 1.8, 2);
 			surface.refine_global(1);
 		}else{
 			refine_mesh();
