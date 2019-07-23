@@ -37,10 +37,9 @@ double SimulateSurface::run(double r1, double r2, double sep, double x, double y
 		std::cout << "Cycle " << cycle << std::endl;
 
 		if(cycle == 0){
-			GridTools::remove_anisotropy(surface, 1.8, 2);
-			GridTools::remove_hanging_nodes(surface, true, 4);
-			std::cout << "MADE IT THROUGH GridTools REFINEMENT!" << std::endl;
 			surface.refine_global(1);
+			GridTools::remove_anisotropy(surface, 1.8, 4);
+			std::cout << "MADE IT THROUGH GridTools REFINEMENT!" << std::endl;
 		}else{
 			refine_mesh(epsilon);
 		}
