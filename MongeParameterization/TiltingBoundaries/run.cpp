@@ -29,18 +29,20 @@ this complicated.
 Thus, this function has run the necessary functions to get energy.
 */
 
-double SimulateSurface::run(double r1, double r2, double sep, double x, double y, double sigma, double kappa, double kappabar, double neumann_value_1, double neumann_value_2, int i, int j){
+double SimulateSurface::run(double r1, double r2, double sep, double x, double y, double sigma, double kappa, double kappabar, double epsilon, double neumann_value_1, double neumann_value_2, int i, int j){
 
-	cell_mesh(r1, r2, sep, x, y, true);
+	cell_mesh(r1, r2, epsilon, sep, x, y, true);
 
-	for(unsigned int cycle = 0; cycle < 8; ++cycle){
+	for(unsigned int cycle = 0; cycle < 3; ++cycle){
 		std::cout << "Cycle " << cycle << std::endl;
 
 		if(cycle == 0){
 			GridTools::remove_anisotropy(surface, 1.8, 2);
+			GridTools::remove_hanging_nodes(surface, true);
+			std::cout << "MADE IT THROUGH GridTools REFINEMENT!" << std::endl;
 			surface.refine_global(1);
 		}else{
-			refine_mesh();
+			refine_mesh(epsilon);
 		}
 
 		setup();
@@ -73,7 +75,7 @@ double SimulateSurface::run(double r1, double r2, double sep, double x, double y
 
 	double energy = calcEnergy(sigma, kappa, kappabar, neumann_value_1, neumann_value_2);
 
-	cell_mesh(r1, r2, sep, x, y, false);
+	cell_mesh(r1, r2, epsilon, sep, x, y, false);
 	doffer.clear();
 	surface.clear();
 

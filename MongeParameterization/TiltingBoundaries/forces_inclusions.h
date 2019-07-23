@@ -98,14 +98,14 @@ public :
     SimulateSurface();
     ~SimulateSurface();
 
-    void cell_mesh(double r1, double r2, double sep, double x, double y, bool first_run);
+    void cell_mesh(double r1, double r2, double epsilon, double sep, double x, double y, bool first_run);
     void setup();
-    void refine_mesh();
+    void refine_mesh(double epsilon);
     void assemble(double sigma, double kappa, double kappabar, double neumann_value_1, double neumann_value_2);
     void solve();
     double calcEnergy(double sigma, double kappa, double kappabar, double neumann_value_1, double neumann_value_2);
     void output(int i, int j);
-    double run(double r1, double r2, double sep, double x, double y, double sigma, double kappa, double kappabar, double neumann_value_1, double neumann_value_2, int i, int j);
+    double run(double r1, double r2, double sep, double x, double y, double sigma, double kappa, double kappabar, double epsilon, double neumann_value_1, double neumann_value_2, int i, int j);
 
 private :
 

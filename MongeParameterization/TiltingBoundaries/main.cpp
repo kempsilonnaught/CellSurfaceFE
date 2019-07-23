@@ -15,6 +15,7 @@ int main() {
 
     double radius_1 = 10;
     double radius_2 = 10;
+    double epsilon = .01;
     double sheet_x = 2250;
     double sheet_y = 1250;
     double sigma = 1;
@@ -24,7 +25,7 @@ int main() {
     for (double sep = 50; sep <= 1500; sep += 500) {
     	const double neumann_value_1 = tan(3.14159265/4);
         const double neumann_value_2 = tan(3.14159265/4);
-        energy[i] = membrane[i].run(radius_1, radius_2, sep, sheet_x, sheet_y, sigma, kappa, kappabar, neumann_value_1, neumann_value_2, i, 1);
+        energy[i] = membrane[i].run(radius_1, radius_2, sep, sheet_x, sheet_y, sigma, kappa, kappabar, epsilon, neumann_value_1, neumann_value_2, i, 1);
         separation[i] = sep;
         energysep << separation[i] << " " << energy[i] << std::endl;
         std::cout << "Energy: " << energy[i] << std::endl;
@@ -41,7 +42,7 @@ int main() {
     for (double sep2 = 50; sep2 <= 1500; sep2 += 500) {
         const double neumann_value_3 = tan(3.14159265/4);
         const double neumann_value_4 = -tan(3.14159265/4);
-        energy[i] = membrane[i].run(radius_1, radius_2, sep2, sheet_x, sheet_y, sigma, kappa, kappabar, neumann_value_3, neumann_value_4, i, -1);
+        energy[i] = membrane[i].run(radius_1, radius_2, sep2, sheet_x, sheet_y, sigma, kappa, kappabar, epsilon, neumann_value_3, neumann_value_4, i, -1);
         separation[i] = sep2;
         energysep2 << separation[i] << " " << energy[i] << std::endl;
         std::cout << "Energy: " << energy[i] << std::endl;
