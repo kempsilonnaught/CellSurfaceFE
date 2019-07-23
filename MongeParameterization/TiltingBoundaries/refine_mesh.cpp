@@ -1,6 +1,6 @@
 #include "forces_inclusions.h"
 
-void SimulateSurface::refine_mesh(){
+void SimulateSurface::refine_mesh(double epsilon){
 	Vector<float> estimated_error_per_cell(surface.n_active_cells());
 
 	KellyErrorEstimator<2>::estimate(doffer, QGauss<1>(3), std::map<types::boundary_id, const Function<2> *>(), solution, estimated_error_per_cell);
