@@ -1,0 +1,24 @@
+0th Element of Boundary Vector: 0
+1th Element of Boundary Vector: 5
+2th Element of Boundary Vector: 6
+0th Element of Manifold Vector: 1
+1th Element of Manifold Vector: 2
+2th Element of Manifold Vector: 4294967295
+Cycle 0
+MADE IT THROUGH GridTools REFINEMENT!
+Number of degrees of freedom: 3995
+Number of non-zero Sparse Matrix entries: 56971
+9807 CG iterations needed to obtain convergence.
+Number of active cells: 824
+Total number of cells: 1344
+Separation: 50
+Cycle 1
+Number of degrees of freedom: 6887
+Number of non-zero Sparse Matrix entries: 99639
+34718 CG iterations needed to obtain convergence.
+Number of active cells: 1456
+Total number of cells: 2184
+Separation: 50
+Cycle 2
+Number of degrees of freedom: 12211
+Number of non-zero Sparse Matrix entries: 177623
