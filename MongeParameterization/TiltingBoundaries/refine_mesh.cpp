@@ -5,7 +5,7 @@ void SimulateSurface::refine_mesh(double epsilon){
 
 	KellyErrorEstimator<2>::estimate(doffer, QGauss<1>(3), std::map<types::boundary_id, const Function<2> *>(), solution, estimated_error_per_cell);
 
-	GridRefinement::refine_and_coarsen_fixed_number(surface, estimated_error_per_cell, 0.25, 0.03);
+	GridRefinement::refine_and_coarsen_fixed_number(surface, estimated_error_per_cell, 0.25, 0);
 
 	surface.execute_coarsening_and_refinement();
 

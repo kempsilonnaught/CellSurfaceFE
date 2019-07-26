@@ -33,12 +33,12 @@ double SimulateSurface::run(double r1, double r2, double sep, double x, double y
 
 	cell_mesh(r1, r2, epsilon, sep, x, y, true);
 
-	for(unsigned int cycle = 0; cycle < 3; ++cycle){
+	for(unsigned int cycle = 0; cycle < 2; ++cycle){
 		std::cout << "Cycle " << cycle << std::endl;
 
 		if(cycle == 0){
 			surface.refine_global(1);
-			GridTools::remove_anisotropy(surface, 1.8, 4);
+			GridTools::remove_anisotropy(surface, 1.8, 3);
 			std::cout << "MADE IT THROUGH GridTools REFINEMENT!" << std::endl;
 		}else{
 			refine_mesh(epsilon);
